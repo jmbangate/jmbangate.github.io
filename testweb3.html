@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Le Havre-Zoom</title>
+<title>Le Havre-Drag</title>
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -29,12 +29,14 @@ path.invis {
 </style>
 </head>
 <body>
+<p style="color:black">GRAPH 01</p>    
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript">
+
+  <script type="text/javascript">
 
   //adding these for ui control
-  var width = 1400,height = 700;
+  var width = 800,height = 600;
   //zoom handler
   ////adding these for ui control
 
@@ -43,56 +45,50 @@ path.invis {
     var data = {
           edges: [
               {
-                source: {id: 0, label: "v0: _"},
-                target: {id: 1, label: "v1: _"},
+                source: {id: 0, label: "v0: A_"},
+                target: {id: 1, label: "v1: B_"},
                 value: "e0: _",
                 color:"#0066ff"
               },
               {
-                source: {id: 0, label: "v0: _"},
-                target: {id: 2, label: "v2: _"},
+                source: {id: 0, label: "v0: A_"},
+                target: {id: 2, label: "v2: C_"},
                 value: "e1: _",
                 color:"#0066ff"
               },
               {
-                source: {id: 0, label: "v0: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 0, label: "v0: A_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e2: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 2, label: "v2: _"},
+                source: {id: 1, label: "v1: B_"},
+                target: {id: 2, label: "v2: C_"},
                 value: "e3: -",
                 color:"#00b300"
               },
               {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 5, label: "v5: _"},
+                source: {id: 1, label: "v1: B_"},
+                target: {id: 5, label: "v5: F_"},
                 value: "e4: _",
                 color:"#00b300"
               },
               {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 5, label: "v5: _"},
-                value: "e4: _",
-                color:"#00b300"
-              },
-              {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 4, label: "v4: _"},
+                source: {id: 1, label: "v1: B_"},
+                target: {id: 4, label: "v4: E_"},
                 value: "e5: _",
                 color:"#660066"
               },
               {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 9, label: "v9: _"},
+                source: {id: 1, label: "v1: B_"},
+                target: {id: 9, label: "v9: J_"},
                 value: "e6: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 1, label: "v1: _"},
-                target: {id: 10, label: "v10: _"},
+                source: {id: 1, label: "v1: B_"},
+                target: {id: 10, label: "v10: K_"},
                 value: "e7: _",
                 color:"#ff8000"
               },
@@ -100,140 +96,147 @@ path.invis {
               {
                 source: {id: 2, label: "v2: _"},
                 target: {id: 1, label: "v1: _"},
-                value: "e8: _",
+                value: "e8: CB_",
                 color:"#00b300"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 3, label: "v3: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 3, label: "v3: D_"},
                 value: "e9: _",
                 color:"#000000"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 10, label: "v10: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 10, label: "v10: K_"},
                 value: "e10: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e11: _",
                 color:"#ff8000"
               },
 
               {
-                source: {id: 3, label: "v3: _"},
-                target: {id: 10, label: "v10: _"},
-                value: "e12: Est inclus",
+                source: {id: 3, label: "v3: D_"},
+                target: {id: 10, label: "v10: K_"},
+                value: "e12:_",
                 color:"#ff8000"
               },
               {
-                source: {id: 3, label: "v3: _"},
-                target: {id: 11, label: "v11: _"},
-                value: "e13: Est inclus",
+                source: {id: 3, label: "v3: D_"},
+                target: {id: 11, label: "v11: L_"},
+                value: "e13:_",
                 color:"#ff8000"
               },
 
               {
-                source: {id: 4, label: "v4: _"},
-                target: {id: 1, label: "v1: _"},
+                source: {id: 4, label: "v4: E_"},
+                target: {id: 1, label: "v1: B_"},
                 value: "e14: _",
                 color:"#660066"
               },
               {
-                source: {id: 4, label: "v4: _"},
-                target: {id: 5, label: "v5: _"},
+                source: {id: 4, label: "v4: E_"},
+                target: {id: 5, label: "v5: F_"},
                 value: "e15: _",
                 color:"#660066"
               },
               {
-                source: {id: 4, label: "v4: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 4, label: "v4: E_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e16: _",
                 color:"#ff8000"
               },
 
               {
-                source: {id: 5, label: "v5: _"},
-                target: {id: 1, label: "v1: _"},
+                source: {id: 5, label: "v5: F_"},
+                target: {id: 1, label: "v1: B_"},
                 value: "e17: _",
                 color:"#00b300"
               },
               {
-                source: {id: 5, label: "v5: _"},
-                target: {id: 4, label: "v4: _"},
+                source: {id: 5, label: "v5: F_"},
+                target: {id: 4, label: "v4: E_"},
                 value: "e18: _",
                 color:"#660066"
               },
               {
-                source: {id: 5, label: "v5: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 5, label: "v5: F_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e19: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 6, label: "v6: _"},
-                target: {id: 5, label: "v5: _"},
+                source: {id: 6, label: "v6: G_"},
+                target: {id: 5, label: "v5: F_"},
                 value: "e20: _",
                 color:"#ff4dff"
               },
               {
-                source: {id: 6, label: "v6: _"},
-                target: {id: 10, label: "v10: _"},
+                source: {id: 6, label: "v6: G_"},
+                target: {id: 10, label: "v10: K_"},
                 value: "e21: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 6, label: "v6: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 6, label: "v6: G_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e22: _",
                 color:"#ff8000"
               },
               {
-                source: {id: 8, label: "v8: _"},
-                target: {id: 11, label: "v11: _"},
+                source: {id: 8, label: "v8: I_"},
+                target: {id: 11, label: "v11: L_"},
                 value: "e22: _",
                 color:"#ff8000"
               },
 
 
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 1, label: "v1: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 1, label: "v1: B_"},
                 value: "e24: _",
                 color:"#ff0000"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 4, label: "v4: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 4, label: "v4: E_"},
                 value: "e24: _",
                 color:"#ff0000"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 1, label: "v1: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 1, label: "v1: B_"},
                 value: "e25: _",
                 color:"#ff0000"
               },
               {
-                source: {id: 2, label: "v2: _"},
-                target: {id: 5, label: "v5: _"},
+                source: {id: 2, label: "v2: C_"},
+                target: {id: 5, label: "v5: F_"},
                 value: "e25: _",
                 color:"#ff0000"
               },
 
               //not connected  
               {
-                source: {id: 7, label: "v7: _"},
-                target: {id: 7, label: "v7: _"},
-                value: "",
+                source: {id: 7, label: "v7: H_"},
+                target: {id: 7, label: "v7: H_"},
+                value: "e0",
                 color:"white"
               },
               {
-                source: {id: 12, label: "v12: _"},
-                target: {id: 2, label: "v12: _"},
-                value: "",
+                source: {id: 12, label: "v12: M_"},
+                target: {id: 12, label: "v12: M_"},
+                value: "e00",
+                color:"white"
+              },
+            //extra line for display (the edge is not displayed properly for the last entry, and needs a redundant entry to be visible)
+              {
+                source: {id: 12, label: "v12: M_"},
+                target: {id: 12, label: "v12: M_"},
+                value: "e00",
                 color:"white"
               },
               
