@@ -143,11 +143,13 @@ path.invis {
               .style("z-index", -10)
               .attr("id", "svg")
               //adding these
+              /*
               .call(d3.behavior.zoom().on("zoom", function () {
                 svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
               }))
 
               .append("g")
+              */
               ;
 
           svg.append('svg:defs').selectAll('marker')
