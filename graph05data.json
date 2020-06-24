@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {"id": "A","group":1,"label":"v0: A"},
+    {"id": "B","group":2,"label":"v1: B"},
+    {"id": "C","group":3,"label":"v2: C"},
+    {"id": "D","group":4,"label":"v3: D"},
+    {"id": "E","group":5,"label":"v4: E"},
+    {"id": "F","group":6,"label":"v5: F"},
+    {"id": "G","group":7,"label":"v6: G"},
+    {"id": "H","group":8,"label":"v7: H"},
+    {"id": "I","group":9,"label":"v8: I"},
+    {"id": "J","group":10,"label":"v9: J"},
+    {"id": "K","group":11,"label":"v10: K"},
+    {"id": "L","group":12,"label":"v11: L"},
+    {"id": "M","group":13,"label":"v12: M"}
+  ],
+  "links": [
+    ["A","B"],
+    ["A","C"],
+    ["A","L"],
+
+    ["B","C"],
+    ["B","F"],
+    ["B","E"],
+    ["B","J"],
+    ["B","K"],
+
+    ["C","B"],
+
+    ["C","B","E"],
+    ["C","B","F"],
+    
+    ["C","D"],
+    ["C","K"],
+    ["C","L"],
+
+    ["D","K"],
+    ["D","L"],
+
+    ["E","B"],
+    ["E","F"],
+    ["E","L"],
+
+    ["F","B"],
+    ["F","E"],
+    ["F","L"],
+
+    ["G","F"],
+    ["G","K"],
+    ["G","L"],
+
+    ["I","L"]
+  ]
+}
