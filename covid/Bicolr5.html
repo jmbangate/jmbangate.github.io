@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>COVID19 Cases-Bicol</title>
+<title>COVID19 Cases-Bicol (As of July 5, 2020)</title>
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black">COVID19 Cases-Bicol</p>    
+<p style="color:black">COVID19 Cases-Bicol (As of July 5, 2020) ZOOM (mouse scroll button), DRAG (Left mouse button then drag)</p>    
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,95 @@ path.invis {
 
     var data = {
           edges: [
+              //july5
+              
+              {
+                source: {id: 105, label: "Bicol#105, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 156, label: "Bicol#156, 7_yo (Female) Address: Naga, City Asymtomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 157, label: "Bicol#157, 30_yo Female, Helper, Address:Naga City, Origin: Laguna Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 157, label: "Bicol#157, 30_yo Female, Helper, Address:Naga City, Origin: Laguna Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 158, label: "Bicol#158, 49_yo Female, Healthworker, Address:Naga City, Symptoms: July 1, 2020", healthworker: "yes" ,status:"Quarantined"},
+                target: {id: 158, label: "Bicol#158, 49_yo Female, Healthworker, Address:Naga City, Symptoms: July 1, 2020", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 103, label: "Bicol#103, Painter, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 159, label: "Bicol#159, 53_yo, Male, OFW, Address:Naga City, Asymptomatic ", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 107, label: "Bicol#107, Housewife, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 159, label: "Bicol#159, 53_yo, Male, OFW, Address:Naga City, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 109, label: "Bicol#109,", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 159, label: "Bicol#159, 53_yo, Male, OFW, Address:Naga City, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 103, label: "Bicol#103, Painter, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 160, label: "Bicol#160, 29_yo, Male, Address:Naga City, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 107, label: "Bicol#107, Housewife, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 160, label: "Bicol#160, 29_yo, Male, Address:Naga City, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 109, label: "Bicol#109,", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 160, label: "Bicol#160, 29_yo, Male, Address:Naga City, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 133, label: "Bicol#133, Address: Presentacion, Vendor, Origin: Novaliches, Arrived: June 25, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 161, label: "Bicol#161, 25_yo, Female, Address:Presentacion, Cam Sur, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+               {
+                source: {id: 103, label: "Bicol#103, Painter, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 107, label: "Bicol#107, Housewife, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 109, label: "Bicol#109,", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+
+
               //july4
               {
                 source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
@@ -377,13 +466,13 @@ path.invis {
 
               {
                 source: {id: 91, label: "Bicol#91 Address: Naga, Origin: Cavite", healthworker: "-" ,status:"Admitted"},
-                target: {id: 105, label: "Bicol#104, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 105, label: "Bicol#105, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 92, label: "Bicol#92 Address: Naga, Origin: Cavite", healthworker: "-" ,status:"Admitted"},
-                target: {id: 105, label: "Bicol#104, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 105, label: "Bicol#105, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -805,7 +894,7 @@ path.invis {
               },
 
               {
-                source: {id: 45, label: "Bicol#45,", healthworker: "-" ,status:"Fully Recovered"},
+                source: {id: 45, label: "Bicol#45, 32_yo, Female, Address: Legazpi City, Healthworker-Physician, Positive: May 2, 2020, Negative: May 12, 2020, Recovered", healthworker: "yes" ,status:"Recovered"},
                 target: {id: 52, label: "Bicol#52, 26_yo Male, Health Worker, Physician, Positive: May 8, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
