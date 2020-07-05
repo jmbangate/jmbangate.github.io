@@ -31,6 +31,18 @@ REPORT DATE,PATIENT,Age,Sex,Local Address,Nationality,Occupation,History of trav
 "July 3, 2020",Bicol#144,24,Female,"Pili, Cam. Sur",Filipino,teacher,,,Bicol#114,"Symptoms, June 28, 2020",,,Quarantined
 "July 3, 2020",Bicol#145,43,Female,"Gubat, Sorsogon",Filipino,caregiver,Quezon City,"June 18, 2020",Bicol#114,"Symptoms, June 29, 2020",,,Quarantined
 "July 3, 2020",Bicol#146,75,Female,"Prieto Diaz, Sorsogon",Filipino,retired teacher,,,Bicol#114,Asymptomatic,,,Quarantined
+"July 2, 2020",Bicol#125,32,Male,Legazpi City,Filipino,machine operator,Paranaque,"June 28, 2020",,Asymptomatic,,,Quarantined
+"July 2, 2020",Bicol#126,19,Female,"Naga City, Cam Sur",Filipino,,,,Community with known cases,Asymptomatic,,,Quarantined
+"July 2, 2020",Bicol#127,24,Female,"Naga City, Cam Sur",Filipino,,,,,"Symptoms, June 30, 2020",,,Quarantined
+"July 2, 2020",Bicol#128,32,Male,"Naga City, Cam Sur",Filipino,,,,"Bicol#91, Bicol#92","Symptoms, June 23, 2020",,,Quarantined
+"July 2, 2020",Bicol#129,45,Male,"Pasacao, Cam Sur",Filipino,truck driver,,,,Asymptomatic,,,Quarantined
+"July 2, 2020",Bicol#130,40,Female,"Pasacao, Cam Sur",Filipino,,,,,Asymptomatic,,,Quarantined
+"July 1, 2020",Bicol#123,27,Male,Legazpi City,Filipino,,"Malate, Manila","June 26, 2020",,Asymptomatic,,,Quarantined
+"July 1, 2020",Bicol#124,28,Female,"Lagonoy, Cam Sur",Filipino,,Cebu City,"June 28, 2020",,Asymptomatic,,,Quarantined
+"June 30, 2020",Bicol#115,35,Female,"Manito, Albay",Filipino,factory worker,Taguig City,"June 24, 2020",Bicol#93,Asymptomatic,,,Quarantined
+"June 30, 2020",Bicol#116,33,Female,"Manito, Albay",Filipino,housewife,Taguig City,"June 24, 2020",Bicol#93,Asymptomatic,,,Quarantined
+"June 30, 2020",Bicol#117,9,Male,"Manito, Albay",Filipino,,Taguig City,"June 24, 2020",Bicol#93,Asymptomatic,,,Quarantined
+"June 30, 2020",Bicol#118,12,Male,"Manito, Albay",Filipino,,Taguig City,"June 24, 2020",Bicol#93,"Symptoms, June 20, 2020",,,Quarantined
 "June 19, 2020",Bicol#76,46,Male,Legazpi City,Filipino,,Batangas,,,Asymptomatic,,"June 5, 2020",
 "June 19, 2020",Bicol#77,27,Male,Bacacay,Filipino,,"Antipolo, Rizal",,,Asymptomatic,,"June 5, 2020",
 "June 19, 2020",Bicol#78,30,Female,Oas Albay,Filipino,Health Worker,,,History of exposure,Asymptomatic,,"June 9, 2020",
