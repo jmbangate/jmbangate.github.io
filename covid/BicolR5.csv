@@ -112,40 +112,40 @@ REPORT DATE,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "June 19, 2020",Bicol#31,19,Male,Legazpi City,Albay,Filipino,,,,,,,"April 22, 2020",Recovered
 "June 19, 2020",Bicol#32,40,Male,Camalig Albay,Albay,Filipino,,,,,,,"April 22, 2020",Recovered
 "June 19, 2020",Bicol#33,43,Female,"Guinobatan, Albay",Albay,Filipino,,,,,,,"April 22, 2020",Recovered
-"June 19, 2020",Bicol#34,33,Female,Legazpi City,Albay,Filipino,,,,,,,"April 22, 2020",Recovered
+"June 19, 2020",Bicol#34,33,Female,Legazpi City,Albay,Filipino,,,,Bicol#19,Asymptomatic,,"April 22, 2020",Recovered
 "June 19, 2020",Bicol#35,40,Male,Legazpi City,Albay,Filipino,,,,,,,"April 24, 2020",Recovered
 "June 19, 2020",Bicol#36,28,Female,Legazpi City,Albay,Filipino,,,,,,,"April 28, 2020",Recovered
 "June 19, 2020",Bicol#37,54,Male,Legazpi City,Albay,Filipino,,,,,,,"April 28, 2020",Recovered
 "June 19, 2020",Bicol#38,56,Female,"Ligao City, Albay",Albay,Filipino,,,,,,,"April 28, 2020",Recovered
-"June 19, 2020",Bicol#39,43,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,,,,"April 29, 2020",Recovered
+"June 19, 2020",Bicol#39,43,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,Health Worker,,,COVID ward,Asymptomatic,,"April 29, 2020",Recovered
 "June 19, 2020",Bicol#40,11 mos,Female,"Ligao City, Albay",Albay,Filipino,,,,,,,"April 30, 2020",Recovered
 "June 19, 2020",Bicol#41,45,Female,Legazpi City,Albay,Filipino,,,,,,,"April 30, 2020",Recovered
-"June 19, 2020",Bicol#42,39,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"April 30, 2020",Recovered
+"June 19, 2020",Bicol#42,39,Female,"Daraga, Albay",Albay,Filipino,Health Worker,,,Hospital COVID Area,Asymptomatic,,"April 30, 2020",Recovered
 "June 19, 2020",Bicol#43,57,Female,Legazpi City,Albay,Filipino,,,,,,,"May 1, 2020",Recovered
-"June 19, 2020",Bicol#44,53,Male,Legazpi City,Albay,Filipino,,,,,,,"May 2, 2020",Recovered
+"June 19, 2020",Bicol#44,53,Male,Legazpi City,Albay,Filipino,,,,Bicol#35,,,"May 2, 2020",Recovered
 "June 19, 2020",Bicol#45,32,Female,Legazpi City,Albay,Filipino,,,,,,,"May 2, 2020",Recovered
 "June 19, 2020",Bicol#46,29,Male,"Daraga, Albay",Albay,Filipino,,,,,,,"May 2, 2020",Recovered
-"June 19, 2020",Bicol#47,27,Male,Legazpi City,Albay,Filipino,,,,,,,"May 5, 2020",Recovered
-"June 19, 2020",Bicol#48,46,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 6, 2020",Recovered
-"June 19, 2020",Bicol#49,31,Female,Legazpi City,Albay,Filipino,,,,,,,"May 6, 2020",Recovered
-"June 19, 2020",Bicol#50,64,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 7, 2020",Recovered
+"June 19, 2020",Bicol#47,27,Male,Legazpi City,Albay,Filipino,,,,Bicol#44,"April 30, 2020",,"May 5, 2020",Recovered
+"June 19, 2020",Bicol#48,46,Female,"Daraga, Albay",Albay,Filipino,Health Worker,,,Bicol#41,Asymptomatic,,"May 6, 2020",Recovered
+"June 19, 2020",Bicol#49,31,Female,Legazpi City,Albay,Filipino,Health Worker,,,Bicol#41,Asymptomatic,,"May 6, 2020",Recovered
+"June 19, 2020",Bicol#50,64,Female,"Daraga, Albay",Albay,Filipino,Health Worker,,,For verification,"May 3, 2020",,"May 7, 2020",Recovered
 "June 19, 2020",Bicol#51,23,Female,"Tigaon, Cam Sur",Camarines Sur,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#52,26,Male,"Daraga, Albay",Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#53,38,Female,Legazpi City,Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#54,51,Female,Legazpi City,Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#55,18,Female,Legazpi City,Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#56,44,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#57,8,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 8, 2020",Recovered
-"June 19, 2020",Bicol#58,48,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 9, 2020",Recovered
-"June 19, 2020",Bicol#59,27,Male,Ligao City,Albay,Filipino,,,,,,,"May 9, 2020",Recovered
-"June 19, 2020",Bicol#60,41,Male,"Tigaon, Cam Sur",Camarines Sur,Filipino,,,,,,,"May 11, 2020",Recovered
+"June 19, 2020",Bicol#52,26,Male,"Daraga, Albay",Albay,Filipino,Health Worker_Physician,,,Bicol#45,"April 28, 2020",,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#53,38,Female,Legazpi City,Albay,Filipino,Health Worker,,,Bicol#36,"April 29, 2020",,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#54,51,Female,Legazpi City,Albay,Filipino,,,,,Asymptomatic,,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#55,18,Female,Legazpi City,Albay,Filipino,,,,,Asymptomatic,,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#56,44,Female,"Daraga, Albay",Albay,Filipino,,,,For verification,,,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#57,8,Female,"Daraga, Albay",Albay,Filipino,,,,Bicol#42,,,"May 8, 2020",Recovered
+"June 19, 2020",Bicol#58,48,Female,"Daraga, Albay",Albay,Filipino,Health Worker,,,Bicol#36,"April 25, 2020",,"May 9, 2020",Recovered
+"June 19, 2020",Bicol#59,27,Male,Ligao City,Albay,Filipino,Health Worker,,,Bicol#28,Asymptomatic,,"May 9, 2020",Recovered
+"June 19, 2020",Bicol#60,41,Male,"Tigaon, Cam Sur",Camarines Sur,Filipino,Health Worker,,,For verification,Asymptomatic,,"May 11, 2020",Recovered
 "June 19, 2020",Bicol#61,45,Male,"Labo, Cam Norte",Camarines Norte,Filipino,,,,,,,"May 11, 2020",Died (5/15/2020)
-"June 19, 2020",Bicol#62,46,Male,"Daraga, Albay",Albay,Filipino,,,,,,,"May 11, 2020",Recovered
-"June 19, 2020",Bicol#63,33,Male,Legazpi City,Albay,Filipino,,,,,,,"May 13, 2020",Recovered
-"June 19, 2020",Bicol#64,47,Female,"Daraga, Albay",Albay,Filipino,,,,,,,"May 13, 2020",Recovered
-"June 19, 2020",Bicol#65,37,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,,,,,,"May 14, 2020",Recovered
-"June 19, 2020",Bicol#66,21,Female,Legazpi City,Albay,Filipino,,,,,,,"May 14, 2020",Recovered
-"June 19, 2020",Bicol#67,32,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,,,,"May 16, 2020",Recovered
+"June 19, 2020",Bicol#62,46,Male,"Daraga, Albay",Albay,Filipino,,,,Bicol#48,"April 25, 2020",,"May 11, 2020",Recovered
+"June 19, 2020",Bicol#63,33,Male,Legazpi City,Albay,Filipino,Health Worker,,,Bicol#46,"May 3, 2020",,"May 13, 2020",Recovered
+"June 19, 2020",Bicol#64,47,Female,"Daraga, Albay",Albay,Filipino,Health Worker,,,Bicol#36,"April 25, 2020",,"May 13, 2020",Recovered
+"June 19, 2020",Bicol#65,37,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,"Florida, USA",,,Asymptomatic,,"May 14, 2020",Recovered
+"June 19, 2020",Bicol#66,21,Female,Legazpi City,Albay,Filipino,,,,,Asymptomatic,,"May 14, 2020",Recovered
+"June 19, 2020",Bicol#67,32,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,Health Worker,,,Bicol#60,Asymptomatic,,"May 16, 2020",Recovered
 "June 19, 2020",Bicol#68,62,Female,"Labo, Cam Norte",Camarines Norte,Filipino,,,,,,,"May 20, 2020",Recovered
 "June 19, 2020",Bicol#69,21,Female,Legazpi City,Albay,Filipino,,,,,,,"May 28, 2020",Recovered
 "June 19, 2020",Bicol#70,57,Male,Legazpi City,Albay,Filipino,,,,,,,"May 29, 2020",Recovered
