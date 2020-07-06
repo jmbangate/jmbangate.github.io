@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>COVID19 Cases-Bicol (As of July 5, 2020)</title>
+<title>COVID19 Cases-Bicol (As of July 6, 2020)</title>
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black">COVID19 Cases-Bicol (As of July 5, 2020) ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data).</p>   
+<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 6, 2020</p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,35 @@ path.invis {
 
     var data = {
           edges: [
+              //july6
+              {
+                source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 163, label: "Bicol#163, 67_yo, Female, PWD, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 164, label: "Bicol#164, 57_yo, Male, Driver, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 165, label: "Bicol#165, 60_yo, Female, housewife, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 138, label: "Bicol#138, Address:Naga City, Delivery Man Exposure/Travel: Exposed to Covid19 Cases", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 166, label: "Bicol#166 24_yo, Male, Delivery Sorter, Address:Naga City, Symptoms: June 27, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+
               //july5
               {
                 source: {id: 155, label: "Bicol#155, 23_yo, Male Address:Legazpi City, Origin: Manila Arrived: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
