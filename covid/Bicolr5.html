@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 7, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
+<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 8, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,60 @@ path.invis {
 
     var data = {
           edges: [
+              //july8 (8) new cases
+              {
+                source: {id: 191, label: "Bicol#191, 43_yo Male, Security guard Address: Pilar Sorsogon, Origin: Quezon City, Arrived: June 27, 2020 Symptoms: June 27, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 191, label: "Bicol#191, 43_yo Male, Security guard Address: Pilar Sorsogon, Origin: Quezon City, Arrived: June 27, 2020 Symptoms: June 27, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 192, label: "Bicol#192, 36_yo Female, Security guard Address: Pilar Sorsogon, Origin: Quezon City, Arrived: June 27, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 192, label: "Bicol#192, 36_yo Female, Security guard Address: Pilar Sorsogon, Origin: Quezon City, Arrived: June 27, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 193, label: "Bicol#193, 36_yo Male, Address: Naga City, Origin: Caloocan, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 193, label: "Bicol#193, 36_yo Male, Address: Naga City, Origin: Caloocan, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 194, label: "Bicol#194, 52_yo Female, Church Worker, Address: Sipocot, Cam. Sur Origin: Navotas, Arrived: June 27, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 194, label: "Bicol#194, 52_yo Female, Church Worker, Address: Sipocot, Cam. Sur Origin: Navotas, Arrived: June 27, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 110, label: "Bicol#110, 38_yo Male, Self employed, Address:Tinambac, Cam Sur From: Laguna, Arrived: June 14, 2020" , healthworker: "-" ,status:"Quarantined"},
+                target: {id: 195, label: "Bicol#195, 38_yo Male, Correction Officer, Address: Tinambac, Cam. Sur Origin: Navotas, Arrived: June 27, 2020 Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 196, label: "Bicol#196, 27_yo Female, Address: Ligao City Origin: Las Pinas, Arrived: June 25, 2020 Symptoms: July 3, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 197, label: "Bicol#197, 23_yo, Female, Housewife, Address: Ligao City, Origin: Laguna, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 197, label: "Bicol#197, 23_yo, Female, Housewife, Address: Ligao City, Origin: Laguna, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 198, label: "Bicol#198, 23_yo, Female, Housewife, Address: Ligao City, Origin: Las Pinas, Arrived: June 25, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 198, label: "Bicol#198, 23_yo, Female, Housewife, Address: Ligao City, Origin: Las Pinas, Arrived: June 25, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
               //july7
               {
                 source: {id: 167, label: "Bicol#167, 22_yo, Male, Address:Aroroy, Origin: Pasay Arrived: June 22, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
