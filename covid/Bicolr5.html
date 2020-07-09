@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>COVID19 Cases-Bicol (As of July 6, 2020)</title>
+<title>COVID19 Cases-Bicol (As of July 9, 2020)</title>
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 8, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
+<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 9, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,76 @@ path.invis {
 
     var data = {
           edges: [
+              //july9 (10 new cases)
+              {
+                source: {id: 199, label: "Bicol#199, 52_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 199, label: "Bicol#199, 52_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 200, label: "Bicol#200, 24_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 200, label: "Bicol#200, 24_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 201, label: "Bicol#201, 18_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 201, label: "Bicol#201, 18_yo Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 202, label: "Bicol#202, 20_yo, Male, Helper, Address: Naga City Symptoms: June 30, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 202, label: "Bicol#202, 20_yo, Male, Helper, Address: Naga City Symptoms: June 30, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 203, label: "Bicol#203, 46_yo, Female, embroiderer, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 203, label: "Bicol#203, 46_yo, Female, embroiderer, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 204, label: "Bicol#204, 20_yo, Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 204, label: "Bicol#204, 20_yo, Female, Address: Naga City Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 205, label: "Bicol#205, 2_yo, Male, Address: Virac Catanduanes Origin: Rizal, June 29, 2020, Symptoms: July 4, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 206, label: "Bicol#206, 4_yo, Male, Address: Mandaon, Masbate Origin: Subic, Zambales, Arrived: June 27, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 206, label: "Bicol#206, 4_yo, Male, Address: Mandaon, Masbate Origin: Subic, Zambales, Arrived: June 27, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 207, label: "Bicol#207, 29_yo, Female, Address: Mandaon, Masbate Origin: Subic, Zambales, Arrived: June 27, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 207, label: "Bicol#207, 29_yo, Female, Address: Mandaon, Masbate Origin: Subic, Zambales, Arrived: June 27, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 208, label: "Bicol#208, 17_yo, Male, Address: Naga City, Ca: Sur Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 208, label: "Bicol#208, 17_yo, Male, Address: Naga City, Ca: Sur Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              }, 
+
+
+
+
+
+
+
+
+
               //july8 (8) new cases
               {
                 source: {id: 191, label: "Bicol#191, 43_yo Male, Security guard Address: Pilar Sorsogon, Origin: Quezon City, Arrived: June 27, 2020 Symptoms: June 27, 2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
