@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>COVID19 Cases-Bicol (As of July 10, 2020)</title>
+<title>COVID19 Cases-Bicol (As of July 11, 2020)</title>
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 10, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
+<p style="color:black">COVID19 Cases-Bicol. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol (https://www.facebook.com/dohbicol/). Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 11, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com</p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -46,8 +46,8 @@ path.invis {
           edges: [
               //july10
               {
-                source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died: July 11, 2020", healthworker: "-" ,status:"Died"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -455,9 +455,6 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-
-
-
               //july6
               {
                 source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
@@ -483,10 +480,6 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-
-
-
-
               //july5
               {
                 source: {id: 155, label: "Bicol#155, 23_yo, Male Address:Legazpi City, Origin: Manila Arrived: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
@@ -577,11 +570,6 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-
-
-
-
-
               //july4
               {
                 source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
@@ -900,13 +888,6 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-
-
-
-
-
-
-
 
 
               //june28
