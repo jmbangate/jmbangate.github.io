@@ -127,12 +127,12 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "June 28, 2020",Bicol#108,26,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,Private Employee,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,
 "June 27, 2020",Bicol#96,23,Male,"Aroroy, Masbate",Masbate,Filipino,,Caloocan City,"June 22, 2020",,Asymptomatic,,,Quarantined,
 "June 27, 2020",Bicol#97,25,Male,"Aroroy, Masbate",Masbate,Filipino,,Taguig City,"June 21, 2020",,"Symptoms, June 24, 2020",,,Quarantined,
-"June 27, 2020",Bicol#98,30,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,"Tondo, Manila",,,Asymptomatic,,,Quarantined,"July 12, 2020"
-"June 27, 2020",Bicol#99,35,Male,"Canaman, Cam Sur",Camarines Sur,Filipino,,,,History of exposure,Asymptomatic,Uniformed Personnel,,Quarantined,"July 12, 2020"
-"June 27, 2020",Bicol#100,60,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,"July 12, 2020"
+"June 27, 2020",Bicol#98,30,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,"Tondo, Manila",,,Asymptomatic,,,Recovered,"July 12, 2020"
+"June 27, 2020",Bicol#99,35,Male,"Canaman, Cam Sur",Camarines Sur,Filipino,,,,History of exposure,Asymptomatic,Uniformed Personnel,,Recovered,"July 12, 2020"
+"June 27, 2020",Bicol#100,60,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,"Bicol#91, Bicol#92",Asymptomatic,,,Recovered,"July 12, 2020"
 "June 27, 2020",Bicol#101,1,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,"Bicol#91, Bicol#92",For verification,,,Quarantined,
-"June 27, 2020",Bicol#94,41,Male,"Pasacao, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Quarantined,"July 12, 2020"
-"June 27, 2020",Bicol#95,32,Female,"Balatan, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Quarantined,"July 12, 2020"
+"June 27, 2020",Bicol#94,41,Male,"Pasacao, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Recovered,"July 12, 2020"
+"June 27, 2020",Bicol#95,32,Female,"Balatan, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Recovered,"July 12, 2020"
 "June 26, 2020",Bicol#93,21,Female,"Legazpi City, Albay",Albay,Filipino,,"Muntinlupa, Manila","June 24, 2020",,Asymptomatic,,,Quarantined,
 "June 30, 2020 (inq)",Bicol#92,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",,
 "June 30, 2020 (inq)",Bicol#91,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",,
