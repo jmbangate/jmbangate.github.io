@@ -134,12 +134,12 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "June 27, 2020",Bicol#94,41,Male,"Pasacao, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Recovered,"July 12, 2020"
 "June 27, 2020",Bicol#95,32,Female,"Balatan, Cam Sur",Camarines Sur,Filipino,,,"June 25, 2020",,Asymptomatic,,,Recovered,"July 12, 2020"
 "June 26, 2020",Bicol#93,21,Female,"Legazpi City, Albay",Albay,Filipino,,"Muntinlupa, Manila","June 24, 2020",,Asymptomatic,,,Quarantined,
-"June 30, 2020 (inq)",Bicol#92,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",,
-"June 30, 2020 (inq)",Bicol#91,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",,
-"June 23, 2020",Bicol#90,56,Male,Legazpi City,Albay,Filipino,,"Muntinlupa, Manila","June 18, 2020",,Asymptomatic,via Cebu Pacific,,Quarantined,
+"June 30, 2020 (inq)",Bicol#92,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",Recovered,"July 10, 2020"
+"June 30, 2020 (inq)",Bicol#91,,,"Naga City, Cam Sur",Camarines Sur,,,"Naic, Cavite","June 14, 2020",,,,"June 25, 2020",Recovered,"July 10, 2020"
+"June 23, 2020",Bicol#90,56,Male,Legazpi City,Albay,Filipino,,"Muntinlupa, Manila","June 18, 2020",,Asymptomatic,via Cebu Pacific,,Recovered,"July 8, 2020"
 "June 22, 2020",Bicol#89,41,Male,Legazpi City,Albay,Filipino,,Quezon City,,,"Onset of Illness, June 4, 2020",Uniformed Personnel,,Quarantined,
 "June 21, 2020",Bicol#88,31,Male,"Tiwi, Albay",Albay,Filipino,,Makati City,"June 11, 2020",,Asymptomatic,,,Quarantined,
-"June 20, 2020",Bicol#87,47,Male,"Bagamanoc, Catanduanes",Catanduanes,Filipino,,"Hawaii, Manila",,,Asymptomatic,,,Quarantined,
+"June 20, 2020",Bicol#87,47,Male,"Bagamanoc, Catanduanes",Catanduanes,Filipino,,"Hawaii, Manila",,,Asymptomatic,,,Recovered,"July 8, 2020"
 "June 19, 2020",Bicol#1,52,Male,Legazpi City,Albay,Foreigner,,,,,,,"March 27, 2020",Recovered,
 "June 19, 2020",Bicol#2,48,Female,"Milaor, Cam Sur",Camarines Sur,Filipino,,,,,,,"March 27, 2020",Recovered,
 "June 19, 2020",Bicol#3,50,Male,Bacacay,Albay,Filipino,,,,,,,"March 27, 2020",Recovered,
@@ -225,4 +225,4 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "June 19, 2020",Bicol#83,39,Female,"San Andres, Catanduanes",Catanduanes,Filipino,,"Middle East, Manila",,,Asymptomatic,,"June 13, 2020",Quarantined,
 "June 19, 2020",Bicol#84,50,Male,Legazpi City,Albay,Filipino,,Manila,,,Asymptomatic,,"June 13, 2020",Recovered,
 "June 19, 2020",Bicol#85,31,Male,"Lupi, Cam Sur",Camarines Sur,Filipino,,Cebu City,"June 15, 2020",,Asymptomatic,"Flight, PAL","June 16, 2020",Recovered,
-"June 19, 2020",Bicol#86,37,Male,Oas Albay,Albay,Filipino,Health Worker (Nurse),,,Bicol#78,Asymptomatic,,"June 18, 2020",Quarantined,
+"June 19, 2020",Bicol#86,37,Male,Oas Albay,Albay,Filipino,Health Worker (Nurse),,,Bicol#78,Asymptomatic,,"June 18, 2020",Recovered,"July 8, 2020"
