@@ -1,4 +1,7 @@
 Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,History of travel  (Origin),Arrival,Exposure,Onset of Illness,Brief Note,Positive on,Status,Recovery Date
+"July 14, 2020",Bicol#229,23,Female,"Virac, Catanduanes",Catanduanes,Filipino,Civil Engineer,Quezon City,"July 5, 2020",,"Symptoms, July 2, 2020",,"July 14, 2020",Quarantined,
+"July 14, 2020",Bicol#230,18,Female,"Baao, Cam Sur",Camarines Sur,Filipino,,,,Bicol#216,,,"July 14, 2020",Quarantined,
+"July 14, 2020",Bicol#231,62,Male,"Baao, Cam Sur",Camarines Norte,Filipino,,,,Bicol#216,,,"July 14, 2020",Quarantined,
 "July 13, 2020",Bicol#228,65,Male,"Camalig, Albay",Albay,Filipino,,Manila,"July 9, 2020",,Asymptomatic,,,Quarantined,
 "July12, 2020",Bicol#224,10,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,Bicol#111,Asymptomatic,,"July 12, 2020",Quarantined,
 "July12, 2020",Bicol#225,51,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,Mechanical Installer,Quezon City,"July 1, 2020",,"Symptoms, July 4, 2020",,"July 12, 2020",Quarantined,
