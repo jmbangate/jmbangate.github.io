@@ -1,4 +1,8 @@
 Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,History of travel  (Origin),Arrival,Exposure,Onset of Illness,Brief Note,Positive on,Status,Recovery Date
+"July 15, 2020",Bicol#232,31,Female,"Placer, Masbate",Masbate,Filipino,,Marikina,"June 26, 2020",,Asymptomatic,,"July 15, 2020",Quarantined,
+,Bicol#233,46,Male,Legazpi City,Albay,Filipino,,Makati City,"July 11, 2020",,Asymptomatic,,"July 15, 2020",Quarantined,
+,Bicol#234,23,Male,"Tabaco City, Albay",Albay,Filipino,,Quezon City,"July 5, 2020",,"Symptoms, July 10, 2020",,"July 15, 2020",Quarantined,
+,Bicol#235,29,Male,"Manito, Albay",Albay,Filipino,,,,Bicol#209,"Symptoms, June 25, 2020",,"July 15, 2020",Quarantined,
 "July 14, 2020",Bicol#229,23,Female,"Virac, Catanduanes",Catanduanes,Filipino,Civil Engineer,Quezon City,"July 5, 2020",,"Symptoms, July 2, 2020",,"July 14, 2020",Quarantined,
 "July 14, 2020",Bicol#230,18,Female,"Baao, Cam Sur",Camarines Sur,Filipino,,,,Bicol#216,Asymptomatic,,"July 14, 2020",Quarantined,
 "July 14, 2020",Bicol#231,62,Male,"Baao, Cam Sur",Camarines Norte,Filipino,,,,Bicol#216,Asymptomatic,,"July 14, 2020",Quarantined,
@@ -121,7 +125,7 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "June 30, 2020",Bicol#117,9,Male,"Manito, Albay",Albay,Filipino,,Taguig City,"June 24, 2020",Bicol#93,Asymptomatic,,,Quarantined,
 "June 30, 2020",Bicol#118,12,Male,"Manito, Albay",Albay,Filipino,,Taguig City,"June 24, 2020",Bicol#93,"Symptoms, June 20, 2020",,,Quarantined,
 "June 29, 2020",Bicol#109,43,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,Construction worker,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,
-"June 29, 2020",Bicol#110,38,Male,"Tinambac, Cam Sur",Camarines Sur,Filipino,self employed,Laguna,"June 23, 2020","Bicol#91, Bicol#92","Symptoms, June 23, 2020",,,Quarantined,
+"June 29, 2020",Bicol#110,38,Male,"Tinambac, Cam Sur",Camarines Sur,Filipino,self employed,Laguna,"June 23, 2020","Bicol#91, Bicol#92","Symptoms, June 23, 2020",,,Recovered,"July 15, 2020"
 "June 28, 2020",Bicol#102,23,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,
 "June 28, 2020",Bicol#103,22,Male,"Naga City, Cam Sur",Camarines Sur,Filipino,Painter,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,
 "June 28, 2020",Bicol#104,26,Female,"Naga City, Cam Sur",Camarines Sur,Filipino,Private Employee,,,"Bicol#91, Bicol#92",Asymptomatic,,,Quarantined,
