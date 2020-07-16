@@ -1,0 +1,3 @@
+Date,ICU Beds_Available,ICU Beds_Utilised_PCT,ICU Beds_Utilised,Isolation Beds_Available,Isolation Beds_Utilised_PCT,Isolation Beds_Utilised,Ward Beds_Available,Ward Beds_Utilised_PCT,Ward Beds_Utilised_PCT,TotalBedCapacity,MechVent_Available,MechVent_Utilised_PCT,MechVent_Utilised
+"July 14, 2020",27,7.41,2,250,13.6,34,162,33.33,54,439,26,7.69,2
+"July 13, 2020",33,3.03,1,249,10.44,26,159,34.59,55,441,26,3.85,1
