@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 16, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a></p>   
+<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 17, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a></p>   
 
 
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -46,6 +46,190 @@ path.invis {
 
     var data = {
           edges: [
+              //july172020
+              {
+                source: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 246, label: "Bicol#246, 24_yo, Male, Security guard, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 10, 2020, Symptoms: July 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 246, label: "Bicol#246, 24_yo, Male, Security guard, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 10, 2020, Symptoms: July 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 247, label: "Bicol#247, 19 Female, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 247, label: "Bicol#247, 19 Female, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 248, label: "Bicol#248, 18 Male, Construction Worker, Address: Batuan, Masbate, Origin: Quezon, City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 248, label: "Bicol#248, 18 Male, Construction Worker, Address: Batuan, Masbate, Origin: Quezon, City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 248, label: "Bicol#248, 18 Male, Construction Worker, Address: Batuan, Masbate, Origin: Quezon, City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 248, label: "Bicol#248, 18 Male, Construction Worker, Address: Batuan, Masbate, Origin: Quezon City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 249, label: "Bicol#249, 29 Male, Address: Batuan, Masbate, Origin: Caloocan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 249, label: "Bicol#249, 29 Male, Address: Batuan, Masbate, Origin: Caloocan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 249, label: "Bicol#249, 29 Male, Address: Batuan, Masbate, Origin: Caloocan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 249, label: "Bicol#249, 29 Male, Address: Batuan, Masbate, Origin: Caloocan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 250, label: "Bicol#250, 24 Male, Address: Batuan, Masbate, Origin: Quezon City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 250, label: "Bicol#250, 24 Male, Address: Batuan, Masbate, Origin: Quezon City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 250, label: "Bicol#250, 24 Male, Address: Batuan, Masbate, Origin: Quezon City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 250, label: "Bicol#250, 24 Male, Address: Batuan, Masbate, Origin: Quezon City, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 251, label: "Bicol#251, 20 Female, Household Helper, Address: Batuan, Masbate, Origin: Bulacan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 251, label: "Bicol#251, 20 Female, Household Helper, Address: Batuan, Masbate, Origin: Bulacan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 251, label: "Bicol#251, 20 Female, Household Helper, Address: Batuan, Masbate, Origin: Bulacan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 251, label: "Bicol#251, 20 Female, Household Helper, Address: Batuan, Masbate, Origin: Bulacan, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 252, label: "Bicol#252, 32 Male, Delivery Man, Address: Batuan, Masbate, Origin: Tonfo, Manila, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 252, label: "Bicol#252, 32 Male, Delivery Man, Address: Batuan, Masbate, Origin: Tonfo, Manila, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 252, label: "Bicol#252, 32 Male, Delivery Man, Address: Batuan, Masbate, Origin: Tonfo, Manila, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 252, label: "Bicol#252, 32 Male, Delivery Man, Address: Batuan, Masbate, Origin: Tonfo, Manila, Arrival: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 253, label: "Bicol#253, 25_yo, Male, Address:San Jose, Camarines Sur, Origin: Tondo, Manila, Arrived: June 20, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 253, label: "Bicol#253, 25_yo, Male, Address:San Jose, Camarines Sur, Origin: Tondo, Manila, Arrived: June 20, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 216, label: "Bicol#216, 60_yo Female, Address: Baao, Camarines Sur Symptoms: July 1, 2020, Confined: July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 254, label: "Bicol#254, 27_yo, Female, Housewife, Address: Baao, Camarines Sur, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 216, label: "Bicol#216, 60_yo Female, Address: Baao, Camarines Sur Symptoms: July 1, 2020, Confined: July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 255, label: "Bicol#255, 37_yo, Male, Seafarer, Address: Baao, Camarines Sur, Origin: Taguig City, Arrived: June 22, 2020, Symptoms: July 11, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 256, label: "Bicol#256, 33_yo Female, Address: Goa, Camarines Sur, Origin: Taguig City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 256, label: "Bicol#256, 33_yo Female, Address: Goa, Camarines Sur, Origin: Taguig City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 216, label: "Bicol#216, 60_yo Female, Address: Baao, Camarines Sur Symptoms: July 1, 2020, Confined: July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 257, label: "Bicol#257, 49_yo, Female, Housewife, Address: Baao, Camarines Sur, Onset of illness for verification", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 258, label: "Bicol#258, 27_yo Male, Seafare, Address: Legazpi City, Albay Origin: Germany, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 258, label: "Bicol#258, 27_yo Male, Seafare, Address: Legazpi City, Albay Origin: Germany, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+
+
               //july162020
               {
                 source: {id: 236, label: "Bicol#236, 25_yo, Male, Address: Aroroy, Masbate, Origin: Tarlac, Arrival: June, 20, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
@@ -488,30 +672,8 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-              {
-                source: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 174, label: "Bicol#174, 26_yo, Female, Vendor, Address:Batuan, Masbate Origin: Payatas, Quezon City Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
-              {
-                source: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 175, label: "Bicol#175, 23_yo, Female, Address:Batuan, Masbate Origin: Valenzuela Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
-              {
-                source: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 176, label: "Bicol#176, 18_yo, Female, Housewife, Address:Batuan, Masbate Origin: Muntinlupa Arrived: June 26, 2020, Symptoms: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
-              {
-                source: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 177, label: "Bicol#177, 3_yo, Male, Address:Batuan, Masbate Origin: Taytay Rizal Arrived: June 26, 2020, Symptoms: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
+            
+              
               {
                 source: {id: 178, label: "Bicol#178, 36_yo, Male, Businessman, Address: Legazpi, Origin: Manila Arrived: June 23, 2020, Symptoms: June 4, 2020", healthworker: "-" ,status:"Admitted"},
                 target: {id: 178, label: "Bicol#178, 36_yo, Male, Businessman, Address: Legazpi, Origin: Manila Arrived: June 23, 2020, Symptoms: June 4, 2020", healthworker: "-" ,status:"Admitted"},
