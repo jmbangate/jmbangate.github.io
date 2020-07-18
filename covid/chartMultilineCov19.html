@@ -66,7 +66,7 @@ var svg = d3.select("body")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("BicolR5casesTotalCSV.csv", function(error, data) {
+d3.csv("https://jmbangate.github.io/covid/BicolR5casesTotalCSV.csv", function(error, data) {
     data.forEach(function(d) {
 		d.date = parseDate(d.date);
 		d.Pop = +d.Pop;
