@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 17, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a></p>   
+<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 18, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a></p>   
 
 
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -46,6 +46,100 @@ path.invis {
 
     var data = {
           edges: [
+              //july18
+              {
+                source: {id: 273, label: "Bicol#273, 31_yo, Female, Food Handler, Address: Placer, Masbate, Origin: Pampanga, Arrival: June 28, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 273, label: "Bicol#273, 31_yo, Female, Food Handler, Address: Placer, Masbate, Origin: Pampanga, Arrival: June 28, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 271, label: "Bicol#271, 26_yo, Male, Address: Pili, Cam Sur, Origin: Muntinlupa, Arrival: July 14, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 271, label: "Bicol#271, 26_yo, Male, Address: Pili, Cam Sur, Origin: Muntinlupa, Arrival: July 14, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 270, label: "Bicol#270, 20_yo, Male, Address: Nabua, Cam Sur, Origin: Taguig City, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 270, label: "Bicol#270, 20_yo, Male, Address: Nabua, Cam Sur, Origin: Taguig City, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },                
+
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 263, label: "Bicol#263, 56_yo, Male, Address: Balud, Masbate Origin: Paranaque City, Arrival: July, 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 263, label: "Bicol#263, 56_yo, Male, Address: Balud, Masbate Origin: Paranaque City, Arrival: July, 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 262, label: "Bicol#262, 28_yo, Male, Welder, Address: Masbate City, Masbate Origin: San Jose, Mandaluyong, Arrival: July, 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 262, label: "Bicol#262, 28_yo, Male, Welder, Address: Masbate City, Masbate Origin: San Jose, Mandaluyong, Arrival: July, 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 261, label: "Bicol#261, 20_yo, Female, Address: Tabaco City, Origin: Quezon City, Arrived: July 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },      
+              {
+                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 260, label: "Bicol#260, 22_yo, Male, Address: Tabaco City, Origin: Muntinlupa, Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+              {
+                source: {id: 260, label: "Bicol#260, 22_yo, Male, Address: Tabaco City, Origin: Muntinlupa, Arrived: Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 259, label: "Bicol#259, 13_yo, Male, Address: Naga, City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },    
+
+
               //july172020
               {
                 source: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
@@ -307,12 +401,6 @@ path.invis {
                 color:"#0066ff"
               },
               {
-                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
-              {
                 source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
                 target: {id: 235, label: "Bicol#235, 29_yo, Male, Address: Manito, Albay, Symptoms: June 25, 2020, Neighbor or Bicol#209", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
@@ -432,13 +520,13 @@ path.invis {
                 color:"#0066ff"
               },
               {
-                source: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymtomatic,", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymptomatic,", healthworker: "-" ,status:"Quarantined"},
                 target: {id: 210, label: "Bicol#210, 54_yo Female, Address: Aroroy Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
-                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymtomatic", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 target: {id: 210, label: "Bicol#210, 54_yo Female, Address: Aroroy Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
@@ -463,13 +551,13 @@ path.invis {
                 color:"#0066ff"
               },
               {
-                source: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymtomatic,", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymptomatic,", healthworker: "-" ,status:"Quarantined"},
                 target: {id: 211, label: "Bicol#211, 23_yo Male, Address: Aroroy Masbate, Origin: Rizal, Arrived: June 20, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
-                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymtomatic", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 target: {id: 211, label: "Bicol#211, 23_yo Male, Address: Aroroy Masbate, Origin: Rizal, Arrived: June 20, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
@@ -841,7 +929,7 @@ path.invis {
 
               {
                 source: {id: 105, label: "Bicol#105, 59_yo, Male, Laborer, Address:Naga", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 156, label: "Bicol#156, 7_yo (Female) Address: Naga, City Asymtomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 156, label: "Bicol#156, 7_yo (Female) Address: Naga, City Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -924,13 +1012,13 @@ path.invis {
               //july4
               {
                 source: {id: 97, label: "Bicol#97 Address: Aroroy Masbate, Origin: Caloocan City, Arrived: June 21, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymtomatic,", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 152, label: "Bicol#152, 28_yo (Male) Address: Aroroy Masbate, Origin: Taguig City, Asymptomatic,", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
-                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymtomatic", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymtomatic", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 153, label: "Bicol#153, 32_yo (Male) Address: Aroroy Masbate, Origin: Taguig, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
