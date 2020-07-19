@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 18, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>   
+<p style="color:black"><strong>COVID19 Cases-Bicol</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 19, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>   
 
 
 
@@ -47,6 +47,39 @@ path.invis {
 
     var data = {
           edges: [
+              //july19
+              {
+                source: {id: 278, label: "Bicol#278, 25_yo Male, Address: Sagnay, Camarines Sur Origin: Tondo, Manila, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 278, label: "Bicol#278, 25_yo Male, Address: Sagnay, Camarines Sur Origin: Tondo, Manila, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 277, label: "Bicol#277, 25_yo Male, Address: Bula, Camarines Sur Origin: Tondo, Manila, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 277, label: "Bicol#277, 25_yo Male, Address: Bula, Camarines Sur Origin: Tondo, Manila, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 276, label: "Bicol#276, 58_yo female, Address: Sipocot, Camarines Sur Origin: Laguna, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 276, label: "Bicol#276, 58_yo female, Address: Sipocot, Camarines Sur Origin: Laguna, Arrival: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 275, label: "Bicol#275, 22_yo, Female, Address: Legazpi City, Albay, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 274, label: "Bicol#274, 55_yo, Male, Address: Mercedes, Camarines Norte, Origin: Angono, Rizal, Arrival: July 12, 2020, Symptoms: July 15, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 274, label: "Bicol#274, 55_yo, Male, Address: Mercedes, Camarines Norte, Origin: Angono, Rizal, Arrival: July 12, 2020, Symptoms: July 15, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
               //july18
               {
                 source: {id: 273, label: "Bicol#273, 31_yo, Female, Food Handler, Address: Placer, Masbate, Origin: Pampanga, Arrival: June 28, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},

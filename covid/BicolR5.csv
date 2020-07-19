@@ -1,4 +1,9 @@
 Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,History of travel  (Origin),Arrival,Exposure,Onset of Illness,Brief Note,Positive on,Status,Recovery Date
+"July 19, 2020",Bicol#274,55,Male,"Mercedes, Camarines Norte",Camarines Norte,Filipino,,"Angono, Rizal","July 12, 2020",,"Symptoms, July 15, 2020",,"July 19, 2020",Quarantined,
+"July 19, 2020",Bicol#275,22,Female,Legazpi City,Albay,Filipino,,,,Bicol#209,Asymptomatic,,"July 19, 2020",Quarantined,
+"July 19, 2020",Bicol#276,58,Female,Sipocot,Cam Sur,Filipino,,Laguna,For verification,,Asymptomatic,,"July 19, 2020",Quarantined,
+"July 19, 2020",Bicol#277,25,Male,"Bula, Cam Sur",Cam Sur,Filipino,,"Tondo, Manila",For verification,,Asymptomatic,,"July 19, 2020",Quarantined,
+"July 19, 2020",Bicol#278,25,Male,"Sagnay, Cam Sur",Cam Sur,Filipino,,"Tondo, Manila",For verification,,Asymptomatic,,"July 19, 2020",Quarantined,
 "July 18, 2020",Bicol#259,13,Male,"Naga City, Cam Sur",Cam Sur,Filipino,,,,From street with known cases,Asymptomatic,,"July 18, 2020",Quarantined,
 "July 18, 2020",Bicol#260,22,Male,"Tabaco City, Albay",Albay,Filipino,,Muntinlupa City,"July 2, 2020",Bicol#234,Asymptomatic,,"July 18, 2020",Quarantined,
 "July 18, 2020",Bicol#261,20,Female,"Tabaco City, Albay",Albay,Filipino,,Quezon City,"July 5, 2020",Bicol#234,Asymptomatic,,"July 18, 2020",Quarantined,
