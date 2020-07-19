@@ -1,4 +1,5 @@
 date,Group,Pop
+20200719,Total,1015
 20200718,Total,1010
 20200717,Total,995
 20200716,Total,980
@@ -13,6 +14,7 @@ date,Group,Pop
 20200707,Total,887
 20200706,Total,864
 20200705,Total,851
+20200719,Positive,278
 20200718,Positive,273
 20200717,Positive,258
 20200716,Positive,244
@@ -27,6 +29,7 @@ date,Group,Pop
 20200707,Positive,190
 20200706,Positive,166
 20200705,Positive,162
+20200719,Negative,734
 20200718,Negative,734
 20200717,Negative,734
 20200716,Negative,731
@@ -41,6 +44,7 @@ date,Group,Pop
 20200707,Negative,695
 20200706,Negative,694
 20200705,Negative,687
+20200719,Probable,1
 20200718,Probable,1
 20200717,Probable,1
 20200716,Probable,1
@@ -55,6 +59,7 @@ date,Group,Pop
 20200707,Probable,1
 20200706,Probable,1
 20200705,Probable,1
+20200719,Suspect,2
 20200718,Suspect,2
 20200717,Suspect,2
 20200716,Suspect,4
