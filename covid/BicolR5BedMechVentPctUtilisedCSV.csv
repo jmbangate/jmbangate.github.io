@@ -13,7 +13,6 @@ date,Group,Pop
 20200708,ICU Beds,8.57
 20200707,ICU Beds,5.41
 20200706,ICU Beds,2.7
-20200705,ICU Beds,
 20200719,Isolation Beds,12.81
 20200718,Isolation Beds,15.38
 20200717,Isolation Beds,14.52
@@ -28,7 +27,6 @@ date,Group,Pop
 20200708,Isolation Beds,12.29
 20200707,Isolation Beds,13.65
 20200706,Isolation Beds,13.41
-20200705,Isolation Beds,
 20200719,Ward Beds,22.16
 20200718,Ward Beds,28.38
 20200717,Ward Beds,29.81
@@ -43,7 +41,6 @@ date,Group,Pop
 20200708,Ward Beds,37.84
 20200707,Ward Beds,33.76
 20200706,Ward Beds,34.01
-20200705,Ward Beds,
 20200719,Mech Ventilators,3.7
 20200718,Mech Ventilators,3.45
 20200717,Mech Ventilators,7.41
@@ -58,4 +55,3 @@ date,Group,Pop
 20200708,Mech Ventilators,0
 20200707,Mech Ventilators,0
 20200706,Mech Ventilators,0
-20200705,Mech Ventilators,
