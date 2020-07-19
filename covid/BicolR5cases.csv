@@ -1,4 +1,12 @@
 Date,Province,Suspect,Probable,Negative,Positive,Total,Quarantined_Total,Quarantined_New,Recovered_Total,Recovered_New,Admitted-Total,Admitted-New,Active_Total,Active_New,Deaths_Total,Deaths_New,Confirmed_Total
+"July 19, 2020",Albay,1,1,399,99,500,,,,,,,24,,4,,
+"July 19, 2020",Cam Norte,0,0,66,9,75,,,,,,,3,,1,,
+"July 19, 2020",Cam Sur,0,0,142,107,249,,,,,,,74,,2,,
+"July 19, 2020",Catanduanes,1,0,29,13,43,,,,,,,9,,0,,
+"July 19, 2020",Masbate,0,0,13,38,51,,,,,,,36,,0,,
+"July 19, 2020",Sorsogon,0,0,83,12,95,,,,,,,5,,1,,
+"July 19, 2020",Others,0,0,2,0,2,,,,,,,,,,,
+"July 19, 2020",Total,2,1,734,278,1015,137,5,119,0,14,0,151,5,8,0,278
 "July 18, 2020",Albay,1,1,399,98,499,,,,,,,23,,4,,
 "July 18, 2020",Cam Norte,0,0,66,8,74,,,,,,,2,,1,,
 "July 18, 2020",Cam Sur,0,0,142,104,246,,,,,,,71,,2,,
