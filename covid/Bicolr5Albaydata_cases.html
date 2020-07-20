@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 9px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p>
+            <strong>COVID19 Cases, Recoveries and Quarantine Summaries Data Compiled from DOH CHD-Bicol Reports</strong></br></br>
+
+             <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a> </br></br>  
+
+            <i>DYNAMIC GRAPHS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a></br></br>
+
+            <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map</a></br></br>
+
+            <strong>COVID19 Cases Albay Municipalities, Compiled from http://albay.gov.ph/ Reports <a href="http://albay.gov.ph/">https://www.facebook.com/dohbicol/</a></strong>.<i>Updated: July 16, 2020</i> For comments, errors/corrections please email: jules.bangate@gmail.com
+        </p>
+
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <!--<script src="d3.min.js?v=3.2.8"></script>-->
+        
+
+        <script type="text/javascript"charset="utf-8">
+            d3.text("https://jmbangate.github.io/covid/r5AlbayMunicipalities.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+        </script>
+    </body>
+</html>
+
