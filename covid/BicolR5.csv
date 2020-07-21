@@ -1,4 +1,12 @@
 Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,History of travel  (Origin),Arrival,Exposure,Onset of Illness,Brief Note,Positive on,Status,Recovery Date
+"July 21, 2020",Bicol#281,33,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,Manila,"July 12, 2020",,"Symptoms, July 13, 2020",,"July 21, 2020",Quarantined,
+"July 21, 2020",Bicol#282,58,Female,"Daraga, Albay",Albay,Filipino,,To be established,,To be established,"Symptoms, July 15, 2020","Consulted July 19, 2020","July 21, 2020",Admitted,
+"July 21, 2020",Bicol#283,22,Male,Camalig Albay,Albay,Filipino,,"Malate, Manila","July 11, 2020",,"Symptoms, July 19, 2020",,"July 21, 2020",Admitted,
+"July 21, 2020",Bicol#284,27,Male,Guinobatan Albay,Albay,Filipino,,Quezon Province,"July 11, 2020",,"Symptoms, July 11, 2020",,"July 21, 2020",Admitted,
+"July 21, 2020",Bicol#285,32,Male,Guinobatan Albay,Albay,Filipino,,Quezon City,"July 10, 2020",,Asymptomatic,,"July 21, 2020",Quarantined,
+"July 21, 2020",Bicol#286,26,Male,Guinobatan Albay,Albay,Filipino,,Quezon City,"July 10, 2020",,Asymptomatic,,"July 21, 2020",Quarantined,
+"July 21, 2020",Bicol#287,26,Male,"Pamplona, Camarines Sur",Cam Sur,Filipino,,Manila,"June 26, 2020",Bicol#186,Asymptomatic,,"July 21, 2020",Quarantined,
+"July 21, 2020",Bicol#288,23,,"Virac, Catanduanes",Catanduanes,Filipino,,,,Bicol#245,Asymptomatic,,"July 21, 2020",Quarantined,
 "July 20, 2020",Bicol#279,57,Male,"Naga City, Cam Sur",Cam Sur,Chinese,,For verification,For verification,,"Symptoms, July 15, 2020","Consulted July 18, 2020","July 20, 2020",Admitted,
 "July 20, 2020",Bicol#280,53,Female,"Matnog, Sorsogon",Sorsogon,Filipino,Caregiver ,Malabon,"July 11, 2020",,Asymptomatic,,"July 20, 2020",Quarantined,
 "July 19, 2020",Bicol#274,55,Male,"Mercedes, Camarines Norte",Camarines Norte,Filipino,,"Angono, Rizal","July 12, 2020",,"Symptoms, July 15, 2020",,"July 19, 2020",Quarantined,

@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Bicol-Camarines Sur</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 20, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a> </p>   
+<p style="color:black"><strong>COVID19 Cases-Bicol-Camarines Sur</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 21, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a> </p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,13 @@ path.invis {
 
     var data = {
           edges: [
+              //july21
+              {
+                source: {id: 186, label: "Bicol#186, 19_yo, Male, Construction Worker, Address: San Fernando, Cam Sur Origin: Las Pinas Arrived: June 25, 2020, Symptoms: July 4, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 287, label: "Bicol#286, 26_yo Female, Address: Pamplona, Camarines Sur, Origin: Manila, Arrived: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
               //july202020
               {
                 source: {id: 279, label: "Bicol#279, 57_yo Male, Chinese, Address: Naga City, Camarines Sur Origin: For verification, Arrival: For verification, Symptoms: July15, 2020", healthworker: "-" ,status:"Admitted"},
@@ -259,7 +266,18 @@ path.invis {
                 color:"#0066ff"
               },
               
-              
+              {
+                source: {id: 94, label: "Bicol#94, 41_yo (Male), Address: Pasacao, Cam Sur, Arrived: June 25, 2020, Asymptomatic ", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 180, label: "Bicol#180, 26_yo, Female,  Address: Ragay, Cam Sur, Origin: Manila Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 180, label: "Bicol#180, 26_yo, Female,  Address: Ragay, Cam Sur, Origin: Manila Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
 
 
 
@@ -267,13 +285,13 @@ path.invis {
 
               {
                 source: {id: 94, label: "Bicol#94, 41_yo (Male), Address: Pasacao, Cam Sur, Arrived: June 25, 2020, Asymptomatic ", healthworker: "-" ,status:"Recovered"},
-                target: {id: 181, label: "Bicol#181, 85_yo, Male,  Address: Del Gallego, Cam Sur Origin: Malabon Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 181, label: "Bicol#181, 85_yo, Male,  Address: Del Gallego, Cam Sur Origin: Malabon Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Recovered"},
-                target: {id: 181, label: "Bicol#181, 85_yo, Male,  Address: Del Gallego, Cam Sur Origin: Malabon Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 181, label: "Bicol#181, 85_yo, Male,  Address: Del Gallego, Cam Sur Origin: Malabon Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -281,26 +299,26 @@ path.invis {
 
               {
                 source: {id: 94, label: "Bicol#94, 41_yo (Male), Address: Pasacao, Cam Sur, Arrived: June 25, 2020, Asymptomatic ", healthworker: "-" ,status:"Recovered"},
-                target: {id: 182, label: "Bicol#182, 25_yo, Male,  Construction Worker, Address: Sipocot, Cam Sur Origin: Quezon City Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 182, label: "Bicol#182, 25_yo, Male,  Construction Worker, Address: Sipocot, Cam Sur Origin: Quezon City Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Recovered"},
-                target: {id: 182, label: "Bicol#182, 25_yo, Male,  Construction Worker, Address: Sipocot, Cam Sur Origin: Quezon City Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 182, label: "Bicol#182, 25_yo, Male,  Construction Worker, Address: Sipocot, Cam Sur Origin: Quezon City Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
 
               {
                 source: {id: 94, label: "Bicol#94, 41_yo (Male), Address: Pasacao, Cam Sur, Arrived: June 25, 2020, Asymptomatic ", healthworker: "-" ,status:"Recovered"},
-                target: {id: 183, label: "Bicol#183, 34_yo, Male, Address: Lupi, Cam Sur Origin: Caloocan Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 183, label: "Bicol#183, 34_yo, Male, Address: Lupi, Cam Sur Origin: Caloocan Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Recovered"},
-                target: {id: 183, label: "Bicol#183, 34_yo, Male, Address: Lupi, Cam Sur Origin: Caloocan Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 183, label: "Bicol#183, 34_yo, Male, Address: Lupi, Cam Sur Origin: Caloocan Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -347,15 +365,15 @@ path.invis {
 
 
               {
-                source: {id: 187, label: "Bicol#187, 55_yo, Female, Housewife, Address: Sipocot, Cam Sur Origin: Montalban Rizal Arrived: June 30, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 187, label: "Bicol#187, 55_yo, Female, Housewife, Address: Sipocot, Cam Sur Origin: Montalban Rizal Arrived: June 30, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                source: {id: 187, label: "Bicol#187, 55_yo, Female, Housewife, Address: Sipocot, Cam Sur Origin: Montalban Rizal Arrived: June 30, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
+                target: {id: 187, label: "Bicol#187, 55_yo, Female, Housewife, Address: Sipocot, Cam Sur Origin: Montalban Rizal Arrived: June 30, 2020, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
 
               {
                 source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 163, label: "Bicol#163, 67_yo, Female, PWD, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 163, label: "Bicol#163, 67_yo, Female, PWD, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -367,7 +385,7 @@ path.invis {
               },
               {
                 source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 165, label: "Bicol#165, 60_yo, Female, housewife, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 165, label: "Bicol#165, 60_yo, Female, housewife, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
@@ -438,26 +456,26 @@ path.invis {
 
               {
                 source: {id: 133, label: "Bicol#133, Address: Presentacion, Vendor, Origin: Novaliches, Arrived: June 25, 2020", healthworker: "-" ,status:"Recovered"},
-                target: {id: 161, label: "Bicol#161, 25_yo, Female, Address:Presentacion, Cam Sur, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                target: {id: 161, label: "Bicol#161, 25_yo, Female, Address:Presentacion, Cam Sur, Asymptomatic", healthworker: "yes" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
 
                {
                 source: {id: 103, label: "Bicol#103, Painter, Address:Naga", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 107, label: "Bicol#107, Housewife, Address:Naga", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },
               {
                 source: {id: 109, label: "Bicol#109,", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Quarantined"},
+                target: {id: 162, label: "Bicol#162, 28_yo, Female, Address:Naga City, Origin: Marikina, Arrived: June 25, 2020, Asymptomatic", healthworker: "yes" ,status:"Recovered"},
                 value: "Close Contact",
                 color:"#0066ff"
               },

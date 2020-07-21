@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Albay</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 20, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>  
+<p style="color:black"><strong>COVID19 Cases-Albay</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 21, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>  
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,37 @@ path.invis {
 
     var data = {
           edges: [
+              //july212020
+              {
+                source: {id: 282, label: "Bicol#282, 58_yo Female, Address: Daraga, Albay, Symptoms: July 15, 2020, Consulted: July 19, 2020, Exposure and travel to be established", healthworker: "-" ,status:"Admitted"},
+                target: {id: 282, label: "Bicol#282, 58_yo Female, Address: Daraga, Albay, Symptoms: July 15, 2020, Consulted: July 19, 2020, Exposure and travel to be established", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 283, label: "Bicol#283, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                target: {id: 283, label: "Bicol#283, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 284, label: "Bicol#284, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                target: {id: 284, label: "Bicol#284, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 285, label: "Bicol#285, 32_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 285, label: "Bicol#285, 32_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 286, label: "Bicol#286, 26_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 286, label: "Bicol#286, 26_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
               //july19
                {
                 source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
@@ -196,18 +227,7 @@ path.invis {
                 value: "Close Contact",
                 color:"#0066ff"
               },
-              {
-                source: {id: 94, label: "Bicol#94, 41_yo (Male), Address: Pasacao, Cam Sur, Arrived: June 25, 2020, Asymptomatic ", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 180, label: "Bicol#180, 26_yo, Female,  Address: Legazpi, Origin: Manila Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
-              {
-                source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Quarantined"},
-                target: {id: 180, label: "Bicol#180, 26_yo, Female,  Address: Legazpi, Origin: Manila Arrived: June 25, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
-                value: "Close Contact",
-                color:"#0066ff"
-              },
+              
 
         
               {
