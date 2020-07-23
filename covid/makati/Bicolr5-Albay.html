@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>COVID19 Cases-Albay</title>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: white;
+  color: white;
+}
+text {
+    fill: black;
+    font-family: 'Open Sans';
+}
+circle {
+  stroke: black;//original white
+  stroke-width: 1.5px;
+}
+path.link, path.textpath {
+    fill: none;
+    stroke-width: 0.5px;
+}
+path.invis {
+    fill: none;
+    stroke-width: 0;
+}
+</style>
+</head>
+<body>
+<p style="color:black"><strong>COVID19 Cases-Albay</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 23, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>  
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script type="text/javascript">
+
+  //adding these for ui control
+  var width = 1400,height = 800;
+  //zoom handler
+  ////adding these for ui control
+
+
+
+    var data = {
+          edges: [
+              //july222020
+              {
+                source: {id: 294, label: "Bicol#294, 73_yo Male, Address: Legazpi City, Albay Symptoms: July 13, 2020, Consulted: July 20, 2020", healthworker: "-" ,status:"Admitted"},
+                target: {id: 294, label: "Bicol#294, 73_yo Male, Address: Legazpi City, Albay Symptoms: July 13, 2020, Consulted: July 20, 2020", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 300, label: "Bicol#300, 21_yo Female, Address: Guinobatan, Albay, Origin: Pasig City, Arrived: July 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 300, label: "Bicol#300, 21_yo Female, Address: Guinobatan, Albay, Origin: Pasig City, Arrived: July 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+
+              //july212020
+              {
+                source: {id: 282, label: "Bicol#282, 58_yo Female, Address: Daraga, Albay, Symptoms: July 15, 2020, Consulted: July 19, 2020, Exposure and travel to be established", healthworker: "-" ,status:"Admitted"},
+                target: {id: 282, label: "Bicol#282, 58_yo Female, Address: Daraga, Albay, Symptoms: July 15, 2020, Consulted: July 19, 2020, Exposure and travel to be established", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 283, label: "Bicol#283, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                target: {id: 283, label: "Bicol#283, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 284, label: "Bicol#284, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                target: {id: 284, label: "Bicol#284, 22_yo Male, Address: Camalig, Albay, Origin: Malate, Manila, Arrived: July 11, 2020, Symptoms: July 12, 2020, ", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 285, label: "Bicol#285, 32_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 285, label: "Bicol#285, 32_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 286, label: "Bicol#286, 26_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 286, label: "Bicol#286, 26_yo Male, Address: Guinobatan, Albay, Origin: Quezon City, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              //july19
+               {
+                source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 275, label: "Bicol#275, 22_yo, Female, Address: Legazpi City, Albay, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              //july18
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 261, label: "Bicol#261, 20_yo, Female, Address: Tabaco City, Origin: Quezon City, Arrived: July 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },      
+              {
+                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 260, label: "Bicol#260, 22_yo, Male, Address: Tabaco City, Origin: Muntinlupa, Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+              {
+                source: {id: 260, label: "Bicol#260, 22_yo, Male, Address: Tabaco City, Origin: Muntinlupa, Arrived: Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 259, label: "Bicol#259, 13_yo, Male, Address: Naga, City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+              //july17
+              {
+                source: {id: 258, label: "Bicol#258, 27_yo Male, Seafare, Address: Legazpi City, Albay Origin: Germany, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 258, label: "Bicol#258, 27_yo Male, Seafare, Address: Legazpi City, Albay Origin: Germany, Arrived: July 10, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              //july16
+              {
+                source: {id: 222, label: "Bicol#222, 53_yo Male, Laborer, Address: Oas, Albay Origin: Quezon City, Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 241, label: "Bicol#241, 22_yo, Female, Address: Oas, Albay, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 242, label: "Bicol#242, 32_yo Male, Factory Worker, Address: Tabaco City, Albay, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 242, label: "Bicol#242, 32_yo Male, Factory Worker, Address: Tabaco City, Albay, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 243, label: "Bicol#243, 31_yo Male, Warehouse Man, Address: Manito, Albay, Origin: Rizal, Arrived: July 11, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 243, label: "Bicol#243, 31_yo Male, Warehouse Man, Address: Manito, Albay, Origin: Rizal, Arrived: July 11, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              //july15
+              {
+                source: {id: 233, label: "Bicol#233, 46_yo, Male, Address: Legazpi City, Albay Origin: Makati City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 233, label: "Bicol#233, 46_yo, Male, Address: Legazpi City, Albay Origin: Makati City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 234, label: "Bicol#234, 23_yo, Male, Address: Tabaco City, Albay Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 10, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 209, label: "Bicol#209, 60_yo Male, Address: Legazpi City Symptoms: July 1, 2020, Positive: July 10, 2020, Confined: July 8, 2020, Died, July 11, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 235, label: "Bicol#235, 29_yo, Male, Address: Manito, Albay, Symptoms: June 25, 2020, Neighbor or Bicol#209", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+               //july13
+              {
+                source: {id: 228, label: "Bicol#228, 65_yo, Male, Address: Camalig, Albay, Origin: Manila, Arrival: July, 9, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 228, label: "Bicol#228, 65_yo, Male, Address: Camalig, Albay, Origin: Manila, Arrival: July, 9, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              //july11
+              {
+                source: {id: 137, label: "Bicol#137, Address:Naga City, Lending Agent Exposure/Travel: For validation", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 222, label: "Bicol#222, 53_yo Male, Laborer, Address: Oas, Albay Origin: Quezon City, Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 164, label: "Bicol#164, 57_yo, Male, Driver, Address:Naga City, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 222, label: "Bicol#222, 53_yo Male, Laborer, Address: Oas, Albay Origin: Quezon City, Arrived: July 2, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 223, label: "Bicol#223, 36_yo Male, Security Guard, Address: Legazpi City, Albay Origin: Pasig City, Arrived: July 9, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 223, label: "Bicol#223, 36_yo Male, Security Guard, Address: Legazpi City, Albay Origin: Pasig City, Arrived: July 9, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //july10
+              {
+                source: {id: 213, label: "Bicol#213, 23_yo, Male, Address: Tabaco City, Origin: Taguig City Arrived: July 3, 2020, Symptoms: July 6, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 213, label: "Bicol#213, 23_yo, Male, Address: Tabaco City, Origin: Taguig City Arrived: July 3, 2020, Symptoms: July 6, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 95, label: "Bicol#95, 32_yo, Female, Address: Balatan, Cam Sur, Arrived: June 25, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 196, label: "Bicol#196, 27_yo Female, Address: Ligao City Origin: Las Pinas, Arrived: June 25, 2020 Symptoms: July 3, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 197, label: "Bicol#197, 23_yo, Female, Housewife, Address: Ligao City, Origin: Laguna, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 197, label: "Bicol#197, 23_yo, Female, Housewife, Address: Ligao City, Origin: Laguna, Arrived: July 4, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 198, label: "Bicol#198, 23_yo, Female, Housewife, Address: Ligao City, Origin: Las Pinas, Arrived: June 25, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 198, label: "Bicol#198, 23_yo, Female, Housewife, Address: Ligao City, Origin: Las Pinas, Arrived: June 25, 2020 Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //july7
+              
+              {
+                source: {id: 178, label: "Bicol#178, 36_yo, Male, Businessman, Address: Legazpi, Origin: Manila Arrived: June 23, 2020, Symptoms: June 4, 2020", healthworker: "-" ,status:"Admitted"},
+                target: {id: 178, label: "Bicol#178, 36_yo, Male, Businessman, Address: Legazpi, Origin: Manila Arrived: June 23, 2020, Symptoms: June 4, 2020", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 179, label: "Bicol#179, 32_yo, Male, Driver, Address: Legazpi, Origin: Batangas Arrived: July 4, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 179, label: "Bicol#179, 32_yo, Male, Driver, Address: Legazpi, Origin: Batangas Arrived: July 4, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+
+        
+              {
+                source: {id: 190, label: "Bicol#190, 23_yo Male Address: Legazpi, Origin: Quezon City, Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 190, label: "Bicol#190, 23_yo Male Address: Legazpi, Origin: Quezon City, Asymptomatic", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              //july6
+              
+              
+              //july5
+              {
+                source: {id: 155, label: "Bicol#155, 23_yo, Male Address:Legazpi City, Origin: Manila Arrived: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 155, label: "Bicol#155, 23_yo, Male Address:Legazpi City, Origin: Manila Arrived: June 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+
+              
+          
+              
+              
+              {
+                source: {id: 123, label: "Bicol#123, Address:Legazpi, Origin: Malate, Arrived: June 26, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 123, label: "Bicol#123, Address:Legazpi, Origin: Malate, Arrived: June 26, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 124, label: "Bicol#124, Address:Legazpi, Origin: Cebu, Arrived: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 124, label: "Bicol#124, Address:Legazpi, Origin: Cebu, Arrived: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //july2 pr
+              {
+                source: {id: 125, label: "Bicol#125, Machine Operator, Address:Legazpi, Origin: Paranaque, Arrived: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 125, label: "Bicol#125, Machine Operator, Address:Legazpi, Origin: Paranaque, Arrived: June 28, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+
+              
+              
+
+             
+              {
+                source: {id: 93, label: "Bicol#93 Address:Legazpi, Origin: Muntinlupa, Arrived: June 24, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 115, label: "Bicol#115, Address:Manito, Origin: Taguig, Arrived: June 24, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 93, label: "Bicol#93 Address:Legazpi, Origin: Muntinlupa, Arrived: June 24, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 116, label: "Bicol#116, Address:Manito, Origin: Taguig, Arrived: June 24, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 93, label: "Bicol#93 Address:Legazpi, Origin: Muntinlupa, Arrived: June 24, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 117, label: "Bicol#117, Address:Manito, Origin: Taguig, Arrived: June 24, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 93, label: "Bicol#93 Address:Legazpi, Origin: Muntinlupa, Arrived: June 24, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 118, label: "Bicol#118, Address:Manito, Origin: Taguig, Arrived: June 24, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 90, label: "Bicol#90, 56_yo (Male), Address:Sorsogn City, Origin: Muntinlupa Arrived: June 24, 2020, Cebu Pacific", healthworker: "-" ,status:"Recovered"},
+                target: {id: 90, label: "Bicol#90, 56_yo (Male), Address:Sorsogon City, Origin: Muntinlupa Arrived: June 24, 2020, Cebu Pacific", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+             
+             
+             
+          
+              {
+                source: {id: 89, label: "Bicol#89, 41_yo (Male), Address:Legazpi City, Origin: Quezon City Arrived: June 4, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 89, label: "Bicol#89, 41_yo (Male), Address:Legazpi City, Origin: Quezon City Arrived: June 4, 2020", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //june21
+              {
+                source: {id: 88, label: "Bicol#88, 31_yo (Male) Address:Tiwi, Origin: Makati Arrived: June 11, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 88, label: "Bicol#88, 31_yo (Male) Address:Tiwi, Origin: Makati Arrived: June 11, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              
+
+              {
+                source: {id: 78, label: "Bicol#78, 30_yo (Female) Address:Oas, Nurse, Recovered", healthworker: "yes" ,status:"Recovered"},
+                target: {id: 86, label: "Bicol#86, 37_yo (Male) Address:Oas, Nurse", healthworker: "yes" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 84, label: "Bicol#84, 50_yo (Male) Address:Legazpi, Origin: Manila Arrived: June 9, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 84, label: "Bicol#84, 50_yo (Male) Address:Legazpi, Origin: Manila Arrived: June 9, 2020", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 79, label: "Bicol#79, 26_yo (Female) Address:Guinobatan Albay, Origin: Laguna Arrived: June 5, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 79, label: "Bicol#79, 26_yo (Female) Address:Guinobatan Albay, Origin: Laguna Arrived: June 5, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 80, label: "Bicol#80, 46_yo (Male) Address:Guinobatan Albay, Travel history for validation, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 80, label: "Bicol#80, 46_yo (Male) Address:Guinobatan Albay, Travel history for validation, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 73, label: "Bicol#73, 32_yo (Male) Address:Legazpi, Origin: Cavite, Laguna Arrived: May 25, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 73, label: "Bicol#73, 32_yo (Male) Address:Legazpi, Origin: Cavite, Laguna Arrived: May 25, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 76, label: "Bicol#76, 46_yo (Male) Address:Legazpi, Origin: Batangas Arrived: June 2, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 76, label: "Bicol#76, 46_yo (Male) Address:Legazpi, Origin: Batangas Arrived: June 2, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 77, label: "Bicol#77, 27_yo (Male) Address:Legazpi, Origin: Antipolo Arrived: June 2, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 81, label: "Bicol#81, 42_yo (Female) Healthworker Address: Bacacay, Origin: Antipolo Arrived: June 2, 2020 Positive on June 11, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 46, label: "Bicol#46, 29_yo Address: Daraga, Albay, Healthworker, Positive: May 2, 2020, Negative: May 12, 2020", healthworker: "yes" ,status:"Recovered"},
+                target: {id: 63, label: "Bicol#63, 33_yo (Male), Health worker, Onset: May 3, 2020, Positive: May 13, 2020, Address:Legazpi, Recovered", healthworker: "yes" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 42, label: "Bicol#42, 39_yo Health Worker, Asymptomatic, Positive on April 30, 2020, Address:Daraga, Work: Health Worker, Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 57, label: "Bicol#57, 8_yo, Female, Address: Daraga, Albay, Positive: May 8, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 36, label: "Bicol#36, 28_yo, Address: Legazpi City, Healthworker, Positive: April 28, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 45, label: "Bicol#45, 32_yo, Female, Address: Legazpi City, Healthworker-Physician, Positive: May 2, 2020, Negative: May 12, 2020, Recovered", healthworker: "yes" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+
+
+
+              {
+                source: {id: 36, label: "Bicol#36, 28_yo, Health worker, Address: Legazpi, Onset: March 30, 2020 Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 53, label: "Bicol#53, 38_yo, Female, Address: Legazpi City, Healthworker, Positive: May 6, 2020  Recovered", healthworker: "yes" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 36, label: "Bicol#36, 28_yo, Health worker, Address: Legazpi, Onset: March 30, 2020 Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 58, label: "Bicol#58, 48_yo, Female, Address: Daraga, Health Worker, Asymptomatic, Positive: May 9, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 36, label: "Bicol#36, 28_yo, Health worker, Address: Legazpi, Onset: March 30, 2020 Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 64, label: "Bicol#64, 47_yo (Female), Health Worker,  Address: Daraga, Asymptomatic, Positive on May 13,2020 Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 69, label: "Bicol#69, 29_yo (Female) Address: Legazpi City Origin: Laguna Arrived: May 22, 2020 Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 69, label: "Bicol#69, 29_yo (Female) Address: Legazpi City Origin: Laguna Arrived: May 22, 2020 Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 70, label: "Bicol#70, 57_yo (Male) Address: Legazpi City Origin: Laguna Arrived: May 22, 2020 Positive: May 29, 2020 Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 70, label: "Bicol#70, 57_yo (Male) Address: Legazpi City Origin: Laguna Arrived: May 22, 2020 Positive: May 29, 2020 Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 19, label: "Bicol#19, 74_yo, Male, Address: Legazpi City, Male, Positive: April 14, 2020, Died April 19, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 34, label: "Bicol#34, 34_yo (Female), Address: Legazpi, Asymptomatic, Positive: May 14, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 19, label: "Bicol#19, 74_yo, Male, Positive: April 14, 2020, Died April 19, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 27, label: "Bicol#27, 21_yo Female, Health worker, Address: Legazpi, Asymptomatic, Positive:April 21, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 21, label: "Bicol#21, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 34, label: "Bicol#34, 34_yo (Female), Address: Legazpi, Asymptomatic, Positive: May 14, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 22, label: "Bicol#22, 28_yo Female, From: Daraga, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 22, label: "Bicol#22, 28_yo Female, From: Daraga, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 23, label: "Bicol#23, 36_yo Female, From: Legazpi, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 23, label: "Bicol#23, 36_yo Female, From: Legazpi, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 24, label: "Bicol#24, 57_yo Female, From: Daraga, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 24, label: "Bicol#24, 57_yo Female, From: Daraga, Albay, Positive: April 18, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 37, label: "Bicol#37, 54_yo Male, Address: Legazpi City, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 37, label: "Bicol#37,  54_yo Male, Address: Legazpi City, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 38, label: "Bicol#38, 56_yo, Female, Address: Ligao Albay, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 38, label: "Bicol#38, 56_yo, Female, Address: Ligao Albay, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+             
+
+              {
+                source: {id: 41, label: "Bicol#41, 45_yo, Female, Address: Legazpi, Healthworker, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 48, label: "Bicol#48, 46_yo (Female), Address: Daraga, Albay, Health worker, Asymptomatic, Positive: May 6, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 41, label: "Bicol#41, 45_yo, Female, Address: Legazpi, Healthworker, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 49, label: "Bicol#49, 31_yo (Female), Address: Legazpi, Health worker, Positive: May 6, 2020 Asymptomatic, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+              {
+                source: {id: 43, label: "Bicol#43, 57_yo Female, Address: Legazpi, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 43, label: "Bicol#43, 57_yo Female, Address: Legazpi, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 35, label: "Bicol#35, 40_yo, Address: Legazpi City, Origin: Manila on March 20, 2020, Positive: April 24, Negative: May 12, 2020,  Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 44, label: "Bicol#44, 53_yo, Address: Legazpi City, Positive: May 2, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 44, label: "Bicol#44, 53_yo, Address: Legazpi City, Positive: May 2, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 47, label: "Bicol#47, 27_yo, Address: Legazpi City, Positive: May 5, 2020, Fully Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 44, label: "Bicol#44, 53_yo, Address: Legazpi City, Positive: May 2, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 54, label: "Bicol#54, 51_yo, Female, Address: Legazpi City, Asymptomatic, Positive: May 13, 2020,  Fully Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 44, label: "Bicol#44, 53_yo, Address: Legazpi City, Positive: May 2, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 55, label: "Bicol#55, 18_yo, Address: Legazpi City, Asymptomatic, Positive: May 13, 2020, Fully Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+               {
+                source: {id: 56, label: "Bicol#56, 44_yo, Female, Address: Daraga, Asymptomatic, Positive: May 8, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 56, label: "Bicol#56, 44_yo, Female, Address: Daraga, Asymptomatic, Positive: May 8, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 50, label: "Bicol#50, 64_yo, Female, Address: Daraga, Albay, Health Worker_Physician, Positive: May 7, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 50, label: "Bicol#50, 64_yo, Female, Address: Daraga, Albay, Health Worker_Physician, Positive: May 7, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+
+              {
+                source: {id: 45, label: "Bicol#45, 32_yo, Female, Address: Legazpi City, Healthworker-Physician, Positive: May 2, 2020, Negative: May 12, 2020, Recovered", healthworker: "yes" ,status:"Recovered"},
+                target: {id: 52, label: "Bicol#52, 26_yo Male, Address: Daraga Albay, Health Worker, Physician, Positive: May 8, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 28, label: "Bicol#28, 78_yo Address: Guinobatan Albay, Died", healthworker: "-" ,status:"Died"},
+                target: {id: 59, label: "Bicol#59, 27_yo Male, Address: Ligao City, Health Worker, Asymptomatic, Positive: May 9, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 48, label: "Bicol#48, 46_yo (Female), Health worker, Asymptomatic, Positive: May 6, 2020, Fully Recovered", healthworker: "yes" ,status:"Fully Recovered"},
+                target: {id: 62, label: "Bicol#62, 46_yo Male, Address: Daraga Albay, Onset: April 25, 2020, Admitted, Positive: May 11, 2020,  Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+            
+              {
+                source: {id: 44, label: "Bicol#44, 53_yo, Address: Legazpi City, Positive: May 2, 2020, Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                target: {id: 66, label: "Bicol#66, 21_yo, Positive: May 14, 2020, Address: Legazpi Origin Fully Recovered", healthworker: "-" ,status:"Fully Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 40, label: "Bicol#40, 11_months, Female, Address: Ligao City, Onset: April 20, Positive: April 30, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 40, label: "Bicol#40, 11_months, Female, Address: Ligao City, Onset: April 20, Positive: April 30, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 30, label: "Bicol#30, 64_yo, Female, Address: Tabaco City, Origin: Quezon City, March 11, 2020 Onset: April 15, Positive: April 22, 2020, Died", healthworker: "-" ,status:"Died"},
+                target: {id: 30, label: "Bicol#30, 64_yo, Female, Address: Tabaco City, Origin: Quezon City, March 11, 2020 Onset: April 15, Positive: April 22, 2020, Died", healthworker: "-" ,status:"Died"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 20, label: "Bicol#20, 54_yo Address: Legazpi Origin: Marikina City on Feb. 29, 2020, Onset: April 2, 2020, Positive: April 19, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 31, label: "Bicol#31, 19_yo, Male, Address: Legazpi City, Asymptomatic, Positive: April 22, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 32, label: "Bicol#32, 40_yo, Male, Health Worker, Address: Camalig, Albay, Asymptomatic, Positive: April 22, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 32, label: "Bicol#32, 40_yo, Male, Health Worker, Address: Camalig, Albay, Asymptomatic, Positive: April 22, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 33, label: "Bicol#33, 43_yo, Health Worker, Female, Address: Guinobatan, Albay, Asymptomatic, Positive: April 22, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 33, label: "Bicol#33, 43_yo, Health Worker, Female, Address: Guinobatan, Albay, Asymptomatic, Positive: April 22, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 17, label: "Bicol#17, 31_yo Female, Address: Albay, With History of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 17, label: "Bicol#17, 31_yo Female, Address: Albay, With History of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 18, label: "Bicol#18, 28_yo Female, Address: Albay, With History of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 18, label: "Bicol#18, 28_yo Female, Address: Albay, With History of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 13, label: "Bicol#13, 63_yo Female, Address: Albay, Origin: Baguio City, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 13, label: "Bicol#13, 63_yo Female, Address: Albay, Origin: Baguio City, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 14, label: "Bicol#14, 66_yo Female, Address: Albay, Origin: Quezon City, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 14, label: "Bicol#14, 66_yo Female, Address: Albay, Origin: Quezon City, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 15, label: "Bicol#15, 60_yo Male, Address: Albay, Origin: Quezon City, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 15, label: "Bicol#15, 60_yo Male, Address: Albay, Origin: Quezon City, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 9, label: "Bicol#9, 40_yo Male, Address: Albay, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 9, label: "Bicol#9, 40_yo Male, Address: Albay, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 10, label: "Bicol#10, 43_yo Male, Address: Albay, Origin: Manila,, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 10, label: "Bicol#10, 43_yo Male, Address: Albay, Origin: Manila,, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 11, label: "Bicol#11, 49_yo Female, Address: Albay, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 11, label: "Bicol#11, 49_yo Female, Address: Albay, With history of exposure, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 7, label: "Bicol#7, 63_yo Male, Address: Albay, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 7, label: "Bicol#7, 63_yo Male, Address: Albay, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 8, label: "Bicol#8, 65_yo Male, Address: Albay, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 8, label: "Bicol#8, 65_yo Male, Address: Albay, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 1, label: "Bicol#1, 52_yo Male Foreigner, Address: Albay, Origin: USA, Positive: March 27, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 1, label: "Bicol#1, 52_yo Male Foreigner, Address: Albay, Origin: USA, Positive: March 27, 2020, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 2, label: "Bicol#1, 48_yo Female, Address: Albay, Origin: NCR, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 2, label: "Bicol#1, 48_yo Female, Address: Albay, Origin: NCR, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 3, label: "Bicol#1, 50_yo Male, Address: Albay, Origin: Manila, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 3, label: "Bicol#1, 50_yo Male, Address: Albay, Origin: Manila, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 4, label: "Bicol#4, 60_yo Female, Address: Albay, Origin: Manila, Recovered", healthworker: "-" ,status:"Recovered"},
+                target: {id: 4, label: "Bicol#4, 60_yo Female, Address: Albay, Origin: Manila, Recovered", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+
+              
+          ]
+    };
+
+    function myGraph() {
+      this.addNode = function (n) {
+          if (!findNode(n.id)) {
+              nodes.push({"id": n.id, "label": n.label, "status":n.status});
+              update();
+          }
+      };
+
+      this.addLink = function (source, target, value,color) {
+          links.push({"source": findNode(source.id), "target": findNode(target.id), "value": value,"color":color});
+          update();
+      };
+
+      this.initialize = function() {
+        data.edges.forEach(function(d) {
+            graph.addNode(d.source);
+            graph.addNode(d.target);
+            graph.addLink(d.source, d.target, d.value,d.color);
+        });
+      };
+
+      var findNode = function (nodeId) {
+          for (var i in nodes) {
+              if (nodes[i].id === nodeId) {
+                return nodes[i];
+              }
+          };
+      };
+
+      var countSiblingLinks = function(source, target) {
+          var count = 0;
+          for(var i = 0; i < links.length; ++i){
+              if( (links[i].source.id == source.id && links[i].target.id == target.id) || (links[i].source.id == target.id && links[i].target.id == source.id) )
+                  count++;
+          };
+          return count;
+      };
+
+      var getSiblingLinks = function(source, target) {
+          var siblings = [];
+          for(var i = 0; i < links.length; ++i){
+              if( (links[i].source.id == source.id && links[i].target.id == target.id) || (links[i].source.id == target.id && links[i].target.id == source.id) )
+                  siblings.push(links[i].value);
+          };
+          return siblings;
+      };
+
+      var w = window.innerWidth - 20,
+          h = window.innerHeight,
+          middle = w/2;
+      var linkDistance = 300;
+
+      var colors = d3.scale.category20();
+
+      var svg = d3.select("body")
+            .append("svg:svg")
+              .attr("width", w)
+              .attr("height", h)
+              .style("z-index", -10)
+              .attr("id", "svg")
+              //adding these
+              ///*
+              .call(d3.behavior.zoom().on("zoom", function () {
+                svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+              }))
+              .append("g")
+              //*/
+              ;
+
+          svg.append('svg:defs').selectAll('marker')
+              .data(['end'])
+              .enter()
+            .append('svg:marker')
+              .attr({'id': "arrowhead",
+                     'viewBox':'0 -5 10 10',
+                     'refX': 22,
+                     'refY': 0,
+                     'orient':'auto',
+                     'markerWidth': 15, //original 20
+                     'markerHeight': 15, //original 20
+                     'markerUnits': "strokeWidth",
+                     'xoverflow':'visible'})
+            .append('svg:path')
+              .attr('d', 'M0,-5L10,0L0,5')
+              .attr('fill', 'black');//original #ccc
+
+        var force = d3.layout.force();
+
+        var nodes = force.nodes(),
+            links = force.links();
+
+        var update = function () {
+
+            var path = svg.selectAll("path.link")
+                    .data(force.links())
+                    .style("stroke", function(d){return d.color})
+                    ;
+
+                path.enter().append("svg:path")
+                    .attr("id", function (d) {
+                        return d.source.id + "-" + d.value + "-" + d.target.id;
+                    })
+                    .attr("class", "link")
+                    .attr('marker-end','url(#arrowhead)');
+
+                path.exit().remove();
+
+            var pathInvis = svg.selectAll("path.invis")
+                    .data(force.links());
+
+                pathInvis.enter().append("svg:path")
+                    .attr("id", function (d) {
+                        return "invis_" + d.source.id + "-" + d.value + "-" + d.target.id;
+                    })
+                    .attr("class", "invis");
+
+                pathInvis.exit().remove();
+
+            var pathLabel = svg.selectAll(".pathLabel")
+                    .data(force.links());
+
+                pathLabel.enter().append("g").append("svg:text")
+                    .attr("class", "pathLabel")
+                    .append("svg:textPath")
+                      .attr("startOffset", "50%")
+                      .attr("text-anchor", "middle")
+                      .attr("xlink:href", function(d) { return "#invis_" + d.source.id + "-" + d.value + "-" + d.target.id; })
+                      //.style("fill", "#cccccc")
+                      .style("fill", function(d){
+                        return d.color;
+                      })
+
+                      .style("font-size", 10)
+                      .text(function(d) { return d.value; });
+
+            var node = svg.selectAll("g.node")
+                    .data(force.nodes());
+
+            var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .call(force.drag);
+
+                nodeEnter.append("svg:circle")
+                        .attr("r", 10)
+                        .attr("id", function (d) {
+                            return "Node;" + d.id;
+                        })
+                        .attr("class", "nodeStrokeClass")
+                        //.attr("fill", "#0db7ed")
+                        
+                        .attr("fill", function(d){
+                          if (d.status=="Died")
+                            return "#ff0066";//red
+                          if (d.status=="Recovered")
+                            return "#00cc00";//green
+                          if (d.status=="Fully Recovered")
+                            return "#008000";//green
+                          if (d.status=="Quarantined")
+                            return "#0db7ed";//blue
+                          if (d.status=="Admitted")
+                            return "#6600ff";//violet     
+                          if (d.status=="status")
+                            return "#b3b3b3";//grey  
+                        })
+                        
+
+                nodeEnter.append("svg:text")
+                        .attr("class", "textClass")
+                        .attr("x", 20)
+                        .attr("y", ".31em")
+                        .text(function (d) {
+                            return d.label;
+                        });
+
+                node.exit().remove();
+
+                function arcPath(leftHand, d) {
+                    var x1 = leftHand ? d.source.x : d.target.x,
+                        y1 = leftHand ? d.source.y : d.target.y,
+                        x2 = leftHand ? d.target.x : d.source.x,
+                        y2 = leftHand ? d.target.y : d.source.y,
+                        dx = x2 - x1,
+                        dy = y2 - y1,
+                        dr = Math.sqrt(dx * dx + dy * dy),
+                        drx = dr,
+                        dry = dr,
+                        sweep = leftHand ? 0 : 1;
+                        siblingCount = countSiblingLinks(d.source, d.target)
+                        xRotation = 0,
+                        largeArc = 0;
+
+                        if (siblingCount > 1) {
+                            var siblings = getSiblingLinks(d.source, d.target);
+                            console.log(siblings);
+                            var arcScale = d3.scale.ordinal()
+                                                    .domain(siblings)
+                                                    .rangePoints([1, siblingCount]);
+                            drx = drx/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                            dry = dry/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                        }
+
+                    return "M" + x1 + "," + y1 + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + x2 + "," + y2;
+                }
+
+                force.on("tick", function(e) {
+                    var q = d3.geom.quadtree(nodes),
+                        i = 0,
+                        n = nodes.length,
+                        k = .1 * e.alpha;
+
+                    while (++i < n) q.visit(collide(nodes[i]));
+
+                    node.attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    });
+
+                    path.attr("d", function(d) {
+                        return arcPath(true, d);
+                    });
+
+                    pathInvis.attr("d", function(d) {
+                        return arcPath(d.source.x < d.target.x, d);
+                    });
+                });
+
+                force
+                        .charge(-10000)
+                        .friction(0.5)
+                        .linkDistance(linkDistance)
+                        .size([w, h])
+                        .start();
+                keepNodesOnTop();
+
+        }
+
+        update();
+
+        function collide(node) {
+          var r = node.radius + 16,
+              nx1 = node.x - r,
+              nx2 = node.x + r,
+              ny1 = node.y - r,
+              ny2 = node.y + r;
+          return function(quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+              var x = node.x - quad.point.x,
+                  y = node.y - quad.point.y,
+                  l = Math.sqrt(x * x + y * y),
+                  r = node.radius + quad.point.radius;
+              if (l < r) {
+                l = (l - r) / l * .5;
+                node.x -= x *= l;
+                node.y -= y *= l;
+                quad.point.x += x;
+                quad.point.y += y;
+              }
+            }
+            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+          };
+        }
+    }
+
+function drawGraph() {
+    graph = new myGraph();
+    graph.initialize();
+}
+
+drawGraph();
+
+function keepNodesOnTop() {
+    $(".nodeStrokeClass").each(function( index ) {
+        var gNode = this.parentNode;
+        gNode.parentNode.appendChild(gNode);
+    });
+}
+
+//adding these functions
+function zoomed() {
+  svg.attr("transform", d3.event.transform);
+}
+
+
+</script>

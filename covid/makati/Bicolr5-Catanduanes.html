@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>COVID19 Cases-Catanduanes</title>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: white;
+  color: white;
+}
+text {
+    fill: black;
+    font-family: 'Open Sans';
+}
+circle {
+  stroke: black;//original white
+  stroke-width: 1.5px;
+}
+path.link, path.textpath {
+    fill: none;
+    stroke-width: 0.5px;
+}
+path.invis {
+    fill: none;
+    stroke-width: 0;
+}
+</style>
+</head>
+<body>
+<p style="color:black"><strong>COVID19 Cases-Bicol-Catanduanes</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 23, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>   
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script type="text/javascript">
+
+  //adding these for ui control
+  var width = 1400,height = 800;
+  //zoom handler
+  ////adding these for ui control
+
+
+
+    var data = {
+          edges: [
+              //july22
+              {
+                source: {id: 299, label: "Bicol#299, 28_yo Male, Waiter, Address: Virac, Catanduanes, Origin: Dubai, Arrived: July 1, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 299, label: "Bicol#299, 28_yo Male, Waiter, Address: Virac, Catanduanes, Origin: Dubai, Arrived: July 1, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              //july21
+              {
+                source: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 288, label: "Bicol#288, 23_yo Male, Address: Virac, Catanduanes, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              //july17
+              {
+                source: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 245, label: "Bicol#245, 61_yo, Male, Address: Virac, Catanduanes, Origin: Silang, Cavite, Arrival: July, 5, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 246, label: "Bicol#246, 24_yo, Male, Security guard, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 10, 2020, Symptoms: July 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 246, label: "Bicol#246, 24_yo, Male, Security guard, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 10, 2020, Symptoms: July 12, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 247, label: "Bicol#247, 19 Female, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 247, label: "Bicol#247, 19 Female, Address: Gigmoto, Catanduanes, Origin: Quezon, City, Arrival: July, 11, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              //july16
+              {
+                source: {id: 239, label: "Bicol#239, 24_yo, Male, Address: Bagamanoc, Catanduanes, Origin: Cavite, Arrival: June, 24, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 239, label: "Bicol#239, 24_yo, Male, Address: Bagamanoc, Catanduanes, Origin: Cavite, Arrival: June, 24, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 240, label: "Bicol#240, 24_yo, Male, Address: Bagamanoc, Catanduanes, Origin: Cavite, Arrival: June, 24, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 240, label: "Bicol#240, 24_yo, Male, Address: Bagamanoc, Catanduanes, Origin: Cavite, Arrival: June, 24, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },  
+
+              //july 14
+              {
+                source: {id: 229, label: "Bicol#229, 23_yo, Female, Civil Engineer, Address: Virac, Catanduanes, Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 2, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 229, label: "Bicol#229, 23_yo, Female, Civil Engineer, Address: Virac, Catanduanes, Origin: Quezon City, Arrival: July, 5, 2020, Symptoms: July 2, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //july10
+              
+              {
+                source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-",status:"Quarantined"},
+                target: {id: 205, label: "Bicol#205, 2_yo, Male, Address: Virac Catanduanes Origin: Rizal, June 29, 2020, Symptoms: July 4, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+
+              {
+                source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 188, label: "Bicol#188, 20_yo Female Address: Virac, Origin: Quezon City, Arrived: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 151, label: "Bicol#151, 1_yo (Male) Address: Virac, Origin: Quezon City, Illness: June 28,2020", healthworker: "-" ,healthworker: "-" ,status:"Quarantined"},
+                target: {id: 189, label: "Bicol#189, 22_yo Female Address: Virac, Origin: Quezon City, Arrived: June 26, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 87, label: "Bicol#87, 47_yo (Male) Address:Bagamanoc, Catanduanes, Origin: Hawaii, Manila Arrived: June 1, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 87, label: "Bicol#87, 47_yo (Male) Address:Bagamanoc, Catanduanes, Origin: Hawaii, Manila Arrived: June 1, 2020", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 83, label: "Bicol#83, 39_yo (Female) Address:San Andres Catanduanes, Origin: Middle East Arrived: Manila, April 25, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 83, label: "Bicol#83, 39_yo (Female) Address:San Andres Catanduanes, Origin: Middle East Arrived: Manila, April 25, 2020", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 82, label: "Bicol#82, 49_yo (Male) Address:San Miguel Catanduanes, Origin: Saudi Arabia, Manila Arrived: June 8, 2020", healthworker: "-" ,status:"Recovered"},
+                target: {id: 82, label: "Bicol#82, 49_yo (Male) Address:San Miguel Catanduanes, Origin: Saudi Arabia, Manila Arrived: June 8, 2020", healthworker: "-" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 25, label: "Bicol#25, 63_yo, Female, Address: Virac Catanduanes, Address: Tokyo, Japan, Onset: March 10, 2020, Positive: April 19, 2020, Negative: April 24, 2020, Recovered", healthworker: "_" ,status:"Recovered"},
+                target: {id: 25, label: "Bicol#25, 63_yo, Female, Address: Virac Catanduanes, Address: Tokyo, Japan, Onset: March 10, 2020, Positive: April 19, 2020, Negative: April 24, 2020, Recovered", healthworker: "_" ,status:"Recovered"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              
+          ]
+    };
+
+    function myGraph() {
+      this.addNode = function (n) {
+          if (!findNode(n.id)) {
+              nodes.push({"id": n.id, "label": n.label, "status":n.status});
+              update();
+          }
+      };
+
+      this.addLink = function (source, target, value,color) {
+          links.push({"source": findNode(source.id), "target": findNode(target.id), "value": value,"color":color});
+          update();
+      };
+
+      this.initialize = function() {
+        data.edges.forEach(function(d) {
+            graph.addNode(d.source);
+            graph.addNode(d.target);
+            graph.addLink(d.source, d.target, d.value,d.color);
+        });
+      };
+
+      var findNode = function (nodeId) {
+          for (var i in nodes) {
+              if (nodes[i].id === nodeId) {
+                return nodes[i];
+              }
+          };
+      };
+
+      var countSiblingLinks = function(source, target) {
+          var count = 0;
+          for(var i = 0; i < links.length; ++i){
+              if( (links[i].source.id == source.id && links[i].target.id == target.id) || (links[i].source.id == target.id && links[i].target.id == source.id) )
+                  count++;
+          };
+          return count;
+      };
+
+      var getSiblingLinks = function(source, target) {
+          var siblings = [];
+          for(var i = 0; i < links.length; ++i){
+              if( (links[i].source.id == source.id && links[i].target.id == target.id) || (links[i].source.id == target.id && links[i].target.id == source.id) )
+                  siblings.push(links[i].value);
+          };
+          return siblings;
+      };
+
+      var w = window.innerWidth - 20,
+          h = window.innerHeight,
+          middle = w/2;
+      var linkDistance = 300;
+
+      var colors = d3.scale.category20();
+
+      var svg = d3.select("body")
+            .append("svg:svg")
+              .attr("width", w)
+              .attr("height", h)
+              .style("z-index", -10)
+              .attr("id", "svg")
+              //adding these
+              ///*
+              .call(d3.behavior.zoom().on("zoom", function () {
+                svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+              }))
+              .append("g")
+              //*/
+              ;
+
+          svg.append('svg:defs').selectAll('marker')
+              .data(['end'])
+              .enter()
+            .append('svg:marker')
+              .attr({'id': "arrowhead",
+                     'viewBox':'0 -5 10 10',
+                     'refX': 22,
+                     'refY': 0,
+                     'orient':'auto',
+                     'markerWidth': 15, //original 20
+                     'markerHeight': 15, //original 20
+                     'markerUnits': "strokeWidth",
+                     'xoverflow':'visible'})
+            .append('svg:path')
+              .attr('d', 'M0,-5L10,0L0,5')
+              .attr('fill', 'black');//original #ccc
+
+        var force = d3.layout.force();
+
+        var nodes = force.nodes(),
+            links = force.links();
+
+        var update = function () {
+
+            var path = svg.selectAll("path.link")
+                    .data(force.links())
+                    .style("stroke", function(d){return d.color})
+                    ;
+
+                path.enter().append("svg:path")
+                    .attr("id", function (d) {
+                        return d.source.id + "-" + d.value + "-" + d.target.id;
+                    })
+                    .attr("class", "link")
+                    .attr('marker-end','url(#arrowhead)');
+
+                path.exit().remove();
+
+            var pathInvis = svg.selectAll("path.invis")
+                    .data(force.links());
+
+                pathInvis.enter().append("svg:path")
+                    .attr("id", function (d) {
+                        return "invis_" + d.source.id + "-" + d.value + "-" + d.target.id;
+                    })
+                    .attr("class", "invis");
+
+                pathInvis.exit().remove();
+
+            var pathLabel = svg.selectAll(".pathLabel")
+                    .data(force.links());
+
+                pathLabel.enter().append("g").append("svg:text")
+                    .attr("class", "pathLabel")
+                    .append("svg:textPath")
+                      .attr("startOffset", "50%")
+                      .attr("text-anchor", "middle")
+                      .attr("xlink:href", function(d) { return "#invis_" + d.source.id + "-" + d.value + "-" + d.target.id; })
+                      //.style("fill", "#cccccc")
+                      .style("fill", function(d){
+                        return d.color;
+                      })
+
+                      .style("font-size", 10)
+                      .text(function(d) { return d.value; });
+
+            var node = svg.selectAll("g.node")
+                    .data(force.nodes());
+
+            var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .call(force.drag);
+
+                nodeEnter.append("svg:circle")
+                        .attr("r", 10)
+                        .attr("id", function (d) {
+                            return "Node;" + d.id;
+                        })
+                        .attr("class", "nodeStrokeClass")
+                        //.attr("fill", "#0db7ed")
+                        
+                        .attr("fill", function(d){
+                          if (d.status=="Died")
+                            return "#ff0066";//red
+                          if (d.status=="Recovered")
+                            return "#00cc00";//green
+                          if (d.status=="Fully Recovered")
+                            return "#008000";//green
+                          if (d.status=="Quarantined")
+                            return "#0db7ed";//blue
+                          if (d.status=="Admitted")
+                            return "#6600ff";//violet     
+                          if (d.status=="status")
+                            return "#b3b3b3";//grey  
+                        })
+                        
+
+                nodeEnter.append("svg:text")
+                        .attr("class", "textClass")
+                        .attr("x", 20)
+                        .attr("y", ".31em")
+                        .text(function (d) {
+                            return d.label;
+                        });
+
+                node.exit().remove();
+
+                function arcPath(leftHand, d) {
+                    var x1 = leftHand ? d.source.x : d.target.x,
+                        y1 = leftHand ? d.source.y : d.target.y,
+                        x2 = leftHand ? d.target.x : d.source.x,
+                        y2 = leftHand ? d.target.y : d.source.y,
+                        dx = x2 - x1,
+                        dy = y2 - y1,
+                        dr = Math.sqrt(dx * dx + dy * dy),
+                        drx = dr,
+                        dry = dr,
+                        sweep = leftHand ? 0 : 1;
+                        siblingCount = countSiblingLinks(d.source, d.target)
+                        xRotation = 0,
+                        largeArc = 0;
+
+                        if (siblingCount > 1) {
+                            var siblings = getSiblingLinks(d.source, d.target);
+                            console.log(siblings);
+                            var arcScale = d3.scale.ordinal()
+                                                    .domain(siblings)
+                                                    .rangePoints([1, siblingCount]);
+                            drx = drx/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                            dry = dry/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                        }
+
+                    return "M" + x1 + "," + y1 + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + x2 + "," + y2;
+                }
+
+                force.on("tick", function(e) {
+                    var q = d3.geom.quadtree(nodes),
+                        i = 0,
+                        n = nodes.length,
+                        k = .1 * e.alpha;
+
+                    while (++i < n) q.visit(collide(nodes[i]));
+
+                    node.attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    });
+
+                    path.attr("d", function(d) {
+                        return arcPath(true, d);
+                    });
+
+                    pathInvis.attr("d", function(d) {
+                        return arcPath(d.source.x < d.target.x, d);
+                    });
+                });
+
+                force
+                        .charge(-10000)
+                        .friction(0.5)
+                        .linkDistance(linkDistance)
+                        .size([w, h])
+                        .start();
+                keepNodesOnTop();
+
+        }
+
+        update();
+
+        function collide(node) {
+          var r = node.radius + 16,
+              nx1 = node.x - r,
+              nx2 = node.x + r,
+              ny1 = node.y - r,
+              ny2 = node.y + r;
+          return function(quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+              var x = node.x - quad.point.x,
+                  y = node.y - quad.point.y,
+                  l = Math.sqrt(x * x + y * y),
+                  r = node.radius + quad.point.radius;
+              if (l < r) {
+                l = (l - r) / l * .5;
+                node.x -= x *= l;
+                node.y -= y *= l;
+                quad.point.x += x;
+                quad.point.y += y;
+              }
+            }
+            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+          };
+        }
+    }
+
+function drawGraph() {
+    graph = new myGraph();
+    graph.initialize();
+}
+
+drawGraph();
+
+function keepNodesOnTop() {
+    $(".nodeStrokeClass").each(function( index ) {
+        var gNode = this.parentNode;
+        gNode.parentNode.appendChild(gNode);
+    });
+}
+
+//adding these functions
+function zoomed() {
+  svg.attr("transform", d3.event.transform);
+}
+
+
+</script>
