@@ -31,13 +31,13 @@
 </head>
 <body>
 <p><h3>Makati City Covid 19 Cases- Total Confirmed</h3>
-Links: <a href="https://jmbangate.github.io/covid/makati/MakatiActiveCases.html">Active Cases</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiRecoveredCases.html">Recovered</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiDeaths.html">Deaths</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiTotalConfirmedCases.html">Total Confirmed Cases</a>, <i> Data as of July 23, 2020</i>
+Links: <a href="https://jmbangate.github.io/covid/makati/MakatiActiveCases.html">Active Cases</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiRecoveredCases.html">Recovered</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiDeaths.html">Deaths</a>, <a href="https://jmbangate.github.io/covid/makati/MakatiTotalConfirmedCases.html">Total Confirmed Cases</a>, <i> Data as of July 24, 2020</i>
 </p>
 
 
 <div id='map'></div>
 
-<script type="text/javascript" src="makati19jul232020active.js"></script>
+<script type="text/javascript" src="makati19jul242020active.js"></script>
 
 <script type="text/javascript">
 
@@ -65,7 +65,7 @@ Links: <a href="https://jmbangate.github.io/covid/makati/MakatiActiveCases.html"
 
 	info.update = function (props) {
 		this._div.innerHTML = '<h4>Makati Covid-19 Cases - Confirmed</h4>' +  (props ?
-			'As of July 23, 2020'+'<br />'+'<br />'+
+			'As of '+ props.date +'<br />'+'<br />'+
 			'<b>' + props.name + '</b><br />' + props.TotalConfr + ' Total confirmed cases'
 			: 'Hover over a barangay');
 	};
