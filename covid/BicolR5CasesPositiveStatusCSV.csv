@@ -1,4 +1,5 @@
 date,Group,Pop
+20200725,Quarantined,176
 20200724,Quarantined,164
 20200723,Quarantined,145
 20200722,Quarantined,134
@@ -19,6 +20,7 @@ date,Group,Pop
 20200707,Quarantined,74
 20200706,Quarantined,55
 20200705,Quarantined,51
+20200725,Recovered,156
 20200724,Recovered,154
 20200723,Recovered,151
 20200722,Recovered,143
@@ -39,6 +41,7 @@ date,Group,Pop
 20200707,Recovered,81
 20200706,Recovered,79
 20200705,Recovered,79
+20200725,Admitted,14
 20200724,Admitted,13
 20200723,Admitted,16
 20200722,Admitted,17
@@ -59,6 +62,7 @@ date,Group,Pop
 20200707,Admitted,29
 20200706,Admitted,26
 20200705,Admitted,26
+20200725,Deaths,8
 20200724,Deaths,8
 20200723,Deaths,8
 20200722,Deaths,8
