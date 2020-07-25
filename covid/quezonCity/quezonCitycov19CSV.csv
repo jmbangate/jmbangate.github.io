@@ -1,4 +1,144 @@
 date,name,District,Active,Died,Recovered,Total
+"July 25, 2020",Alicia,District 1,6,0,5,11
+"July 25, 2020",Amihan,District 3,12,0,4,16
+"July 25, 2020",Apolonio Samson,District 6,16,3,96,115
+"July 25, 2020",Baesa,District 6,75,7,43,125
+"July 25, 2020",Bagbag,District 5,38,3,31,72
+"July 25, 2020",Bagong Lipunan ng Crame,District 4,15,0,23,38
+"July 25, 2020",Bagong Pag-asa,District 1,26,4,27,57
+"July 25, 2020",Bagong Silangan,District 2,33,3,31,67
+"July 25, 2020",Bagumbayan,District 3,5,0,10,15
+"July 25, 2020",Bagumbuhay,District 3,10,2,16,28
+"July 25, 2020",Bahay Toro,District 1,69,11,141,221
+"July 25, 2020",Balingasa,District 1,21,4,23,48
+"July 25, 2020",Balong Bato,District 6,13,1,14,28
+"July 25, 2020",Batasan Hills,District 2,45,15,184,244
+"July 25, 2020",Blue Ridge A,District 3,0,0,2,2
+"July 25, 2020",Blue Ridge B,District 3,0,0,1,1
+"July 25, 2020",Botocan,District 4,13,0,8,21
+"July 25, 2020",Bungad,District 1,6,2,15,23
+"July 25, 2020",Camp Aguinaldo,District 3,2,0,6,8
+"July 25, 2020",Capri,District 5,7,0,10,17
+"July 25, 2020",Central,District 4,39,3,37,79
+"July 25, 2020",Claro,District 3,4,0,6,10
+"July 25, 2020",Commonwealth,District 2,81,6,107,194
+"July 25, 2020",Culiat,District 6,24,10,155,189
+"July 25, 2020",Damar,District 1,6,0,2,8
+"July 25, 2020",Damayan,District 1,12,2,17,31
+"July 25, 2020",Damayang Lagi,District 4,12,1,29,42
+"July 25, 2020",Del Monte,District 1,4,1,11,16
+"July 25, 2020",Dioquino Zobel,District 3,0,1,0,1
+"July 25, 2020",Don Manuel,District 4,2,0,8,10
+"July 25, 2020",Dona Aurora,District 4,4,1,7,12
+"July 25, 2020",Dona Imelda,District 4,30,3,24,57
+"July 25, 2020",Dona Josefa,District 4,1,0,2,3
+"July 25, 2020",Duyan-duyan,District 3,0,0,3,3
+"July 25, 2020",E. Rodriguez,District 3,19,3,79,101
+"July 25, 2020",East Kamias,District 3,2,2,2,6
+"July 25, 2020",Escopa I,District 3,1,1,5,7
+"July 25, 2020",Escopa II,District 3,1,0,0,1
+"July 25, 2020",Escopa III,District 3,30,0,6,36
+"July 25, 2020",Escopa IV,District 3,2,0,1,3
+"July 25, 2020",Fairview,District 5,69,9,46,124
+"July 25, 2020",Greater Lagro,District 5,6,1,20,27
+"July 25, 2020",Gulod,District 5,28,4,25,57
+"July 25, 2020",Holy Spirit,District 2,49,8,83,140
+"July 25, 2020",Horseshoe,District 4,1,1,6,8
+"July 25, 2020",Immaculate Concepcion,District 4,9,3,9,21
+"July 25, 2020",Kaligayahan,District 5,26,1,28,55
+"July 25, 2020",Kalusugan,District 4,9,1,33,43
+"July 25, 2020",Kamuning,District 4,16,2,32,50
+"July 25, 2020",Katipunan,District 1,3,0,3,6
+"July 25, 2020",Kaunlaran,District 4,22,2,13,37
+"July 25, 2020",Kristong Hari,District 4,47,3,7,57
+"July 25, 2020",Krus na Ligas,District 4,10,0,13,23
+"July 25, 2020",Laging Handa,District 4,1,0,10,11
+"July 25, 2020",Libis,District 3,4,0,23,27
+"July 25, 2020",Lourdes,District 1,1,4,8,13
+"July 25, 2020",Loyola Heights,District 3,26,0,26,52
+"July 25, 2020",Maharlika,District 1,7,1,10,18
+"July 25, 2020",Malaya,District 4,1,0,2,3
+"July 25, 2020",Manresa,District 1,23,3,23,49
+"July 25, 2020",Mariana,District 4,23,2,27,52
+"July 25, 2020",Mariblo,District 1,4,0,9,13
+"July 25, 2020",Marilag,District 3,8,0,21,29
+"July 25, 2020",Masagana,District 3,5,1,7,13
+"July 25, 2020",Masambong,District 1,2,2,8,12
+"July 25, 2020",Matandang Balara,District 3,41,10,57,108
+"July 25, 2020",Milagrosa,District 3,3,1,22,26
+"July 25, 2020",N.S. Amoranto,District 1,7,0,17,24
+"July 25, 2020",Nagkaisang Nayon,District 5,25,2,15,42
+"July 25, 2020",Nayong Kanluran,District 1,7,0,9,16
+"July 25, 2020",New Era,District 6,24,5,41,70
+"July 25, 2020",North Fairview,District 5,28,3,16,47
+"July 25, 2020",Novaliches Proper,District 5,12,1,17,30
+"July 25, 2020",Obrero,District 4,15,1,16,32
+"July 25, 2020",Old Capitol Site,District 4,16,2,4,32
+"July 25, 2020",Paang Bundok,District 1,11,0,5,16
+"July 25, 2020",Pag-ibig sa Nayon,District 1,4,1,1,6
+"July 25, 2020",Paligsahan,District 4,3,3,11,17
+"July 25, 2020",Paltok,District 1,8,3,26,37
+"July 25, 2020",Pansol,District 3,29,2,28,59
+"July 25, 2020",Paraiso,District 1,2,0,2,4
+"July 25, 2020",Pasong Putik Proper,District 5,22,3,19,44
+"July 25, 2020",Pasong Tamo,District 6,64,8,135,207
+"July 25, 2020",Payatas,District 2,35,6,49,90
+"July 25, 2020",Phil-Am,District 1,1,2,9,12
+"July 25, 2020",Pinagkaisahan,District 4,0,1,9,10
+"July 25, 2020",Pinyahan,District 4,39,7,41,87
+"July 25, 2020",Project 6,District 1,17,1,16,33
+"July 25, 2020",Quirino 2-A,District 3,5,0,6,11
+"July 25, 2020",Quirino 2-B,District 3,14,0,3,17
+"July 25, 2020",Quirino 2-C,District 3,1,0,2,3
+"July 25, 2020",Quirino 3-A,District 3,0,0,1,1
+"July 25, 2020",Ramon Magsaysay,District 1,10,2,12,24
+"July 25, 2020",Roxas,District 4,25,1,33,59
+"July 25, 2020",Sacred Heart,District 4,0,2,4,6
+"July 25, 2020",Saint Peter,District 1,2,0,4,6
+"July 25, 2020",Salvacion,District 1,18,3,24,45
+"July 25, 2020",San Agustin,District 5,10,2,11,23
+"July 25, 2020",San Antonio,District 1,50,3,35,88
+"July 25, 2020",San Bartolome,District 5,24,6,37,67
+"July 25, 2020",San Isidro,District 4,24,2,13,39
+"July 25, 2020",San Isidro Labrador,District 1,6,2,5,13
+"July 25, 2020",San Jose,District 1,14,3,25,42
+"July 25, 2020",San Martin de Porres,District 4,41,3,33,77
+"July 25, 2020",San Roque,District 3,26,3,41,70
+"July 25, 2020",San Vicente,District 4,21,0,7,28
+"July 25, 2020",Sangandaan,District 6,41,0,63,104
+"July 25, 2020",Santa Cruz,District 1,8,0,15,23
+"July 25, 2020",Santa Lucia,District 5,19,0,10,29
+"July 25, 2020",Santa Monica,District 5,17,1,21,39
+"July 25, 2020",Santa Teresita,District 1,13,1,14,28
+"July 25, 2020",Santo Cristo,District 1,16,0,26,42
+"July 25, 2020",Santo Domingo,District 1,11,3,15,29
+"July 25, 2020",Santo Nino,District 4,6,1,6,13
+"July 25, 2020",Santol,District 4,27,2,10,39
+"July 25, 2020",Sauyo,District 6,59,5,58,122
+"July 25, 2020",Siena,District 1,1,1,5,7
+"July 25, 2020",Sikatuna,District 4,7,2,11,20
+"July 25, 2020",Silangan,District 3,1,1,7,9
+"July 25, 2020",Socorro,District 3,12,3,22,37
+"July 25, 2020",South Triangle,District 4,35,2,27,64
+"July 25, 2020",Tagumpay,District 3,8,0,1,9
+"July 25, 2020",Talayan,District 1,12,0,5,17
+"July 25, 2020",Talipapa,District 6,21,3,40,64
+"July 25, 2020",Tandang Sora,District 6,56,12,76,144
+"July 25, 2020",Tatalon,District 4,70,9,73,152
+"July 25, 2020",Teachers Village East,District 4,6,0,7,13
+"July 25, 2020",Teachers Village West,District 4,1,0,3,4
+"July 25, 2020",Ugong Norte,District 3,2,3,11,16
+"July 25, 2020",Unang Sigaw,District 6,12,0,13,25
+"July 25, 2020",UP Campus,District 4,23,4,10,37
+"July 25, 2020",UP Village,District 4,1,0,7,8
+"July 25, 2020",Valencia,District 4,7,0,12,19
+"July 25, 2020",Vasra,District 1,7,2,4,13
+"July 25, 2020",Veterans Village,District 1,19,1,18,38
+"July 25, 2020",Villa Maria Clara,District 3,1,1,0,2
+"July 25, 2020",West Kamias,District 3,7,0,10,17
+"July 25, 2020",West Triangle,District 1,3,1,10,14
+"July 25, 2020",White Plains,District 3,0,0,8,8
+,,,,,,
 "July 24, 2020",Alicia,District 1,6,0,5,11
 "July 24, 2020",Amihan,District 3,12,0,4,16
 "July 24, 2020",Apolonio Samson,District 6,12,3,96,111
