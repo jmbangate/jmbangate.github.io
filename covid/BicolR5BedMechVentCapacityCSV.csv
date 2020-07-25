@@ -1,4 +1,5 @@
 date,Group,Pop
+20200724,ICU Beds,34
 20200723,ICU Beds,34
 20200722,ICU Beds,30
 20200721,ICU Beds,34
@@ -17,6 +18,7 @@ date,Group,Pop
 20200708,ICU Beds,35
 20200707,ICU Beds,37
 20200706,ICU Beds,37
+20200724,Isolation Beds,236
 20200723,Isolation Beds,201
 20200722,Isolation Beds,246
 20200721,Isolation Beds,250
@@ -35,6 +37,7 @@ date,Group,Pop
 20200708,Isolation Beds,301
 20200707,Isolation Beds,293
 20200706,Isolation Beds,276
+20200724,Ward Beds,163
 20200723,Ward Beds,165
 20200722,Ward Beds,155
 20200721,Ward Beds,149
@@ -53,6 +56,7 @@ date,Group,Pop
 20200708,Ward Beds,148
 20200707,Ward Beds,157
 20200706,Ward Beds,147
+20200724,Total Bed,433
 20200723,Total Bed,400
 20200722,Total Bed,431
 20200721,Total Bed,433
@@ -71,6 +75,7 @@ date,Group,Pop
 20200708,Total Bed,484
 20200707,Total Bed,487
 20200706,Total Bed,460
+20200724,,28
 20200723,Mech Ventilators,29
 20200722,Mech Ventilators,27
 20200721,Mech Ventilators,27
