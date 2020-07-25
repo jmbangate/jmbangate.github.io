@@ -1,272 +1,307 @@
-date,Barangay,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,PUM
-"July 24, 2020",Bangkal,38,18,6,62,1,20,44
-"July 24, 2020",Bel-Air,21,32,2,55,0,16,31
-"July 24, 2020",Carmona,0,8,0,8,0,1,1
-"July 24, 2020",Dasmarinas,3,6,2,11,0,0,0
-"July 24, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 24, 2020",Kasilawan,3,18,2,23,0,14,1
-"July 24, 2020",La Paz,9,14,2,25,0,9,17
-"July 24, 2020",Magallanes,1,9,0,10,0,1,3
-"July 24, 2020",Olympia,29,36,3,68,0,34,37
-"July 24, 2020",Palanan,18,33,2,53,0,11,5
-"July 24, 2020",Pio del Pilar,41,39,4,84,0,38,69
-"July 24, 2020",Poblacion,42,43,7,92,0,24,64
-"July 24, 2020",San Antonio,22,29,2,53,0,13,37
-"July 24, 2020",San Isidro,18,11,1,30,0,13,20
-"July 24, 2020",San Lorenzo,18,24,3,45,0,8,14
-"July 24, 2020",Singkamas,6,5,5,16,0,9,23
-"July 24, 2020",Santa Cruz,17,7,2,26,0,11,25
-"July 24, 2020",Tejeros,14,30,5,49,0,26,18
-"July 24, 2020",Urdaneta,3,3,0,6,0,2,13
-"July 24, 2020",Valenzuela,5,8,1,14,0,5,9
-"July 24, 2020",Cembo,47,40,3,90,0,49,90
-"July 24, 2020",Comembo,16,30,6,52,0,17,41
-"July 24, 2020",East Rembo,35,45,8,88,0,31,66
-"July 24, 2020",Guadalupe Nuevo,39,47,6,92,0,29,64
-"July 24, 2020",Guadalupe Viejo,21,19,2,42,0,15,44
-"July 24, 2020",Pembo,73,80,8,161,0,57,104
-"July 24, 2020",Pinagkaisahan,28,19,2,49,0,16,22
-"July 24, 2020",Pitogo,23,39,3,65,1,16,28
-"July 24, 2020",Post Proper Southside,49,30,7,86,0,18,67
-"July 24, 2020",Post Proper Northside,7,12,1,20,0,4,3
-"July 24, 2020",Rizal,97,58,10,165,0,70,126
-"July 24, 2020",South Cembo,10,22,4,36,0,16,15
-"July 24, 2020",West Rembo,60,53,11,124,0,40,85
-,,,,,,,,
-"July 23, 2020",Bangkal,36,18,6,60,1,18,44
-"July 23, 2020",Bel-Air,20,32,2,54,0,16,31
-"July 23, 2020",Carmona,0,8,0,8,0,1,1
-"July 23, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 23, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 23, 2020",Kasilawan,3,18,2,23,0,14,1
-"July 23, 2020",La Paz,7,14,2,23,0,9,6
-"July 23, 2020",Magallanes,1,9,0,10,0,1,3
-"July 23, 2020",Olympia,29,35,3,67,0,34,37
-"July 23, 2020",Palanan,16,33,2,51,0,9,5
-"July 23, 2020",Pio del Pilar,40,39,4,83,0,36,67
-"July 23, 2020",Poblacion,39,43,7,89,0,18,61
-"July 23, 2020",San Antonio,19,29,2,50,0,18,30
-"July 23, 2020",San Isidro,18,18,1,30,0,13,20
-"July 23, 2020",San Lorenzo,16,24,3,43,0,8,14
-"July 23, 2020",Singkamas,6,5,5,16,0,9,15
-"July 23, 2020",Santa Cruz,17,7,2,26,0,8,25
-"July 23, 2020",Tejeros,14,30,5,49,0,26,18
-"July 23, 2020",Urdaneta,3,3,0,6,0,2,15
-"July 23, 2020",Valenzuela,5,8,1,14,0,4,9
-"July 23, 2020",Cembo,40,40,3,83,0,49,95
-"July 23, 2020",Comembo,15,30,6,51,0,16,42
-"July 23, 2020",East Rembo,34,45,8,87,0,30,67
-"July 23, 2020",Guadalupe Nuevo,38,47,6,91,0,29,66
-"July 23, 2020",Guadalupe Viejo,20,19,2,41,0,15,45
-"July 23, 2020",Pembo,72,79,7,158,0,55,105
-"July 23, 2020",Pinagkaisahan,28,19,2,49,0,17,22
-"July 23, 2020",Pitogo,22,39,3,64,1,16,28
-"July 23, 2020",Post Proper Southside,49,30,7,86,0,16,67
-"July 23, 2020",Post Proper Northside,5,12,1,18,0,4,3
-"July 23, 2020",Rizal,92,58,10,160,0,65,127
-"July 23, 2020",South Cembo,9,22,4,35,0,15,16
-"July 23, 2020",West Rembo,59,53,11,123,0,38,79
-,,,,,,,,
-"July 22, 2020",Bangkal,32,17,6,55,1,18,47
-"July 22, 2020",Bel-Air,23,29,2,54,0,16,31
-"July 22, 2020",Carmona,0,8,0,8,0,1,1
-"July 22, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 22, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 22, 2020",Kasilawan,3,18,2,23,0,15,1
-"July 22, 2020",La Paz,8,13,2,23,0,9,6
-"July 22, 2020",Magallanes,3,7,0,10,0,1,3
-"July 22, 2020",Olympia,32,32,3,67,0,33,39
-"July 22, 2020",Palanan,18,31,2,51,0,8,5
-"July 22, 2020",Pio del Pilar,36,38,4,78,0,32,56
-"July 22, 2020",Poblacion,36,43,7,86,0,14,61
-"July 22, 2020",San Antonio,19,28,2,49,0,12,30
-"July 22, 2020",San Isidro,19,9,1,29,0,10,13
-"July 22, 2020",San Lorenzo,14,24,3,41,0,8,9
-"July 22, 2020",Singkamas,5,5,5,15,1,10,15
-"July 22, 2020",Santa Cruz,17,7,2,26,0,7,25
-"July 22, 2020",Tejeros,13,30,5,49,0,26,22
-"July 22, 2020",Urdaneta,3,3,0,6,0,2,15
-"July 22, 2020",Valenzuela,5,8,1,14,0,4,9
-"July 22, 2020",Cembo,44,35,2,81,0,47,92
-"July 22, 2020",Comembo,17,27,6,50,0,15,39
-"July 22, 2020",East Rembo,36,43,8,87,0,29,60
-"July 22, 2020",Guadalupe Nuevo,40,44,6,90,0,29,55
-"July 22, 2020",Guadalupe Viejo,20,19,2,41,0,15,45
-"July 22, 2020",Pembo,71,76,7,154,0,55,102
-"July 22, 2020",Pinagkaisahan,29,18,2,49,0,16,23
-"July 22, 2020",Pitogo,24,36,3,63,1,15,27
-"July 22, 2020",Post Proper Southside,51,25,7,83,0,16,64
-"July 22, 2020",Post Proper Northside,5,12,1,18,0,4,3
-"July 22, 2020",Rizal,93,55,9,157,0,62,123
-"July 22, 2020",South Cembo,10,21,4,35,0,15,17
-"July 22, 2020",West Rembo,61,50,11,122,0,37,79
-,,,,,,,,
-"July 21, 2020",Bangkal,26,17,6,49,1,17,44
-"July 21, 2020",Bel-Air,23,29,2,54,0,15,31
-"July 21, 2020",Carmona,0,8,0,8,0,1,1
-"July 21, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 21, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 21, 2020",Kasilawan,3,18,2,23,0,15,1
-"July 21, 2020",La Paz,8,13,1,22,0,9,13
-"July 21, 2020",Magallanes,3,7,0,10,0,1,3
-"July 21, 2020",Olympia,26,32,3,61,0,33,42
-"July 21, 2020",Palanan,18,31,2,51,0,7,5
-"July 21, 2020",Pio del Pilar,35,38,4,77,0,31,57
-"July 21, 2020",Poblacion,35,43,7,85,0,14,61
-"July 21, 2020",San Antonio,19,28,2,49,0,12,31
-"July 21, 2020",San Isidro,18,9,1,28,0,10,16
-"July 21, 2020",San Lorenzo,17,24,3,44,0,8,9
-"July 21, 2020",Singkamas,4,5,5,14,1,10,15
-"July 21, 2020",Santa Cruz,12,7,2,21,0,6,25
-"July 21, 2020",Tejeros,13,30,5,48,0,26,21
-"July 21, 2020",Urdaneta,3,3,0,6,0,2,15
-"July 21, 2020",Valenzuela,4,8,1,13,0,4,9
-"July 21, 2020",Cembo,42,35,2,79,0,45,78
-"July 21, 2020",Comembo,16,27,6,49,0,15,39
-"July 21, 2020",East Rembo,36,43,8,87,0,26,60
-"July 21, 2020",Guadalupe Nuevo,41,44,6,91,0,26,56
-"July 21, 2020",Guadalupe Viejo,17,19,2,38,0,15,31
-"July 21, 2020",Pembo,71,73,7,151,0,55,99
-"July 21, 2020",Pinagkaisahan,28,18,2,48,0,16,22
-"July 21, 2020",Pitogo,24,36,3,63,1,13,27
-"July 21, 2020",Post Proper Southside,49,25,7,81,0,15,56
-"July 21, 2020",Post Proper Northside,4,12,1,17,0,4,3
-"July 21, 2020",Rizal,75,54,9,138,0,62,129
-"July 21, 2020",South Cembo,10,21,4,35,0,14,17
-"July 21, 2020",West Rembo,59,50,11,120,0,36,79
-,,,,,,,,
-"July 20, 2020",Bangkal,23,17,6,46,1,17,38
-"July 20, 2020",Bel-Air,21,29,2,52,0,12,22
-"July 20, 2020",Carmona,0,8,0,8,0,1,1
-"July 20, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 20, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 20, 2020",Kasilawan,3,18,2,23,1,14,1
-"July 20, 2020",La Paz,8,13,1,22,0,9,9
-"July 20, 2020",Magallanes,3,7,0,10,0,1,3
-"July 20, 2020",Olympia,26,32,3,61,0,32,43
-"July 20, 2020",Palanan,17,30,2,49,0,6,5
-"July 20, 2020",Pio del Pilar,32,38,4,74,0,31,57
-"July 20, 2020",Poblacion,33,42,6,81,1,11,48
-"July 20, 2020",San Antonio,18,28,2,48,0,11,21
-"July 20, 2020",San Isidro,17,9,1,27,0,6,17
-"July 20, 2020",San Lorenzo,16,24,3,43,0,6,9
-"July 20, 2020",Singkamas,3,5,5,13,2,10,3
-"July 20, 2020",Santa Cruz,12,7,2,21,0,6,25
-"July 20, 2020",Tejeros,14,29,5,48,0,26,21
-"July 20, 2020",Urdaneta,3,3,0,6,0,2,15
-"July 20, 2020",Valenzuela,4,8,1,13,0,4,9
-"July 20, 2020",Cembo,41,35,2,78,0,43,79
-"July 20, 2020",Comembo,16,26,6,48,0,15,33
-"July 20, 2020",East Rembo,36,43,8,87,0,26,60
-"July 20, 2020",Guadalupe Nuevo,37,44,6,87,0,26,50
-"July 20, 2020",Guadalupe Viejo,16,19,2,37,0,15,26
-"July 20, 2020",Pembo,69,73,7,149,0,55,99
-"July 20, 2020",Pinagkaisahan,18,17,2,37,0,16,22
-"July 20, 2020",Pitogo,23,36,3,62,0,14,25
-"July 20, 2020",Post Proper Southside,48,25,7,80,1,15,49
-"July 20, 2020",Post Proper Northside,4,12,1,17,0,4,3
-"July 20, 2020",Rizal,75,53,9,137,0,62,124
-"July 20, 2020",South Cembo,10,21,4,35,0,14,17
-"July 20, 2020",West Rembo,59,50,11,120,0,36,73
-,,,,,,,,
-"July 19, 2020",Bangkal,23,17,6,46,1,15,38
-"July 19, 2020",Bel-Air,21,29,2,52,0,13,22
-"July 19, 2020",Carmona,0,8,0,8,0,1,1
-"July 19, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 19, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 19, 2020",Kasilawan,1,18,2,21,1,14,1
-"July 19, 2020",La Paz,8,13,1,22,0,9,8
-"July 19, 2020",Magallanes,3,7,0,10,0,1,3
-"July 19, 2020",Olympia,25,32,3,60,0,32,43
-"July 19, 2020",Palanan,17,30,2,49,0,8,9
-"July 19, 2020",Pio del Pilar,30,38,4,72,0,27,58
-"July 19, 2020",Poblacion,35,39,6,80,1,15,48
-"July 19, 2020",San Antonio,16,28,2,46,0,10,14
-"July 19, 2020",San Isidro,17,9,0,26,0,6,17
-"July 19, 2020",San Lorenzo,15,24,3,42,0,5,9
-"July 19, 2020",Singkamas,3,5,5,13,2,9,1
-"July 19, 2020",Santa Cruz,12,7,2,21,0,6,24
-"July 19, 2020",Tejeros,12,27,5,46,0,25,13
-"July 19, 2020",Urdaneta,3,3,0,6,0,2,15
-"July 19, 2020",Valenzuela,4,8,1,13,0,4,9
-"July 19, 2020",Cembo,40,34,2,76,0,42,81
-"July 19, 2020",Comembo,16,26,6,48,0,15,24
-"July 19, 2020",East Rembo,33,43,8,84,0,22,54
-"July 19, 2020",Guadalupe Nuevo,33,44,6,83,0,25,40
-"July 19, 2020",Guadalupe Viejo,15,19,2,36,0,14,24
-"July 19, 2020",Pembo,61,73,7,141,0,52,82
-"July 19, 2020",Pinagkaisahan,16,17,2,35,0,13,24
-"July 19, 2020",Pitogo,22,36,3,61,0,13,25
-"July 19, 2020",Post Proper Southside,47,25,7,79,1,15,41
-"July 19, 2020",Post Proper Northside,4,12,1,17,0,4,3
-"July 19, 2020",Rizal,76,51,9,136,0,56,123
-"July 19, 2020",South Cembo,9,21,4,34,0,13,15
-"July 19, 2020",West Rembo,60,48,10,118,0,31,66
-,,,,,,,,
-"July 18, 2020",Bangkal,23,17,6,46,1,14,38
-"July 18, 2020",Bel-Air,19,29,2,50,0,11,20
-"July 18, 2020",Carmona,0,8,0,8,0,1,1
-"July 18, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 18, 2020",Forbes Park,2,2,0,4,0,0,9
-"July 18, 2020",Kasilawan,1,18,2,21,0,14,2
-"July 18, 2020",La Paz,8,13,1,22,0,9,8
-"July 18, 2020",Magallanes,3,7,0,10,0,1,3
-"July 18, 2020",Olympia,19,32,3,54,0,22,38
-"July 18, 2020",Palanan,16,30,2,48,0,8,9
-"July 18, 2020",Pio del Pilar,30,38,4,72,0,26,59
-"July 18, 2020",Poblacion,35,39,5,79,0,14,49
-"July 18, 2020",San Antonio,16,28,2,46,0,9,15
-"July 18, 2020",San Isidro,15,9,0,24,0,6,17
-"July 18, 2020",San Lorenzo,14,24,3,41,0,5,9
-"July 18, 2020",Singkamas,3,5,5,13,2,9,1
-"July 18, 2020",Santa Cruz,12,7,2,21,0,7,24
-"July 18, 2020",Tejeros,11,29,5,45,0,25,13
-"July 18, 2020",Urdaneta,3,3,0,6,0,1,15
-"July 18, 2020",Valenzuela,3,8,1,12,0,3,9
-"July 18, 2020",Cembo,40,34,2,76,0,42,73
-"July 18, 2020",Comembo,16,26,6,48,0,15,24
-"July 18, 2020",East Rembo,31,43,8,82,0,20,53
-"July 18, 2020",Guadalupe Nuevo,33,44,6,83,0,25,38
-"July 18, 2020",Guadalupe Viejo,14,18,2,34,0,12,10
-"July 18, 2020",Pembo,58,72,6,136,0,49,78
-"July 18, 2020",Pinagkaisahan,15,17,2,34,0,12,23
-"July 18, 2020",Pitogo,22,36,3,61,0,13,25
-"July 18, 2020",Post Proper Southside,47,25,7,79,1,15,38
-"July 18, 2020",Post Proper Northside,4,12,1,17,0,1,4
-"July 18, 2020",Rizal,74,49,9,132,0,55,118
-"July 18, 2020",South Cembo,9,20,4,33,0,12,15
-"July 18, 2020",West Rembo,60,46,10,116,0,31,72
-,,,,,,,,
-"July 17, 2020",Bangkal,23,16,6,45,1,14,32
-"July 17, 2020",Bel-Air,18,28,2,48,0,9,17
-"July 17, 2020",Carmona,0,8,0,8,0,1,1
-"July 17, 2020",Dasmarinas,3,6,2,11,0,0,4
-"July 17, 2020",Forbes Park,1,2,0,3,0,0,3
-"July 17, 2020",Kasilawan,1,18,2,21,0,14,2
-"July 17, 2020",La Paz,7,13,1,21,0,9,8
-"July 17, 2020",Magallanes,3,7,0,10,0,1,3
-"July 17, 2020",Olympia,17,31,3,51,0,21,37
-"July 17, 2020",Palanan,16,30,2,48,0,8,9
-"July 17, 2020",Pio del Pilar,26,38,4,68,0,26,51
-"July 17, 2020",Poblacion,32,39,5,76,0,14,52
-"July 17, 2020",San Antonio,16,27,2,45,0,9,15
-"July 17, 2020",San Isidro,15,9,0,24,0,6,17
-"July 17, 2020",San Lorenzo,13,24,3,40,0,4,9
-"July 17, 2020",Singkamas,1,5,5,11,2,9,1
-"July 17, 2020",Santa Cruz,11,7,2,20,0,6,22
-"July 17, 2020",Tejeros,12,28,5,45,0,25,12
-"July 17, 2020",Urdaneta,3,3,0,6,0,0,8
-"July 17, 2020",Valenzuela,3,8,1,12,0,3,9
-"July 17, 2020",Cembo,37,34,2,73,0,38,68
-"July 17, 2020",Comembo,13,26,6,45,0,15,24
-"July 17, 2020",East Rembo,30,42,8,80,0,20,45
-"July 17, 2020",Guadalupe Nuevo,30,44,6,80,0,27,36
-"July 17, 2020",Guadalupe Viejo,14,16,2,32,0,12,10
-"July 17, 2020",Pembo,58,72,6,136,0,50,69
-"July 17, 2020",Pinagkaisahan,9,17,2,28,0,13,19
-"July 17, 2020",Pitogo,21,36,3,60,0,13,25
-"July 17, 2020",Post Proper Southside,45,25,6,76,1,15,28
-"July 17, 2020",Post Proper Northside,3,12,1,16,0,1,1
-"July 17, 2020",Rizal,73,48,9,130,0,55,112
-"July 17, 2020",South Cembo,9,20,4,33,0,10,15
-"July 17, 2020",West Rembo,57,46,10,113,0,33,68
+date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,PUM
+"July 25, 2020",Bangkal,1,39,18,6,63,1,22,44
+"July 25, 2020",Bel-Air,1,22,32,2,56,0,14,32
+"July 25, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 25, 2020",Dasmarinas,1,3,6,2,11,0,0,0
+"July 25, 2020",Forbes Park,1,3,2,0,5,0,0,9
+"July 25, 2020",Kasilawan,1,3,18,2,23,0,12,1
+"July 25, 2020",La Paz,1,10,15,2,27,0,12,21
+"July 25, 2020",Magallanes,1,1,9,0,10,0,1,3
+"July 25, 2020",Olympia,1,29,36,3,68,0,39,33
+"July 25, 2020",Palanan,1,19,33,2,54,1,11,12
+"July 25, 2020",Pio del Pilar,1,45,39,4,88,0,40,74
+"July 25, 2020",Poblacion,1,44,43,7,94,0,23,63
+"July 25, 2020",San Antonio,1,22,30,2,54,0,14,37
+"July 25, 2020",San Isidro,1,18,11,1,30,0,14,20
+"July 25, 2020",San Lorenzo,1,18,24,3,45,0,8,14
+"July 25, 2020",Singkamas,1,6,5,5,16,0,9,23
+"July 25, 2020",Santa Cruz,1,17,8,2,27,0,11,23
+"July 25, 2020",Tejeros,1,13,33,5,51,0,24,19
+"July 25, 2020",Urdaneta,1,3,3,0,6,0,2,13
+"July 25, 2020",Valenzuela,1,5,8,1,14,0,5,9
+"July 25, 2020",Cembo,2,47,40,3,90,1,49,95
+"July 25, 2020",Comembo,2,16,30,6,52,0,15,43
+"July 25, 2020",East Rembo,2,36,45,8,89,2,31,65
+"July 25, 2020",Guadalupe Nuevo,2,39,49,6,94,0,29,67
+"July 25, 2020",Guadalupe Viejo,2,20,19,3,42,0,15,53
+"July 25, 2020",Pembo,2,74,82,9,165,0,57,99
+"July 25, 2020",Pinagkaisahan,2,28,19,2,49,0,16,22
+"July 25, 2020",Pitogo,2,23,39,3,65,1,13,27
+"July 25, 2020",Post Proper Southside,2,50,30,7,87,0,15,61
+"July 25, 2020",Post Proper Northside,2,7,12,1,20,0,4,3
+"July 25, 2020",Rizal,2,102,58,11,171,0,69,141
+"July 25, 2020",South Cembo,2,12,23,4,39,0,16,15
+"July 25, 2020",West Rembo,2,61,54,11,126,1,39,92
+,,,,,,,,,
+,,,,,,,,,
+"July 24, 2020",Bangkal,1,38,18,6,62,1,20,44
+"July 24, 2020",Bel-Air,1,21,32,2,55,0,16,31
+"July 24, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 24, 2020",Dasmarinas,1,3,6,2,11,0,0,0
+"July 24, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 24, 2020",Kasilawan,1,3,18,2,23,0,14,1
+"July 24, 2020",La Paz,1,9,14,2,25,0,9,17
+"July 24, 2020",Magallanes,1,1,9,0,10,0,1,3
+"July 24, 2020",Olympia,1,29,36,3,68,0,34,37
+"July 24, 2020",Palanan,1,18,33,2,53,0,11,5
+"July 24, 2020",Pio del Pilar,1,41,39,4,84,0,38,69
+"July 24, 2020",Poblacion,1,42,43,7,92,0,24,64
+"July 24, 2020",San Antonio,1,22,29,2,53,0,13,37
+"July 24, 2020",San Isidro,1,18,11,1,30,0,13,20
+"July 24, 2020",San Lorenzo,1,18,24,3,45,0,8,14
+"July 24, 2020",Singkamas,1,6,5,5,16,0,9,23
+"July 24, 2020",Santa Cruz,1,17,7,2,26,0,11,25
+"July 24, 2020",Tejeros,1,14,30,5,49,0,26,18
+"July 24, 2020",Urdaneta,1,3,3,0,6,0,2,13
+"July 24, 2020",Valenzuela,1,5,8,1,14,0,5,9
+"July 24, 2020",Cembo,2,47,40,3,90,0,49,90
+"July 24, 2020",Comembo,2,16,30,6,52,0,17,41
+"July 24, 2020",East Rembo,2,35,45,8,88,0,31,66
+"July 24, 2020",Guadalupe Nuevo,2,39,47,6,92,0,29,64
+"July 24, 2020",Guadalupe Viejo,2,21,19,2,42,0,15,44
+"July 24, 2020",Pembo,2,73,80,8,161,0,57,104
+"July 24, 2020",Pinagkaisahan,2,28,19,2,49,0,16,22
+"July 24, 2020",Pitogo,2,23,39,3,65,1,16,28
+"July 24, 2020",Post Proper Southside,2,49,30,7,86,0,18,67
+"July 24, 2020",Post Proper Northside,2,7,12,1,20,0,4,3
+"July 24, 2020",Rizal,2,97,58,10,165,0,70,126
+"July 24, 2020",South Cembo,2,10,22,4,36,0,16,15
+"July 24, 2020",West Rembo,2,60,53,11,124,0,40,85
+,,,,,,,,,
+"July 23, 2020",Bangkal,1,36,18,6,60,1,18,44
+"July 23, 2020",Bel-Air,1,20,32,2,54,0,16,31
+"July 23, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 23, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 23, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 23, 2020",Kasilawan,1,3,18,2,23,0,14,1
+"July 23, 2020",La Paz,1,7,14,2,23,0,9,6
+"July 23, 2020",Magallanes,1,1,9,0,10,0,1,3
+"July 23, 2020",Olympia,1,29,35,3,67,0,34,37
+"July 23, 2020",Palanan,1,16,33,2,51,0,9,5
+"July 23, 2020",Pio del Pilar,1,40,39,4,83,0,36,67
+"July 23, 2020",Poblacion,1,39,43,7,89,0,18,61
+"July 23, 2020",San Antonio,1,19,29,2,50,0,18,30
+"July 23, 2020",San Isidro,1,18,18,1,30,0,13,20
+"July 23, 2020",San Lorenzo,1,16,24,3,43,0,8,14
+"July 23, 2020",Singkamas,1,6,5,5,16,0,9,15
+"July 23, 2020",Santa Cruz,1,17,7,2,26,0,8,25
+"July 23, 2020",Tejeros,1,14,30,5,49,0,26,18
+"July 23, 2020",Urdaneta,1,3,3,0,6,0,2,15
+"July 23, 2020",Valenzuela,1,5,8,1,14,0,4,9
+"July 23, 2020",Cembo,2,40,40,3,83,0,49,95
+"July 23, 2020",Comembo,2,15,30,6,51,0,16,42
+"July 23, 2020",East Rembo,2,34,45,8,87,0,30,67
+"July 23, 2020",Guadalupe Nuevo,2,38,47,6,91,0,29,66
+"July 23, 2020",Guadalupe Viejo,2,20,19,2,41,0,15,45
+"July 23, 2020",Pembo,2,72,79,7,158,0,55,105
+"July 23, 2020",Pinagkaisahan,2,28,19,2,49,0,17,22
+"July 23, 2020",Pitogo,2,22,39,3,64,1,16,28
+"July 23, 2020",Post Proper Southside,2,49,30,7,86,0,16,67
+"July 23, 2020",Post Proper Northside,2,5,12,1,18,0,4,3
+"July 23, 2020",Rizal,2,92,58,10,160,0,65,127
+"July 23, 2020",South Cembo,2,9,22,4,35,0,15,16
+"July 23, 2020",West Rembo,2,59,53,11,123,0,38,79
+,,,,,,,,,
+"July 22, 2020",Bangkal,1,32,17,6,55,1,18,47
+"July 22, 2020",Bel-Air,1,23,29,2,54,0,16,31
+"July 22, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 22, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 22, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 22, 2020",Kasilawan,1,3,18,2,23,0,15,1
+"July 22, 2020",La Paz,1,8,13,2,23,0,9,6
+"July 22, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 22, 2020",Olympia,1,32,32,3,67,0,33,39
+"July 22, 2020",Palanan,1,18,31,2,51,0,8,5
+"July 22, 2020",Pio del Pilar,1,36,38,4,78,0,32,56
+"July 22, 2020",Poblacion,1,36,43,7,86,0,14,61
+"July 22, 2020",San Antonio,1,19,28,2,49,0,12,30
+"July 22, 2020",San Isidro,1,19,9,1,29,0,10,13
+"July 22, 2020",San Lorenzo,1,14,24,3,41,0,8,9
+"July 22, 2020",Singkamas,1,5,5,5,15,1,10,15
+"July 22, 2020",Santa Cruz,1,17,7,2,26,0,7,25
+"July 22, 2020",Tejeros,1,13,30,5,49,0,26,22
+"July 22, 2020",Urdaneta,1,3,3,0,6,0,2,15
+"July 22, 2020",Valenzuela,1,5,8,1,14,0,4,9
+"July 22, 2020",Cembo,2,44,35,2,81,0,47,92
+"July 22, 2020",Comembo,2,17,27,6,50,0,15,39
+"July 22, 2020",East Rembo,2,36,43,8,87,0,29,60
+"July 22, 2020",Guadalupe Nuevo,2,40,44,6,90,0,29,55
+"July 22, 2020",Guadalupe Viejo,2,20,19,2,41,0,15,45
+"July 22, 2020",Pembo,2,71,76,7,154,0,55,102
+"July 22, 2020",Pinagkaisahan,2,29,18,2,49,0,16,23
+"July 22, 2020",Pitogo,2,24,36,3,63,1,15,27
+"July 22, 2020",Post Proper Southside,2,51,25,7,83,0,16,64
+"July 22, 2020",Post Proper Northside,2,5,12,1,18,0,4,3
+"July 22, 2020",Rizal,2,93,55,9,157,0,62,123
+"July 22, 2020",South Cembo,2,10,21,4,35,0,15,17
+"July 22, 2020",West Rembo,2,61,50,11,122,0,37,79
+,,,,,,,,,
+"July 21, 2020",Bangkal,1,26,17,6,49,1,17,44
+"July 21, 2020",Bel-Air,1,23,29,2,54,0,15,31
+"July 21, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 21, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 21, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 21, 2020",Kasilawan,1,3,18,2,23,0,15,1
+"July 21, 2020",La Paz,1,8,13,1,22,0,9,13
+"July 21, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 21, 2020",Olympia,1,26,32,3,61,0,33,42
+"July 21, 2020",Palanan,1,18,31,2,51,0,7,5
+"July 21, 2020",Pio del Pilar,1,35,38,4,77,0,31,57
+"July 21, 2020",Poblacion,1,35,43,7,85,0,14,61
+"July 21, 2020",San Antonio,1,19,28,2,49,0,12,31
+"July 21, 2020",San Isidro,1,18,9,1,28,0,10,16
+"July 21, 2020",San Lorenzo,1,17,24,3,44,0,8,9
+"July 21, 2020",Singkamas,1,4,5,5,14,1,10,15
+"July 21, 2020",Santa Cruz,1,12,7,2,21,0,6,25
+"July 21, 2020",Tejeros,1,13,30,5,48,0,26,21
+"July 21, 2020",Urdaneta,1,3,3,0,6,0,2,15
+"July 21, 2020",Valenzuela,1,4,8,1,13,0,4,9
+"July 21, 2020",Cembo,2,42,35,2,79,0,45,78
+"July 21, 2020",Comembo,2,16,27,6,49,0,15,39
+"July 21, 2020",East Rembo,2,36,43,8,87,0,26,60
+"July 21, 2020",Guadalupe Nuevo,2,41,44,6,91,0,26,56
+"July 21, 2020",Guadalupe Viejo,2,17,19,2,38,0,15,31
+"July 21, 2020",Pembo,2,71,73,7,151,0,55,99
+"July 21, 2020",Pinagkaisahan,2,28,18,2,48,0,16,22
+"July 21, 2020",Pitogo,2,24,36,3,63,1,13,27
+"July 21, 2020",Post Proper Southside,2,49,25,7,81,0,15,56
+"July 21, 2020",Post Proper Northside,2,4,12,1,17,0,4,3
+"July 21, 2020",Rizal,2,75,54,9,138,0,62,129
+"July 21, 2020",South Cembo,2,10,21,4,35,0,14,17
+"July 21, 2020",West Rembo,2,59,50,11,120,0,36,79
+,,,,,,,,,
+"July 20, 2020",Bangkal,1,23,17,6,46,1,17,38
+"July 20, 2020",Bel-Air,1,21,29,2,52,0,12,22
+"July 20, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 20, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 20, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 20, 2020",Kasilawan,1,3,18,2,23,1,14,1
+"July 20, 2020",La Paz,1,8,13,1,22,0,9,9
+"July 20, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 20, 2020",Olympia,1,26,32,3,61,0,32,43
+"July 20, 2020",Palanan,1,17,30,2,49,0,6,5
+"July 20, 2020",Pio del Pilar,1,32,38,4,74,0,31,57
+"July 20, 2020",Poblacion,1,33,42,6,81,1,11,48
+"July 20, 2020",San Antonio,1,18,28,2,48,0,11,21
+"July 20, 2020",San Isidro,1,17,9,1,27,0,6,17
+"July 20, 2020",San Lorenzo,1,16,24,3,43,0,6,9
+"July 20, 2020",Singkamas,1,3,5,5,13,2,10,3
+"July 20, 2020",Santa Cruz,1,12,7,2,21,0,6,25
+"July 20, 2020",Tejeros,1,14,29,5,48,0,26,21
+"July 20, 2020",Urdaneta,1,3,3,0,6,0,2,15
+"July 20, 2020",Valenzuela,1,4,8,1,13,0,4,9
+"July 20, 2020",Cembo,2,41,35,2,78,0,43,79
+"July 20, 2020",Comembo,2,16,26,6,48,0,15,33
+"July 20, 2020",East Rembo,2,36,43,8,87,0,26,60
+"July 20, 2020",Guadalupe Nuevo,2,37,44,6,87,0,26,50
+"July 20, 2020",Guadalupe Viejo,2,16,19,2,37,0,15,26
+"July 20, 2020",Pembo,2,69,73,7,149,0,55,99
+"July 20, 2020",Pinagkaisahan,2,18,17,2,37,0,16,22
+"July 20, 2020",Pitogo,2,23,36,3,62,0,14,25
+"July 20, 2020",Post Proper Southside,2,48,25,7,80,1,15,49
+"July 20, 2020",Post Proper Northside,2,4,12,1,17,0,4,3
+"July 20, 2020",Rizal,2,75,53,9,137,0,62,124
+"July 20, 2020",South Cembo,2,10,21,4,35,0,14,17
+"July 20, 2020",West Rembo,2,59,50,11,120,0,36,73
+,,,,,,,,,
+"July 19, 2020",Bangkal,1,23,17,6,46,1,15,38
+"July 19, 2020",Bel-Air,1,21,29,2,52,0,13,22
+"July 19, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 19, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 19, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 19, 2020",Kasilawan,1,1,18,2,21,1,14,1
+"July 19, 2020",La Paz,1,8,13,1,22,0,9,8
+"July 19, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 19, 2020",Olympia,1,25,32,3,60,0,32,43
+"July 19, 2020",Palanan,1,17,30,2,49,0,8,9
+"July 19, 2020",Pio del Pilar,1,30,38,4,72,0,27,58
+"July 19, 2020",Poblacion,1,35,39,6,80,1,15,48
+"July 19, 2020",San Antonio,1,16,28,2,46,0,10,14
+"July 19, 2020",San Isidro,1,17,9,0,26,0,6,17
+"July 19, 2020",San Lorenzo,1,15,24,3,42,0,5,9
+"July 19, 2020",Singkamas,1,3,5,5,13,2,9,1
+"July 19, 2020",Santa Cruz,1,12,7,2,21,0,6,24
+"July 19, 2020",Tejeros,1,12,27,5,46,0,25,13
+"July 19, 2020",Urdaneta,1,3,3,0,6,0,2,15
+"July 19, 2020",Valenzuela,1,4,8,1,13,0,4,9
+"July 19, 2020",Cembo,2,40,34,2,76,0,42,81
+"July 19, 2020",Comembo,2,16,26,6,48,0,15,24
+"July 19, 2020",East Rembo,2,33,43,8,84,0,22,54
+"July 19, 2020",Guadalupe Nuevo,2,33,44,6,83,0,25,40
+"July 19, 2020",Guadalupe Viejo,2,15,19,2,36,0,14,24
+"July 19, 2020",Pembo,2,61,73,7,141,0,52,82
+"July 19, 2020",Pinagkaisahan,2,16,17,2,35,0,13,24
+"July 19, 2020",Pitogo,2,22,36,3,61,0,13,25
+"July 19, 2020",Post Proper Southside,2,47,25,7,79,1,15,41
+"July 19, 2020",Post Proper Northside,2,4,12,1,17,0,4,3
+"July 19, 2020",Rizal,2,76,51,9,136,0,56,123
+"July 19, 2020",South Cembo,2,9,21,4,34,0,13,15
+"July 19, 2020",West Rembo,2,60,48,10,118,0,31,66
+,,,,,,,,,
+"July 18, 2020",Bangkal,1,23,17,6,46,1,14,38
+"July 18, 2020",Bel-Air,1,19,29,2,50,0,11,20
+"July 18, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 18, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 18, 2020",Forbes Park,1,2,2,0,4,0,0,9
+"July 18, 2020",Kasilawan,1,1,18,2,21,0,14,2
+"July 18, 2020",La Paz,1,8,13,1,22,0,9,8
+"July 18, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 18, 2020",Olympia,1,19,32,3,54,0,22,38
+"July 18, 2020",Palanan,1,16,30,2,48,0,8,9
+"July 18, 2020",Pio del Pilar,1,30,38,4,72,0,26,59
+"July 18, 2020",Poblacion,1,35,39,5,79,0,14,49
+"July 18, 2020",San Antonio,1,16,28,2,46,0,9,15
+"July 18, 2020",San Isidro,1,15,9,0,24,0,6,17
+"July 18, 2020",San Lorenzo,1,14,24,3,41,0,5,9
+"July 18, 2020",Singkamas,1,3,5,5,13,2,9,1
+"July 18, 2020",Santa Cruz,1,12,7,2,21,0,7,24
+"July 18, 2020",Tejeros,1,11,29,5,45,0,25,13
+"July 18, 2020",Urdaneta,1,3,3,0,6,0,1,15
+"July 18, 2020",Valenzuela,1,3,8,1,12,0,3,9
+"July 18, 2020",Cembo,2,40,34,2,76,0,42,73
+"July 18, 2020",Comembo,2,16,26,6,48,0,15,24
+"July 18, 2020",East Rembo,2,31,43,8,82,0,20,53
+"July 18, 2020",Guadalupe Nuevo,2,33,44,6,83,0,25,38
+"July 18, 2020",Guadalupe Viejo,2,14,18,2,34,0,12,10
+"July 18, 2020",Pembo,2,58,72,6,136,0,49,78
+"July 18, 2020",Pinagkaisahan,2,15,17,2,34,0,12,23
+"July 18, 2020",Pitogo,2,22,36,3,61,0,13,25
+"July 18, 2020",Post Proper Southside,2,47,25,7,79,1,15,38
+"July 18, 2020",Post Proper Northside,2,4,12,1,17,0,1,4
+"July 18, 2020",Rizal,2,74,49,9,132,0,55,118
+"July 18, 2020",South Cembo,2,9,20,4,33,0,12,15
+"July 18, 2020",West Rembo,2,60,46,10,116,0,31,72
+,,,,,,,,,
+"July 17, 2020",Bangkal,1,23,16,6,45,1,14,32
+"July 17, 2020",Bel-Air,1,18,28,2,48,0,9,17
+"July 17, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 17, 2020",Dasmarinas,1,3,6,2,11,0,0,4
+"July 17, 2020",Forbes Park,1,1,2,0,3,0,0,3
+"July 17, 2020",Kasilawan,1,1,18,2,21,0,14,2
+"July 17, 2020",La Paz,1,7,13,1,21,0,9,8
+"July 17, 2020",Magallanes,1,3,7,0,10,0,1,3
+"July 17, 2020",Olympia,1,17,31,3,51,0,21,37
+"July 17, 2020",Palanan,1,16,30,2,48,0,8,9
+"July 17, 2020",Pio del Pilar,1,26,38,4,68,0,26,51
+"July 17, 2020",Poblacion,1,32,39,5,76,0,14,52
+"July 17, 2020",San Antonio,1,16,27,2,45,0,9,15
+"July 17, 2020",San Isidro,1,15,9,0,24,0,6,17
+"July 17, 2020",San Lorenzo,1,13,24,3,40,0,4,9
+"July 17, 2020",Singkamas,1,1,5,5,11,2,9,1
+"July 17, 2020",Santa Cruz,1,11,7,2,20,0,6,22
+"July 17, 2020",Tejeros,1,12,28,5,45,0,25,12
+"July 17, 2020",Urdaneta,1,3,3,0,6,0,0,8
+"July 17, 2020",Valenzuela,1,3,8,1,12,0,3,9
+"July 17, 2020",Cembo,2,37,34,2,73,0,38,68
+"July 17, 2020",Comembo,2,13,26,6,45,0,15,24
+"July 17, 2020",East Rembo,2,30,42,8,80,0,20,45
+"July 17, 2020",Guadalupe Nuevo,2,30,44,6,80,0,27,36
+"July 17, 2020",Guadalupe Viejo,2,14,16,2,32,0,12,10
+"July 17, 2020",Pembo,2,58,72,6,136,0,50,69
+"July 17, 2020",Pinagkaisahan,2,9,17,2,28,0,13,19
+"July 17, 2020",Pitogo,2,21,36,3,60,0,13,25
+"July 17, 2020",Post Proper Southside,2,45,25,6,76,1,15,28
+"July 17, 2020",Post Proper Northside,2,3,12,1,16,0,1,1
+"July 17, 2020",Rizal,2,73,48,9,130,0,55,112
+"July 17, 2020",South Cembo,2,9,20,4,33,0,10,15
+"July 17, 2020",West Rembo,2,57,46,10,113,0,33,68
