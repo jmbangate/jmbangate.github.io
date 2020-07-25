@@ -29,7 +29,7 @@ path.invis {
 </style>
 </head>
 <body>
-<p style="color:black"><strong>COVID19 Cases-Bicol-Masbate</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 22, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>   
+<p style="color:black"><strong>COVID19 Cases-Bicol-Masbate</strong>. ZOOM (mouse scroll button), DRAG (Left mouse button then drag) Data Source: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a>. Nodes are infected individuals. Directed edges show the close contact. Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). UPDATED: July 24, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i> <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Albay.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map Bicol Region</a></p>   
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -44,6 +44,340 @@ path.invis {
 
     var data = {
           edges: [
+              //july242020
+              {
+                source: {id: 323, label: "Bicol#323, 24_yo Male, Construction Worker, Address: Palanas, Masbate, Origin: Quezon City, Arrived: July 19, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 323, label: "Bicol#323, 24_yo Male, Construction Worker, Address: Palanas, Masbate, Origin: Quezon City, Arrived: July 19, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 324, label: "Bicol#324, 46_yo Male, Construction Worker, Address: Palanas, Masbate, Origin: Las Pinas, Arrived: July 17, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 324, label: "Bicol#324, 46_yo Male, Construction Worker, Address: Palanas, Masbate, Origin: Las Pinas, Arrived: July 17, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 325, label: "Bicol#325, 41_yo Female, Address: Cawayan, Masbate, Origin: Caloocan, Arrived: July 17, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 325, label: "Bicol#325, 41_yo Female, Address: Cawayan, Masbate, Origin: Caloocan, Arrived: July 17, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 326, label: "Bicol#326, 18_yo Female, Address: Cawayan, Masbate, Origin: Caloocan, Arrived: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 326, label: "Bicol#326, 18_yo Female, Address: Cawayan, Masbate, Origin: Caloocan, Arrived: For verification, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              //july232020
+              {
+                source: {id: 311, label: "Bicol#311, 18_yo male, Address: Masbate City, Masbate, Origin: Paranaque City, Arrived: July 16, 2020, Symptoms: July 13, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 311, label: "Bicol#311, 18_yo male, Address: Masbate City, Masbate, Origin: Paranaque City, Arrived: July 16, 2020, Symptoms: July 13, 2020", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 312, label: "Bicol#312, 43_yo Female, Address: Placer, Masbate, Origin: Taguig City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 313, label: "Bicol#313, 56_yo Female, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+            
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 314, label: "Bicol#314, 47_yo Male, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 315, label: "Bicol#315, 25_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 316, label: "Bicol#316, 21_yo Male, Address: Placer, Masbate, Origin: Laguna, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 317, label: "Bicol#317, 21_yo Female, Address: Placer, Masbate, Origin: Quezon City, Arrived: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+            
+              {
+                source: {id: 264, label: "Bicol#264, 19_yo, Female, Computer Attendant, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 265, label: "Bicol#265, 21_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 266, label: "Bicol#266, 29_yo, Male, Computer Shop Operator, Address: Placer, Masbate Origin: Commonwealth, Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 267, label: "Bicol#267, 43_yo, Male, Construction worker, Address: Placer, Masbate Origin: Taguig City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 268, label: "Bicol#268, 49_yo, Female, Farmer, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 269, label: "Bicol#269, 49_yo, Male, Address: Placer, Masbate Origin: Quezon City, Arrival: June 29, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+               {
+                source: {id: 272, label: "Bicol#272, 23_yo, Male, Driver, Address: Legazpi City, Albay, Origin: Antipolo City, Arrival: July 16, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 318, label: "Bicol#318, 37_yo Female, Address: Placer, Masbate, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
               //july18
               {
                 source: {id: 273, label: "Bicol#273, 31_yo, Female, Food Handler, Address: Placer, Masbate, Origin: Pampanga, Arrival: June 28, 2020, Asymptomatic", healthworker: "-" ,status:"Quarantined"},
