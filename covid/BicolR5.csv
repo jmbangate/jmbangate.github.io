@@ -1,4 +1,13 @@
 Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,History of travel (Origin),Arrival,Exposure,Onset of Illness,Brief Note,Positive on,Status,Recovery Date
+"July 27, 2020",Bicol#373,62,Female,"Legazpi City, Albay",Albay,Filipino,,,,Bicol#329,Asymptomatic,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#374,30,Female,"Legazpi City, Albay",Albay,Filipino,Housewife,,,Bicol#342,Asymptomatic,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#375,21,Female,"Legazpi City, Albay",Albay,Filipino,Loan Officer,,,Bicol#327,For verification,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#376,66,Female,"Legazpi City, Albay",Albay,Filipino,,Cainta Rizal,"July 25, 2020",,For verification,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#377,42,Female,"Legazpi City, Albay",Albay,Filipino,House Keeper,Cainta Rizal,"July 25, 2020",,Asymptomatic,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#378,59,Male,"Legazpi City, Albay",Albay,Filipino,Barangay Kagawad,,,To be established,"July 15, 2020",,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#379,25,Male,"Legazpi City, Albay",Albay,Filipino,Office Staff,,,Bicol#328,Asymptomatic,,"July 27, 2020",Quarantined,
+"July 27, 2020",Bicol#380,51,Male,"Legazpi City, Albay",Albay,Filipino,Supply Staff,,,Bicol#328,For verification,,"July 27, 2020",Quarantined,
+,,,,,,,,,,,,,,,
 "July 26, 2020",Bicol#355,25,Male,"Gubat, Sorsogon",Sorsogon,Filipino,factory worker,Paranaque City,"July 13, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#356,24,Female,"Gubat, Sorsogon",Sorsogon,Filipino,Service Crew,Paranaque,"July 13, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#357,1,Female,Sta. Magdalena Sorsogon,Sorsogon,Filipino,,Las Pinas,"July 16, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
