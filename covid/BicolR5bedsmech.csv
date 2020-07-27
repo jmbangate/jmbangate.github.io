@@ -1,4 +1,6 @@
 Date,ICU_Beds_Available,ICU_Beds_Utilised_PCT,ICU_Beds_Utilised,Isolation_Beds_Available,Isolation_Beds_Utilised_PCT,Isolation_Beds_Utilised,Ward_Beds_Available,Ward_Beds_Utilised_PCT,Ward_Beds_Utilised,TotalBedCapacity,MechVent_Available,MechVent_Utilised_PCT,MechVent_Utilised
+"July 27, 2020",39,23.08,9,265,22.26,59,142,16.2,23,446,27,7.41,2
+"July 26, 2020",39,23.08,9,276,19.57,55,147,12.93,19,462,27,3.7,1
 "July 25, 2020",34,11.76,4,238,10.92,26,152,25.66,39,424,27,3.7,1
 "July 24, 2020",34,8.82,3,236,11.44,27,163,20.25,33,433,28,3.57,1
 "July 23, 2020",34,8.82,3,201,12.94,27,165,21.82,36,400,29,3.45,1
