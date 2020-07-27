@@ -36,12 +36,12 @@
 <script>
 	var provinces = L.layerGroup();
 
-	L.marker([13.225639, 123.5242382]).addTo(provinces).bindPopup('<strong>Albay Province</strong><br />Date: 07/25/2020<br />Active: 29<br />Deaths: 4'),
-	L.marker([14.079487, 122.654888]).addTo(provinces).bindPopup('<strong>Camarines Norte</strong><br />Date: 07/25/2020<br />Active: 3 <br />Deaths: 1'),
-	L.marker([13.643775, 123.187398]).addTo(provinces).bindPopup('<strong>Camarines Sur</strong><br />Date: 07/25/2020<br />Active: 86 <br />Deaths: 2'),
-	L.marker([13.744074, 124.245632]).addTo(provinces).bindPopup('<strong>Catanduanes Province</strong><br />Date: 07/25/2020<br />Active: 8 <br />Deaths: 0'),
-	L.marker([12.318278, 123.531032]).addTo(provinces).bindPopup('<strong>Masbate</strong><br />Date: 07/25/2020<br />Active: 53 <br />Deaths: 0'),
-	L.marker([12.742990, 124.004843]).addTo(provinces).bindPopup('<strong>Sorsogon</strong><br />Date: 07/25/2020<br />Active: 11 <br />Deaths: 1')
+	L.marker([13.225639, 123.5242382]).addTo(provinces).bindPopup('<strong>Albay Province</strong><br />Date: 07/27/2020<br />Active: 40<br />Deaths: 4'),
+	L.marker([14.079487, 122.654888]).addTo(provinces).bindPopup('<strong>Camarines Norte</strong><br />Date: 07/27/2020<br />Active: 3 <br />Deaths: 1'),
+	L.marker([13.643775, 123.187398]).addTo(provinces).bindPopup('<strong>Camarines Sur</strong><br />Date: 07/27/2020<br />Active: 94 <br />Deaths: 2'),
+	L.marker([13.744074, 124.245632]).addTo(provinces).bindPopup('<strong>Catanduanes Province</strong><br />Date: 07/27/2020<br />Active: 8 <br />Deaths: 0'),
+	L.marker([12.318278, 123.531032]).addTo(provinces).bindPopup('<strong>Masbate</strong><br />Date: 07/27/2020<br />Active: 50 <br />Deaths: 0'),
+	L.marker([12.742990, 124.004843]).addTo(provinces).bindPopup('<strong>Sorsogon</strong><br />Date: 07/27/2020<br />Active: 15 <br />Deaths: 1')
 	;
 
 
@@ -55,16 +55,16 @@
 	});
 
 	var municipalities = L.layerGroup();
-	L.marker([13.151310, 123.741452], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Legazpi City</strong><br />Date: 07/24/2020<br />Total: 51 <br />New: 11'),
-	L.marker([13.220250, 123.518735], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Ligao City</strong><br />Date: 07/24/2020<br />Total: 6 <br />New: 0'),
-	L.marker([13.338930, 123.673887], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Tabaco City</strong><br />Date: 07/24/2020<br />Total: 8 <br />New: 5'),
-	L.marker([13.280287, 123.787194], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Bacacay</strong><br />Date: 07/24/2020<br />Total: 3 <br />New: 0'),
-	L.marker([13.157277, 123.635156], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Camalig</strong><br />Date: 07/24/2020<br />Total: 3 <br />New: 2'),
-	L.marker([13.134082, 123.689936], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Daraga</strong><br />Date: 07/24/2020<br />Total: 15 <br />New: 1'),
-	L.marker([13.182091, 123.572156], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Guinobatan</strong><br />Date: 07/24/2020<br />Total: 12 <br />New: 4'),
-	L.marker([13.088332, 123.878359], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Manito</strong><br />Date: 07/24/2020<br />Total: 6 <br />New: 2'),
-	L.marker([13.172009, 123.399971], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Oas</strong><br />Date: 07/24/2020<br />Total: 4 <br />New: 2'),
-	L.marker([13.466741, 123.612668], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Tiwi</strong><br />Date: 07/24/2020<br />Total: 1 <br />New: 0')
+	L.marker([13.151310, 123.741452], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Legazpi City</strong><br />Date: 07/27/2020<br />Total: 63 <br />Active: 22'),
+	L.marker([13.220250, 123.518735], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Ligao City</strong><br />Date: 07/27/2020<br />Total: 6 <br />Active: 0'),
+	L.marker([13.338930, 123.673887], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Tabaco City</strong><br />Date: 07/27/2020<br />Total: 8 <br />Active: 4'),
+	L.marker([13.280287, 123.787194], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Bacacay</strong><br />Date: 07/27/2020<br />Total: 3 <br />Active: 0'),
+	L.marker([13.157277, 123.635156], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Camalig</strong><br />Date: 07/27/2020<br />Total: 3 <br />Active: 2'),
+	L.marker([13.134082, 123.689936], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Daraga</strong><br />Date: 07/27/2020<br />Total: 16 <br />Active: 2'),
+	L.marker([13.182091, 123.572156], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Guinobatan</strong><br />Date: 07/27/2020<br />Total: 13 <br />Active: 5'),
+	L.marker([13.088332, 123.878359], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Manito</strong><br />Date: 07/27/2020<br />Total: 8 <br />Active: 4'),
+	L.marker([13.172009, 123.399971], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Oas</strong><br />Date: 07/27/2020<br />Total: 4 <br />Active: 1'),
+	L.marker([13.466741, 123.612668], {icon: greenIcon}).addTo(municipalities).bindPopup('<strong>Tiwi</strong><br />Date: 07/27/2020<br />Total: 1 <br />Active: 0')
 	;
 
 	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
