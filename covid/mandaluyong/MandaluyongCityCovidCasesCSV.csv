@@ -26,3 +26,5 @@ date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Cleared,Probable
 "July 27, 2020",San Jose,26,1,1,28,49,157,13
 "July 27, 2020",Vergara,5,19,0,24,2,140,0
 "July 27, 2020",Wack-Wack Greenhills,9,12,1,22,0,77,0
+"July 27, 2020",*Correctional Institution for Women,0,7,1,8,,,
+"July 27, 2020",*Natl. Center for Mental Health,14,46,7,67,,,
