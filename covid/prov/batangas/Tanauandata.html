@@ -18,14 +18,14 @@
     </head>
     <body>
         <p>
-        <strong>Makati City Covid-19 Barangay Data</strong></br>
+        <strong>Tanauan City Covid-19 Barangay Data</strong></br>
                 
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <!--<script src="d3.min.js?v=3.2.8"></script>-->
         
 
         <script type="text/javascript"charset="utf-8">
-            d3.text("https://jmbangate.github.io/covid/makati/MakatiCityCovidCasesCSV.csv", function(data) {
+            d3.text("https://jmbangate.github.io/covid/prov/batangas/TanauanCityCovidCasesCSV.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("body")
