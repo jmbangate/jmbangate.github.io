@@ -1,4 +1,37 @@
 date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Cleared,Probable
+"July 30, 2020",Addition Hills,130,176,15,321,315,1378,66
+"July 30, 2020",Bagong Silang,4,14,1,19,1,73,0
+"July 30, 2020",Barangka Drive,12,57,8,77,138,378,10
+"July 30, 2020",Barangka Ibaba,31,20,1,52,13,60,5
+"July 30, 2020",Barangka Ilaya,18,21,3,42,33,177,3
+"July 30, 2020",Barangka Itaas,12,11,2,25,31,204,0
+"July 30, 2020",Buayang Bato,9,14,1,24,8,82,1
+"July 30, 2020",Burol,18,7,2,27,19,104,2
+"July 30, 2020",Daang Bakal,5,9,1,15,13,26,2
+"July 30, 2020",Hagdang Bato Ibaba,5,17,0,22,10,65,0
+"July 30, 2020",Hagdang Bato Itaas,15,12,2,29,10,106,11
+"July 30, 2020",Harapin Ang Bukas,13,9,0,22,4,20,0
+"July 30, 2020",Highway Hills,65,52,10,127,19,471,5
+"July 30, 2020",Hulo,35,48,5,88,6,378,7
+"July 30, 2020",Mabini-J. Rizal,27,12,1,40,4,93,27
+"July 30, 2020",Malamig,21,14,0,35,31,73,12
+"July 30, 2020",Mauway,21,109,6,136,237,467,66
+"July 30, 2020",Namayan,16,11,1,28,18,191,0
+"July 30, 2020",New Zaniga,6,13,2,21,11,42,1
+"July 30, 2020",Old Zaniga,16,9,0,25,7,34,0
+"July 30, 2020",Pag-asa,14,6,2,22,16,45,7
+"July 30, 2020",Plainview,37,78,1,116,21,485,30
+"July 30, 2020",Pleasant Hills,3,32,2,37,8,376,0
+"July 30, 2020",Poblacion,18,37,6,61,97,179,0
+"July 30, 2020",San Jose,20,9,1,30,82,165,13
+"July 30, 2020",Vergara,4,20,0,24,3,143,0
+"July 30, 2020",Wack-Wack Greenhills,13,12,1,26,0,78,0
+"July 30, 2020",*Correctional Institution for Women,0,7,1,8,0,0,0
+"July 30, 2020",*Natl. Center for Mental Health,14,46,7,67,0,0,0
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
 "July 29, 2020",Addition Hills,122,175,15,312,315,1378,66
 "July 29, 2020",Bagong Silang,3,14,1,18,1,73,0
 "July 29, 2020",Barangka Drive,10,57,8,75,138,378,10
@@ -17,8 +50,8 @@ date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Cleared,Probable
 "July 29, 2020",Malamig,21,14,0,35,31,73,12
 "July 29, 2020",Mauway,20,109,6,135,237,467,66
 "July 29, 2020",Namayan,16,11,1,28,18,191,0
-"July 29, 2020",New Zañiga,7,12,2,21,11,42,1
-"July 29, 2020",Old Zañiga,17,8,0,25,7,34,0
+"July 29, 2020",New Zaniga,7,12,2,21,11,42,1
+"July 29, 2020",Old Zaniga,17,8,0,25,7,34,0
 "July 29, 2020",Pag-asa,14,5,2,21,16,45,7
 "July 29, 2020",Plainview,36,78,1,115,21,485,30
 "July 29, 2020",Pleasant Hills,3,32,2,37,8,376,0
@@ -28,7 +61,6 @@ date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Cleared,Probable
 "July 29, 2020",Wack-Wack Greenhills,13,12,1,26,0,78,0
 "July 29, 2020",*Correctional Institution for Women,0,7,1,8,,,
 "July 29, 2020",*Natl. Center for Mental Health,14,46,7,67,,,
-,,,,,,,,
 ,,,,,,,,
 "July 27, 2020",Addition Hills,115,170,15,300,305,1271,66
 "July 27, 2020",Bagong Silang,4,13,1,18,1,67,0
@@ -48,8 +80,8 @@ date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Cleared,Probable
 "July 27, 2020",Malamig,10,14,0,34,20,71,12
 "July 27, 2020",Mauway,17,108,6,131,180,455,59
 "July 27, 2020",Namayan,16,11,1,28,18,191,0
-"July 27, 2020",New Zañiga,8,11,2,21,9,39,1
-"July 27, 2020",Old Zañiga,11,8,0,19,12,34,0
+"July 27, 2020",New Zaniga,8,11,2,21,9,39,1
+"July 27, 2020",Old Zaniga,11,8,0,19,12,34,0
 "July 27, 2020",Pag-asa,14,3,2,19,16,37,7
 "July 27, 2020",Plainview,40,69,1,110,21,471,30
 "July 27, 2020",Pleasant Hills,2,32,2,36,8,373,0
