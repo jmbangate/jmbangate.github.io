@@ -1,4 +1,38 @@
 date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,PUM
+"July 31, 2020",Bangkal,1,46,23,8,77,0,24,59
+"July 31, 2020",Bel-Air,1,27,23,2,65,0,14,30
+"July 31, 2020",Carmona,1,0,8,0,8,0,1,1
+"July 31, 2020",Dasmarinas,1,3,6,2,11,0,0,0
+"July 31, 2020",Forbes Park,1,3,2,0,5,0,0,9
+"July 31, 2020",Kasilawan,1,4,18,2,24,0,11,1
+"July 31, 2020",La Paz,1,9,18,2,29,0,18,26
+"July 31, 2020",Magallanes,1,1,9,0,10,0,0,3
+"July 31, 2020",Olympia,1,41,38,4,83,0,38,65
+"July 31, 2020",Palanan,1,36,38,3,77,1,18,22
+"July 31, 2020",Pio del Pilar,1,64,41,4,109,0,35,120
+"July 31, 2020",Poblacion,1,53,47,7,107,0,15,82
+"July 31, 2020",San Antonio,1,21,35,2,58,0,10,33
+"July 31, 2020",San Isidro,1,14,17,1,32,0,13,24
+"July 31, 2020",San Lorenzo,1,22,25,3,50,0,10,18
+"July 31, 2020",Singkamas,1,10,5,6,21,0,21,39
+"July 31, 2020",Santa Cruz,1,18,9,3,30,0,7,26
+"July 31, 2020",Tejeros,1,14,37,5,56,0,23,29
+"July 31, 2020",Urdaneta,1,3,4,0,7,0,2,13
+"July 31, 2020",Valenzuela,1,10,8,1,19,0,7,6
+"July 31, 2020",Cembo,2,59,43,3,105,1,41,125
+"July 31, 2020",Comembo,2,34,31,6,71,0,15,50
+"July 31, 2020",East Rembo,2,44,49,8,101,2,33,89
+"July 31, 2020",Guadalupe Nuevo,2,46,51,6,103,0,29,76
+"July 31, 2020",Guadalupe Viejo,2,27,23,4,54,0,17,80
+"July 31, 2020",Pembo,2,84,90,9,183,0,55,115
+"July 31, 2020",Pinagkaisahan,2,38,19,2,59,0,17,13
+"July 31, 2020",Pitogo,2,27,43,3,73,1,16,36
+"July 31, 2020",Post Proper Southside,2,55,35,7,97,0,22,86
+"July 31, 2020",Post Proper Northside,2,6,13,1,20,0,4,4
+"July 31, 2020",Rizal,2,108,67,11,186,0,73,167
+"July 31, 2020",South Cembo,2,16,23,4,43,0,16,33
+"July 31, 2020",West Rembo,2,65,66,11,142,1,37,106
+,,,,,,,,,
 "July 30, 2020",Bangkal,1,42,23,7,72,1,26,59
 "July 30, 2020",Bel-Air,1,26,35,2,63,0,14,29
 "July 30, 2020",Carmona,1,0,8,0,8,0,1,1
