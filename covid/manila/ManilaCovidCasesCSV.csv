@@ -1,0 +1,17 @@
+date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Probable
+"July 31, 2020",Binondo,17,44,2,63,1,0
+"July 31, 2020",Ermita,26,43,1,70,25,12
+"July 31, 2020",Intramuros,1,18,0,19,2,0
+"July 31, 2020",Malate,96,152,7,255,63,9
+"July 31, 2020",Paco,43,113,6,162,30,9
+"July 31, 2020",Pandacan,90,162,7,259,41,11
+"July 31, 2020",Port Area,7,55,8,70,8,7
+"July 31, 2020",Quiapo,21,50,2,73,9,2
+"July 31, 2020",Sampaloc,277,363,26,666,82,34
+"July 31, 2020",San Andres Bukid,60,148,13,221,49,25
+"July 31, 2020",San Miguel,26,26,4,56,1,1
+"July 31, 2020",San Nicolas,13,99,1,113,32,0
+"July 31, 2020",Santa Ana,55,99,10,164,20,15
+"July 31, 2020",Santa Cruz,113,250,20,383,56,2
+"July 31, 2020",Santa Mesa,71,134,12,217,18,4
+"July 31, 2020",Tondo,515,1258,100,1873,163,35
