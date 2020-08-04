@@ -1,4 +1,38 @@
 date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,PUM
+"August 3, 2020",Bangkal,1,62,27,8,97,0,23,87
+"August 3, 2020",Bel-Air,1,27,38,2,67,0,14,26
+"August 3, 2020",Carmona,1,1,8,0,9,0,1,2
+"August 3, 2020",Dasmarinas,1,3,6,2,11,0,0,0
+"August 3, 2020",Forbes Park,1,3,2,0,5,0,0,9
+"August 3, 2020",Kasilawan,1,4,18,2,24,0,12,1
+"August 3, 2020",La Paz,1,7,20,2,29,0,18,26
+"August 3, 2020",Magallanes,1,1,9,0,10,0,0,3
+"August 3, 2020",Olympia,1,49,38,4,91,0,41,56
+"August 3, 2020",Palanan,1,32,42,3,77,0,21,16
+"August 3, 2020",Pio del Pilar,1,78,46,4,128,0,36,123
+"August 3, 2020",Poblacion,1,51,51,7,109,0,15,81
+"August 3, 2020",San Antonio,1,22,37,2,61,0,12,44
+"August 3, 2020",San Isidro,1,14,18,1,33,0,13,24
+"August 3, 2020",San Lorenzo,1,24,26,4,54,0,10,22
+"August 3, 2020",Singkamas,1,9,6,6,21,0,23,37
+"August 3, 2020",Santa Cruz,1,23,10,3,36,0,8,29
+"August 3, 2020",Tejeros,1,17,37,5,59,0,23,37
+"August 3, 2020",Urdaneta,1,4,4,0,8,0,2,13
+"August 3, 2020",Valenzuela,1,11,10,1,22,0,13,17
+"August 3, 2020",Cembo,2,60,47,3,110,1,43,135
+"August 3, 2020",Comembo,2,34,32,6,72,0,16,51
+"August 3, 2020",East Rembo,2,50,50,8,108,2,34,101
+"August 3, 2020",Guadalupe Nuevo,2,50,53,6,109,0,30,79
+"August 3, 2020",Guadalupe Viejo,2,29,24,4,57,0,18,79
+"August 3, 2020",Pembo,2,78,102,9,189,0,55,120
+"August 3, 2020",Pinagkaisahan,2,41,19,2,62,0,18,18
+"August 3, 2020",Pitogo,2,24,48,3,75,1,18,43
+"August 3, 2020",Post Proper Southside,2,54,39,7,100,0,22,82
+"August 3, 2020",Post Proper Northside,2,6,13,1,20,0,4,4
+"August 3, 2020",Rizal,2,99,79,12,190,0,78,146
+"August 3, 2020",South Cembo,2,17,23,4,44,0,16,33
+"August 3, 2020",West Rembo,2,67,69,11,147,1,42,104
+,,,,,,,,,
 "August 2, 2020",Bangkal,1,53,27,8,88,0,23,79
 "August 2, 2020",Bel-Air,1,25,38,2,65,0,14,26
 "August 2, 2020",Carmona,1,0,8,0,8,0,1,2
