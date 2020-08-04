@@ -1,0 +1,11 @@
+date,time,name,Active,Recovered,Deaths,TotalConfr,source
+"August 3, 2020",17:00:00,Caloocan,961,1546,123,2630,https://www.facebook.com/CaloocanCity
+"August 3, 2020",21:00:00,Makati,1051,1051,132,2234,https://www.facebook.com/MyMakatiVerified
+"August 4, 2020",16:00:00,Mandaluyong,688,952,82,1722,https://www.facebook.com/MandaluyongPIO
+"July 31, 2020",12:00:00,Manila,1431,3014,219,4664,https://www.facebook.com/ManilaPIO
+"August 4, 2020",15:00:00,Marikina,391,390,40,821,https://www.facebook.com/MarikinaPIO
+"August 3, 2020",23:55:00,Pasay,941,1041,77,2059,https://www.facebook.com/lgupasaypio
+"August 3, 2020",,Pasig,1033,807,124,1964,https://www.facebook.com/PasigPIO/
+"August 1, 2020",08:00:00,Quezon City,2722,3755,302,6779,https://www.facebook.com/QCGov
+"August 3, 2020",18:00:00,San Juan,297,652,51,1000,https://www.facebook.com/CityofSanJuanNCRPhilippines/
+"August 4, 2020",,Taguig,316,1886,37,2239,https://www.facebook.com/taguigcity
