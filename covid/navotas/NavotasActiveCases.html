@@ -75,14 +75,14 @@ Links: <a href="https://jmbangate.github.io/covid/navotas/NavotasActiveCases.htm
 	// get color depending on population density value
 	function getColor(d) {
 
-		return 	d > 100 ? '#092834':
-				d > 80 ? '#1A3E4C' :
-				d > 60 ? '#1F4A5B' :
-				d > 50 ? '#286076' :
-				d > 40 ? '#357F9C' :
-				d > 30 ? '#459DBF' :
-				d > 20 ? '#67AFCB' :
-				d > 10 ? '#ABD3E3' :
+		return 	d > 160 ? '#092834':
+				d > 140 ? '#1A3E4C' :
+				d > 120 ? '#1F4A5B' :
+				d > 100 ? '#286076' :
+				d > 80 ? '#357F9C' :
+				d > 60 ? '#459DBF' :
+				d > 40 ? '#67AFCB' :
+				d > 20 ? '#ABD3E3' :
 						 '#E4F1F6';
 	}
 
@@ -146,7 +146,7 @@ Links: <a href="https://jmbangate.github.io/covid/navotas/NavotasActiveCases.htm
 	legend.onAdd = function (map) {
 
 		var div = L.DomUtil.create('div', 'info legend'),
-			grades = [0, 10, 20, 30, 40, 50, 60, 80,100],
+			grades = [0, 20, 40, 60, 80, 100, 120, 140,160],
 			labels = [],
 			from, to;
 
