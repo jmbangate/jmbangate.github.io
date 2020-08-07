@@ -15,3 +15,4 @@ date,name,Active,Recovered,Deaths,TotalConfr,source
 "August 1, 2020",Quezon City,2722,3755,302,6779,https://www.facebook.com/QCGov
 "August 3, 2020",San Juan,297,652,51,1000,https://www.facebook.com/CityofSanJuanNCRPhilippines/
 "August 4, 2020",Taguig,316,1886,37,2239,https://www.facebook.com/taguigcity
+"August 5, 2020",Valenzuela,1155,1316,70,2541,https://valenzuela.gov.ph/covid19/
