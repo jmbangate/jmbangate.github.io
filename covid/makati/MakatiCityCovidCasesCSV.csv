@@ -1,4 +1,39 @@
 date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,PUM
+"August 7, 2020",Bangkal,1,55,38,8,101,0,28,94
+"August 7, 2020",Bel-Air,1,25,41,2,68,0,13,22
+"August 7, 2020",Carmona,1,2,8,0,10,0,1,2
+"August 7, 2020",Dasmarinas,1,3,6,2,11,0,0,0
+"August 7, 2020",Forbes Park,1,3,2,0,5,0,0,9
+"August 7, 2020",Kasilawan,1,5,18,2,25,0,12,4
+"August 7, 2020",La Paz,1,5,22,2,29,1,7,22
+"August 7, 2020",Magallanes,1,1,9,0,10,0,0,0
+"August 7, 2020",Olympia,1,74,41,4,119,0,40,62
+"August 7, 2020",Palanan,1,30,45,3,78,0,22,19
+"August 7, 2020",Pio del Pilar,1,74,54,5,133,0,39,123
+"August 7, 2020",Poblacion,1,52,58,7,117,1,19,75
+"August 7, 2020",San Antonio,1,23,40,2,65,0,14,44
+"August 7, 2020",San Isidro,1,12,21,1,34,0,12,16
+"August 7, 2020",San Lorenzo,1,27,27,4,58,0,10,19
+"August 7, 2020",Singkamas,1,18,6,6,30,0,26,40
+"August 7, 2020",Santa Cruz,1,21,13,3,37,0,8,26
+"August 7, 2020",Tejeros,1,18,40,6,64,0,22,34
+"August 7, 2020",Urdaneta,1,4,6,0,10,0,3,14
+"August 7, 2020",Valenzuela,1,16,11,1,28,0,15,16
+"August 7, 2020",Cembo,2,54,59,3,116,1,46,135
+"August 7, 2020",Comembo,2,35,35,6,76,0,15,65
+"August 7, 2020",East Rembo,2,43,60,8,111,3,34,105
+"August 7, 2020",Guadalupe Nuevo,2,54,57,6,117,0,26,79
+"August 7, 2020",Guadalupe Viejo,2,33,26,4,63,0,19,105
+"August 7, 2020",Pembo,2,80,111,9,200,0,49,120
+"August 7, 2020",Pinagkaisahan,2,34,30,2,66,0,16,20
+"August 7, 2020",Pitogo,2,24,50,3,77,1,20,39
+"August 7, 2020",Post Proper Southside,2,51,45,7,103,0,20,77
+"August 7, 2020",Post Proper Northside,2,7,13,1,21,0,3,4
+"August 7, 2020",Rizal,2,90,93,12,195,0,65,136
+"August 7, 2020",South Cembo,2,18,27,4,49,0,13,40
+"August 7, 2020",West Rembo,2,62,79,11,152,1,44,93
+"August 7, 2020",TOTALS,1 & 2,1053,1191,134,2378,8,661,1659
+,,,,,,,,,
 "August 4, 2020",Bangkal,1,62,29,8,99,0,26,87
 "August 4, 2020",Bel-Air,1,25,40,2,67,0,13,22
 "August 4, 2020",Carmona,1,1,8,0,9,0,1,1
@@ -32,6 +67,7 @@ date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,
 "August 4, 2020",Rizal,2,95,83,12,190,0,65,134
 "August 4, 2020",South Cembo,2,15,25,4,44,0,13,28
 "August 4, 2020",West Rembo,2,65,75,11,151,1,44,95
+"August 4, 2020",TOTALS,1 & 2,1032,1097,132,2260,7,629,1566
 ,,,,,,,,,
 "August 3, 2020",Bangkal,1,62,27,8,97,0,23,87
 "August 3, 2020",Bel-Air,1,27,38,2,67,0,14,26
@@ -66,6 +102,8 @@ date,Barangay,District,Active,Recovered,Deaths,Total Confirmed,Probable,Suspect,
 "August 3, 2020",Rizal,2,99,79,12,190,0,78,146
 "August 3, 2020",South Cembo,2,17,23,4,44,0,16,33
 "August 3, 2020",West Rembo,2,67,69,11,147,1,42,104
+"August 3, 2020",TOTALS,1 & 2,1051,1051,132,2234,5,679,1648
+,,,,,,,,,
 ,,,,,,,,,
 "August 2, 2020",Bangkal,1,53,27,8,88,0,23,79
 "August 2, 2020",Bel-Air,1,25,38,2,65,0,14,26
