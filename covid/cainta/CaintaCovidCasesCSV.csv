@@ -1,0 +1,9 @@
+date,name,Active,Recovered,Deaths,TotalConfr,Admitted,HomeQuarantine
+"August 6, 2020",San Andres,66,92,8,166,6,60
+"August 6, 2020",San Isidro,28,90,9,127,4,24
+"August 6, 2020",San Juan,43,66,7,116,7,36
+"August 6, 2020",San Roque,2,5,0,7,0,2
+"August 6, 2020",Santa Rosa,3,4,0,7,2,1
+"August 6, 2020",Santo Domingo,10,46,3,59,1,9
+"August 6, 2020",Santo Nino,2,9,1,12,1,1
+"August 6, 2020",TOTALS,154,312,28,494,21,133
