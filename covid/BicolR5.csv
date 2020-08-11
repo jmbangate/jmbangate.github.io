@@ -314,7 +314,7 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "July 28, 2020",Bicol#393,42,Female,Legazpi City,Albay,Filipino,,For verification,,,,,"July 28, 2020",for verification,
 "July 28, 2020",Bicol#394,22,Male,"Polangui, Albay",Albay,Filipino,,Manila,"July 23, 2020",,"July 23, 2020",,"July 28, 2020",Admitted,
 "July 28, 2020",Bicol#395,90,Male,"Rapu_rapu, Albay",Albay,Filipino,,To be established,,,"July 14, 2020",,"July 28, 2020",Admitted,
-"July 28, 2020",Bicol#396,34,Male,"Legazpi City, Albay",Albay,Filipino,Tricycle driver,To be established,,,"July 21, 2020",,"July 28, 2020",Admitted,
+"July 28, 2020",Bicol#396,34,Male,"Brgy Rawis, Legazpi City, Albay",Albay,Filipino,Tricycle driver,To be established,,,"July 21, 2020",,"July 28, 2020",Recovered,"August 11, 2020"
 "July 28, 2020",Bicol#397,74,Female,"Legazpi City, Albay",Albay,Filipino,Housewife,To be established,,,"July 26, 2020",,"July 28, 2020",Admitted,
 "July 28, 2020",Bicol#400,29,Male,"Legazpi City, Albay",Albay,Filipino,Security Guard,Pasay,"July 26, 2020",,Asymptomatic,,"July 28, 2020",Quarantined,
 "July 28, 2020",Bicol#401,26,Male,"Canaman, Cam Sur",Cam Sur,Filipino,Make up artist,For verification,,,"July 23, 2020",,"July 28, 2020",Quarantined,
@@ -333,9 +333,9 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "July 26, 2020",Bicol#357,1,Female,Sta. Magdalena Sorsogon,Sorsogon,Filipino,,Las Pinas,"July 16, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#358,24,Female,Sta. Magdalena Sorsogon,Sorsogon,Filipino,,Las Pinas,"July 16, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#359,44,Female,"Manito, Albay",Albay,Filipino,House Keeper,Surigao City & Leyte,"July 17, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
-"July 26, 2020",Bicol#360,25,Male,Legazpi City,Albay,Filipino,Construction worker,Makati City,"July 22, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
-"July 26, 2020",Bicol#361,18,Male,Legazpi City,Albay,Filipino,Student,,,Bicol#294,Asymptomatic,,"July 26, 2020",Quarantined,
-"July 26, 2020",Bicol#362,59,Female,Legazpi City,Albay,Filipino,Government Employee,,,Bicol#282,Asymptomatic,,"July 26, 2020",Quarantined,
+"July 26, 2020",Bicol#360,25,Male,"Brgy Mabinit, Legazpi City",Albay,Filipino,Construction worker,Makati City,"July 22, 2020",,Asymptomatic,,"July 26, 2020",Recovered,"August 11, 2020"
+"July 26, 2020",Bicol#361,18,Male,"Brgy Victory Village, Legazpi City",Albay,Filipino,Student,,,Bicol#294,Asymptomatic,,"July 26, 2020",Recovered,"August 11, 2020"
+"July 26, 2020",Bicol#362,59,Female,"Brgy Sabang, Legazpi City",Albay,Filipino,Government Employee,,,Bicol#282,Asymptomatic,,"July 26, 2020",Recovered,"August 11, 2020"
 "July 26, 2020",Bicol#363,46,Male,"Bula, Cam Sur",Cam Sur,Filipino,Foreman,Paranaque,"July 22, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#364,41,Female,"Sipocot, Cam Sur",Cam Sur,Filipino,,Rizal,"July 24, 2020",,Asymptomatic,,"July 26, 2020",Quarantined,
 "July 26, 2020",Bicol#365,16,Female,"Goa, Cam Sur",Cam Sur,Filipino,,,,Bicol#319 & Bicol#320,Asymptomatic,,"July 26, 2020",Quarantined,
@@ -370,7 +370,7 @@ Report Date,PATIENT,Age,Sex,Local Address,Province,Nationality,Occupation,Histor
 "July 24, 2020",Bicol#325,41,Female,"Cawayan, Masbate",Masbate,Filipino,,Caloocan City,,,Asymptomatic,,"July 24, 2020",Quarantined,
 "July 24, 2020",Bicol#326,18,Female,"Cawayan, Masbate",Masbate,Filipino,,Caloocan City,,,Asymptomatic,,"July 24, 2020",Quarantined,
 "July 24, 2020",Bicol#327,44,Male,Legazpi City,Albay,Filipino,Supervisor,,,,"Symptoms, July 20, 2020","Consulted July 22, 2020","July 24, 2020",Quarantined,
-"July 24, 2020",Bicol#328,25,Male,Legazpi City,Albay,Filipino,Warehouse man,,,,"Symptoms, July 19, 2020","Consulted July 22, 2020","July 24, 2020",Quarantined,
+"July 24, 2020",Bicol#328,25,Male,"Brgy Tula-Tula, Legazpi City",Albay,Filipino,Warehouse man,,,,"Symptoms, July 19, 2020","Consulted July 22, 2020","July 24, 2020",Recovered,"August 11, 2020"
 "July 24, 2020",Bicol#329,34,Male,Legazpi City,Albay,Filipino,Administrative Assistant,,,,"Symptoms, July 8, 2020","Consulted July 22, 2020","July 24, 2020",Quarantined,
 "July 24, 2020",Bicol#330,15,Male,"Matnog, Sorsogon",Sorsogon,Filipino,,Cavite,,,Asymptomatic,,"July 24, 2020",Quarantined,
 "July 24, 2020",Bicol#331,39,Female,"Matnog, Sorsogon",Sorsogon,Filipino,,Bulacan,,,Asymptomatic,,"July 24, 2020",Quarantined,
