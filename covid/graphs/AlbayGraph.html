@@ -1,3 +1,15 @@
+// NODE KEY
+// Green is group1
+// Red is Quarantined
+// Blue is group3
+// Black is group4
+<br>
+// LINK KEY
+// Black is type1
+// Blue is Close Contact
+
+
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -60,9 +72,8 @@
 <script>
 
 
-var linkpath = d3.csv.parseRows('https://jmbangate.github.io/covid/graphs/links.csv');
-
-var nodepath = d3.csv.parseRows('https://jmbangate.github.io/covid/graphs/nodes.csv');
+//var linkpath = ('https://jmbangate.github.io/covid/graphs/links.csv');
+//var nodepath = ('https://jmbangate.github.io/covid/graphs/nodes.csv');
 
 var width = 1600,
     height = 800;
@@ -116,7 +127,7 @@ var svg = d3.select("body")
     .charge(-300);
     
  
-d3.csv(nodepath, function(nodes) {
+d3.csv("https://jmbangate.github.io/covid/graphs/nodes.csv", function(nodes) {
  
   var nodelookup = {};
   var nodecollector = {};
@@ -137,7 +148,7 @@ d3.csv(nodepath, function(nodes) {
 
 //Get all the links out of of the csv in a way that will match up with the nodes
  
-d3.csv(linkpath, function(linkchecker) {
+d3.csv("https://jmbangate.github.io/covid/graphs/links.csv", function(linkchecker) {
 
   var linkcollector = {};
   indexsource = 0;
@@ -210,5 +221,3 @@ var links = d3.values(linkcollector);
   });
 
 </script>
-</body>
-</html>
