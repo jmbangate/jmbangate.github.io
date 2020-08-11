@@ -72,8 +72,8 @@
 <script>
 
 
-//var linkpath = ('https://jmbangate.github.io/covid/graphs/links.csv');
-//var nodepath = ('https://jmbangate.github.io/covid/graphs/nodes.csv');
+var linkpath = ('https://jmbangate.github.io/covid/graphs/links.csv');
+var nodepath = ('https://jmbangate.github.io/covid/graphs/nodes.csv');
 
 var width = 1600,
     height = 800;
@@ -127,7 +127,7 @@ var svg = d3.select("body")
     .charge(-300);
     
  
-d3.csv("nodes.csv", function(nodes) {
+d3.csv(nodepath, function(nodes) {
  
   var nodelookup = {};
   var nodecollector = {};
@@ -148,7 +148,7 @@ d3.csv("nodes.csv", function(nodes) {
 
 //Get all the links out of of the csv in a way that will match up with the nodes
  
-d3.csv("links.csv", function(linkchecker) {
+d3.csv(linkpath, function(linkchecker) {
 
   var linkcollector = {};
   indexsource = 0;
