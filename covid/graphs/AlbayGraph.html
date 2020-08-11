@@ -127,7 +127,7 @@ var svg = d3.select("body")
     .charge(-300);
     
  
-d3.csv("https://jmbangate.github.io/covid/graphs/nodes.csv", function(nodes) {
+d3.csv("nodes.csv", function(nodes) {
  
   var nodelookup = {};
   var nodecollector = {};
@@ -148,7 +148,7 @@ d3.csv("https://jmbangate.github.io/covid/graphs/nodes.csv", function(nodes) {
 
 //Get all the links out of of the csv in a way that will match up with the nodes
  
-d3.csv("https://jmbangate.github.io/covid/graphs/links.csv", function(linkchecker) {
+d3.csv("links.csv", function(linkchecker) {
 
   var linkcollector = {};
   indexsource = 0;
