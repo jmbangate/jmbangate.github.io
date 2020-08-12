@@ -34,7 +34,7 @@ path.invis {
   <small>
   The links between COVID19 patients are shown as a semantic graph. Nodes represent infected individuals. Directed edges show the relationship (close contact). Legend: Dark Green (Fully recovered), Green (Recovered), Blue (Quarantined), Violet (Admitted to hospital), Red (Died), and Grey (no data). To explore the graph: to ZOOM, use the mouse scroll button;  DRAG and SHAKE the nodes using the Left mouse button then drag.</br></br>
 
-   Data Sources: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a> and <a href="https://www.facebook.com/noel.e.rosal.3" target="_blank">https://www.facebook.com/noel.e.rosal.3</a>.  UPDATED: August 11, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i><a href="Bicolr5-Albay-LegazpiCity.html">Legazpi City</a>, <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="Bicolr5-Albay-Province.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/prov/Albay/AlbayCovid19.html"> Albay</a>, <a href="https://jmbangate.github.io/covid/prov/BicolRegionR5Covid19.html"> Bicol Region </a>, <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map2 Bicol Region</a></p>  
+   Data Sources: DOH CHD-Bicol <a href="https://www.facebook.com/dohbicol/" target="_blank">https://www.facebook.com/dohbicol/</a> and <a href="https://www.facebook.com/noel.e.rosal.3" target="_blank">https://www.facebook.com/noel.e.rosal.3</a>.  UPDATED: August 12, 2020, For comments, errors/corrections please email: jules.bangate@gmail.com, <i>LINKS:</i><a href="Bicolr5-Albay-LegazpiCity.html">Legazpi City</a>, <a href="https://jmbangate.github.io/covid/Bicolr5.html">Region 5</a>, <a href="Bicolr5-Albay-Province.html">Albay</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamNorte.html">Camarines Norte</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-CamSur.html">Camarines Sur</a>,<a href="https://jmbangate.github.io/covid/Bicolr5-Catanduanes.html">Catanduanes</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Masbate.html">Masbate</a>, <a href="https://jmbangate.github.io/covid/Bicolr5-Sorsogon.html">Sorsogon</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data.html">Data</a>, <i>Other Data:</i> <a href="https://jmbangate.github.io/covid/Bicolr5data_cases.html">Cases</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_bedsmech.html">Beds and Mechanical Ventilators</a>, <a href="https://jmbangate.github.io/covid/Bicolr5data_testing.html">Testing</a>, <i>Map:</i> <a href="https://jmbangate.github.io/covid/prov/Albay/AlbayCovid19.html"> Albay</a>, <a href="https://jmbangate.github.io/covid/prov/BicolRegionR5Covid19.html"> Bicol Region </a>, <a href="https://jmbangate.github.io/covid/Covid19BicolR5Map.html">Map2 Bicol Region</a></p>  
  </small>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -50,6 +50,169 @@ path.invis {
 
     var data = {
           edges: [
+              //august12
+              {
+                source: {id: 711, label: "Bicol#711, 77_yo Female, Address: Legazpi City, Albay, Symptoms: August 2, 2020, Died: August 7, 2020", healthworker: "-" ,status:"Died"},
+                target: {id: 711, label: "Bicol#711, 77_yo Female, Address: Legazpi City, Albay, Symptoms: August 2, 2020, Died: August 7, 2020", healthworker: "-" ,status:"Died"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 712, label: "Bicol#712, 54_yo Male, Address: Legazpi City, Albay, Symptoms: August 3, 2020, Admitted BRTTH", healthworker: "-" ,status:"Admitted"},
+                target: {id: 712, label: "Bicol#712, 54_yo Male, Address: Legazpi City, Albay, Symptoms: August 3, 2020, Admitted BRTTH", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 713, label: "Bicol#713, 21_yo Female, Accounting Staff, Address: Legazpi City, Albay, Symptoms: July 24, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 713, label: "Bicol#713, 21_yo Female, Accounting Staff, Address: Legazpi City, Albay, Symptoms: July 24, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 714, label: "Bicol#714, 33_yo Male, Nurse, Address: Legazpi City, Albay, Symptoms: August 5, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 714, label: "Bicol#714, 33_yo Male, Nurse, Address: Legazpi City, Albay, Symptoms: August 5, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 451, label: "Bicol#451, 67_yo Male, Barangay tanod, Address: Sabang, Legazpi City, Albay, Asymptomatic, Consulted: July 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 715, label: "Bicol#715, 55_yo Female, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 515, label: "Bicol#515, 43_yo Female, Address: Binanuahan, Legazpi City, Albay, Detected: August 5, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 716, label: "Bicol#716, 21_yo Female, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 451, label: "Bicol#451, 67_yo Male, Barangay tanod, Address: Sabang, Legazpi City, Albay, Asymptomatic, Consulted: July 29, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 717, label: "Bicol#717, 62_yo Female, Barangay Tanod, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 718, label: "Bicol#718, 30_yo Female, Physician, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 718, label: "Bicol#718, 30_yo Female, Physician, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 719, label: "Bicol#719, 43_yo Male, Military, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 719, label: "Bicol#719, 43_yo Male, Military, Address: Legazpi City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 720, label: "Bicol#720, 50_yo Female, Housewife, Address: Ligao City, Albay, Asymptomatic, Origin: Quezon City, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 720, label: "Bicol#720, 50_yo Female, Housewife, Address: Ligao City, Albay, Asymptomatic, Origin: Quezon City, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 721, label: "Bicol#721, 19_yo Male, Uniformed Personnel, Address: Ligao City, Albay, Symptoms: August 1, 2020, Origin: Makati, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 721, label: "Bicol#721, 19_yo Male, Uniformed Personnel, Address: Ligao City, Albay, Symptoms: August 1, 2020, Origin: Makati, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 722, label: "Bicol#722, 1_yo Male,, Address: Ligao City, Albay, Origin: Novaliches, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 722, label: "Bicol#722, 1_yo Male,, Address: Ligao City, Albay, Origin: Novaliches, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 723, label: "Bicol#723, 22_yo Female, Address: Ligao City, Albay, Origin: Novaliches, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 723, label: "Bicol#723, 22_yo Female, Address: Ligao City, Albay, Origin: Novaliches, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 724, label: "Bicol#724, 30_yo Male, Seaman, Address: Ligao City, Albay, Origin: Manila, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 724, label: "Bicol#724, 30_yo Male, Seaman, Address: Ligao City, Albay, Origin: Manila, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 725, label: "Bicol#725, 60_yo Female, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 725, label: "Bicol#725, 60_yo Female, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 726, label: "Bicol#726, 27_yo Female, Baker, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 726, label: "Bicol#726, 27_yo Female, Baker, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 727, label: "Bicol#727, 3_yo Female, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 727, label: "Bicol#727, 3_yo Female, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 728, label: "Bicol#728, 60_yo Female, Address: Tabaco City, Albay, Symptoms: July 25, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 728, label: "Bicol#728, 60_yo Female, Address: Tabaco City, Albay, Symptoms: July 25, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 729, label: "Bicol#729, 42_yo Male, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 729, label: "Bicol#729, 42_yo Male, Address: Tabaco City, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 730, label: "Bicol#730, 64_yo Female, Address: Tabaco City, Albay, Origin: Calamba, Laguna, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 730, label: "Bicol#730, 64_yo Female, Address: Tabaco City, Albay, Origin: Calamba, Laguna, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 731, label: "Bicol#731, 81_yo Male, Address: Daraga, Albay, Symptoms: July 23, 2020, Admitted@BRTTH", healthworker: "-" ,status:"Admitted"},
+                target: {id: 731, label: "Bicol#731, 81_yo Male, Address: Daraga, Albay, Symptoms: July 23, 2020, Admitted@BRTTH", healthworker: "-" ,status:"Admitted"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 577, label: "Bicol#577, 22_yo Male, Address: Daraga, Albay, Symptoms: July 26, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 732, label: "Bicol#732, 52_yo Male, Uniformed Personnel, Address: Daraga, Albay, Asymptomatic, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+              {
+                source: {id: 577, label: "Bicol#577, 22_yo Male, Address: Daraga, Albay, Symptoms: July 26, 2020", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 733, label: "Bicol#733, 53_yo Male, Nurse, Address: Daraga, Albay, Symptoms: August 1, 2020, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+              {
+                source: {id: 734, label: "Bicol#734, 21_yo Female, Address: Malilipot, Albay, Symptoms: For verification, Isolated", healthworker: "-" ,status:"Quarantined"},
+                target: {id: 734, label: "Bicol#734, 21_yo Female, Address: Malilipot, Albay, Symptoms: For verification, Isolated", healthworker: "-" ,status:"Quarantined"},
+                value: "Close Contact",
+                color:"#0066ff"
+              },
+
+
+
+
+
+
+
               //august10otheralbay
               {
                 source: {id: 473, label: "Bicol#473, 69_yo Male, Address: Daraga, Albay, Symptoms: July 27, 2020, Died: July 30, 2020", healthworker: "-" ,status:"Died"},
