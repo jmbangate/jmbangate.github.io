@@ -1,4 +1,22 @@
 date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Probable
+" August 14, 2020 ",Binondo,1,70,2,73,1,0
+" August 14, 2020 ",Ermita,16,71,1,88,13,1
+" August 14, 2020 ",Intramuros,2,24,0,26,0,0
+" August 14, 2020 ",Malate,48,252,12,312,27,0
+" August 14, 2020 ",Paco,56,157,7,220,17,1
+" August 14, 2020 ",Pandacan,78,243,9,330,19,0
+" August 14, 2020 ",Port Area,7,63,8,78,8,0
+" August 14, 2020 ",Quiapo,11,77,4,92,8,1
+" August 14, 2020 ",Sampaloc,85,861,28,974,84,1
+" August 14, 2020 ",San Andres Bukid,39,206,16,261,23,0
+" August 14, 2020 ",San Miguel,18,49,5,72,2,0
+" August 14, 2020 ",San Nicolas,4,119,1,124,5,0
+" August 14, 2020 ",Santa Ana,49,154,11,214,18,0
+" August 14, 2020 ",Santa Cruz,65,421,23,509,20,0
+" August 14, 2020 ",Santa Mesa,106,214,17,337,23,0
+" August 14, 2020 ",Tondo,112,1991,115,2218,107,3
+" August 14, 2020 ",TOTALS,697,4972,259,5928,375,7
+,,,,,,,
 "July 31, 2020",Binondo,17,44,2,63,1,0
 "July 31, 2020",Ermita,26,43,1,70,25,12
 "July 31, 2020",Intramuros,1,18,0,19,2,0
@@ -15,3 +33,4 @@ date,name,Active,Recovered,Deaths,TotalConfirmed,Suspect,Probable
 "July 31, 2020",Santa Cruz,113,250,20,383,56,2
 "July 31, 2020",Santa Mesa,71,134,12,217,18,4
 "July 31, 2020",Tondo,515,1258,100,1873,163,35
+"July 31, 2020",TOTALS,1431,3014,219,4664,600,166
