@@ -64,6 +64,19 @@
     	subdomains:['mt0','mt1','mt2','mt3']
 	});	
 
+	var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+   		 maxZoom: 20,
+    	subdomains:['mt0','mt1','mt2','mt3']
+	});
+	var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    	maxZoom: 20,
+    	subdomains:['mt0','mt1','mt2','mt3']
+	});
+	var googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+    	maxZoom: 20,
+    	subdomains:['mt0','mt1','mt2','mt3']
+	});
+
 
 
 	function onEachFeature(feature, layer) {
@@ -132,7 +145,10 @@
 		//"Streets": streets,
 		"OpenStreetMap": OpenStreetMap_Mapnik,
 		"Esri Imagery":Esri_WorldImagery,
-		"Google Terrain": googleTerrain
+		"Google Terrain": googleTerrain, 
+		"Google Imagery": googleSat,
+		"Google Streets": googleStreets, 
+		"Google Hybrid": googleHybrid
 	};
 
 	var overlays = {
