@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Landslides Philippines</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 100%;
+			height: 600px;
+		}
+	</style>
+
+	
+</head>
+<body>
+<h4>Some Old Landslide Scarps in the Philippines</h4>	
+
+<div id='map'></div>
+
+<script src="sample-geojson.js" type="text/javascript"></script>
+
+<script>
+	
+
+	var greyscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/light-v9',
+		tileSize: 512,
+		zoomOffset: -1
+	});
+
+
+	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+		});
+	var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	});		
+
+
+
+	function onEachFeature(feature, layer) {
+		var popupContent = "<p>Landslide " +
+				feature.geometry.type + ".</p>";
+
+		if (feature.properties && feature.properties.popupContent) {
+			popupContent += feature.properties.popupContent;
+		}
+
+		layer.bindPopup(popupContent);
+	}
+
+	var LandslidePolygons =L.geoJSON([LandslidePolygons], {
+
+		style: function (feature) {
+			//return feature.properties && feature.properties.style;
+		},
+
+		onEachFeature: onEachFeature,
+
+		pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, {
+				radius: 8,
+				fillColor: "#ff7800",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+	});
+
+
+	var LandslidePoints = L.geoJSON([LandslidePoints ], {
+
+		style: function (feature) {
+			//return feature.properties && feature.properties.style;
+		},
+
+		onEachFeature: onEachFeature,
+
+		pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, {
+				radius: 8,
+				fillColor: "#ff7800",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+	});
+
+
+	//var map = L.map('map').setView([12.115186, 122.907855], 6);
+
+	var map = L.map('map', {
+		center: [12.115186, 122.907855],
+		zoom: 6,
+		layers: [Esri_WorldImagery, LandslidePoints,LandslidePolygons]
+	});
+
+	var baseLayers = {
+		//"Grayscale": grayscale,
+		//"Streets": streets,
+		"OpenStreetMap": OpenStreetMap_Mapnik,
+		"Esri Imagery":Esri_WorldImagery
+	};
+
+	var overlays = {
+		"LandslidePoints": LandslidePoints,
+		"LandslidePolygons": LandslidePolygons
+	};
+
+	L.control.layers(baseLayers, overlays).addTo(map);
+
+
+</script>
+<p><small><strong>BRIEF NOTE:</strong> These old landslide scarps have been digitized as Points and Polygons from satellite imagery using  <a href="https://josm.openstreetmap.de/" target="_blank">JOSM</a> and stored in <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. Since it is not a standard OpenStreetMap layer, it is not visible in the generic OpenStreetMap display. It can however be viewed in JOSM and can be queried/downloaded using <a href="https://overpass-turbo.eu/" target="_blank">https://overpass-turbo.eu/</a>  (use the query wizard to query <i>hazard_type = landslide</i>, Export to download the file as GeoJSON, GPX, KML or raw OSM data). I digitised the data when I was doing my MSc in Remote Sensing in 2008 :). This landslide scarp data is open and can be updated by contributing to OpenStreetMap via JOSM and adding the tag <i>hazard_type = landslide</i>. Contributing can help grow the data and aid future research. For errors/comments/questions, please email: <i>jules.bangate@gmail.com</i>. Download this data: </small></p> 
+
+
+</body>
+</html>
