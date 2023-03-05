@@ -14,8 +14,7 @@ global {
 	
 	//Shape of the environment
 	geometry shape <- envelope(road_shapefile);
-	
-	
+
 	//clean or not the data
 	bool clean_data <- true parameter: true;
 	
@@ -47,7 +46,7 @@ global {
 		//computed the connected components of the graph (for visualization purpose)
 		connected_components <- list<list<point>>(connected_components_of(road_network_clean));
 		loop times: length(connected_components) {colors << rnd_color(255);}
-    }
+    	}
 }
 
 //Species to represent the roads
@@ -67,8 +66,8 @@ experiment clean_network type: gui {
 		layout #split;
 		display network {
 	
-			 overlay position: { 10, 100 } size: { 1000 #px, 60 #px } background: # black transparency: 0.5 border: #black rounded: true
-            {
+			overlay position: { 10, 100 } size: { 1000 #px, 60 #px } background: # black transparency: 0.5 border: #black rounded: true
+            		{
 				draw legend color: #white font: font("SansSerif", 20, #bold) at: {40#px, 40#px, 1 };
 			}
 			species road ;
